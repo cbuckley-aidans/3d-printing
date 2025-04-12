@@ -1,0 +1,1445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Printing for Assistive Technology</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/inter-ui/3.19.3/inter.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.3.0/raphael.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.15.0/flowchart.min.js"></script>
+</head>
+<body>
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar" style="overflow-y: auto; overflow-x: hidden;">
+        <div class="sidebar-logo">3D PRINTING FOR ASSISTIVE TECHNOLOGY</div>
+        <a href="index.html" class="home-button">
+            <i class="fas fa-home"></i>
+            HOME
+        </a>
+        <div class="sidebar-nav">
+            <button class="tab-button active" data-tab="lisc">
+                <i class="fas fa-clipboard-list"></i>
+                LI/SC
+            </button>
+            <button class="tab-button" data-tab="chunk1">
+                <i class="fas fa-cube"></i>
+                CHUNK 1
+            </button>
+            <button class="tab-button" data-tab="chew1">
+                <i class="fas fa-utensils"></i>
+                CHEW 1
+            </button>
+            <button class="tab-button" data-tab="chunk2">
+                <i class="fas fa-cube"></i>
+                CHUNK 2
+            </button>
+            <button class="tab-button" data-tab="chew2">
+                <i class="fas fa-utensils"></i>
+                CHEW 2
+            </button>
+            <button class="tab-button" data-tab="chunk3">
+                <i class="fas fa-cube"></i>
+                CHUNK 3
+            </button>
+            <button class="tab-button" data-tab="chew3">
+                <i class="fas fa-utensils"></i>
+                CHEW 3
+            </button>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Learning Intentions and Success Criteria section -->
+        <section id="lisc" class="tab-content active light-section">
+            <h1>LEARNING INTENTIONS & SUCCESS CRITERIA <i class="fas fa-bullseye" style="margin-left: 15px;"></i></h1>
+            
+            <div class="card">
+                <div class="element-header" style="margin: -35px -40px 30px -40px; padding: 25px 35px;">
+                    <div class="element-number">1</div>
+                    <h3>Learning Intentions <i class="fas fa-bullseye" style="margin-left: 15px; color: var(--accent-color);"></i></h3>
+                </div>
+                
+                <ul>
+                    <li><i class="fas fa-check-circle" style="color: var(--accent-color); margin-right: 12px;"></i> Understand what assistive technology is and how 3D printing can be used to create it</li>
+                    <li><i class="fas fa-check-circle" style="color: var(--accent-color); margin-right: 12px;"></i> Explore case studies to get inspiration for the make:able challenge</li>
+                </ul>
+            </div>
+            
+            <div class="card">
+                <div class="element-header" style="margin: -35px -40px 30px -40px; padding: 25px 35px;">
+                    <div class="element-number">2</div>
+                    <h3>Success Criteria <i class="fas fa-trophy" style="margin-left: 15px; color: var(--accent-color);"></i></h3>
+                </div>
+                
+                <p>By the end of this lesson, you should be able to:</p>
+                
+                <ul>
+                    <li><i class="fas fa-star" style="color: var(--accent-color); margin-right: 12px;"></i> Explain at least 2 benefits of using 3D printing for assistive technology</li>
+                    <li><i class="fas fa-star" style="color: var(--accent-color); margin-right: 12px;"></i> Identify elements from case studies you find inspiring for your own project</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- CHUNK 1: Introduction to make:able Challenge -->
+        <section id="chunk1" class="tab-content dark-section">
+            <h1>CHUNK 1: INTRODUCTION TO THE MAKE:ABLE CHALLENGE <i class="fas fa-rocket" style="margin-left: 15px;"></i></h1>
+            
+            <div class="chunk-section">
+                <div class="chunk-badge">TEACHER CHUNK</div>
+                <div class="timer-badge"><i class="fas fa-clock"></i> 15 mins</div>
+                
+                <h3>What is the make:able Challenge?</h3>
+                
+                <p>The make:able challenge is a global competition that invites students to design and create 3D-printed assistive technology for someone with a physical disability or limitation.</p>
+                
+                <div class="two-column-grid" style="margin-top: 30px;">
+                    <div class="interactive-card">
+                        <div class="element-header" style="margin: -35px -35px 30px -35px; padding: 20px 25px;">
+                            <div class="element-number">1</div>
+                            <h3>Understanding Assistive Technology <i class="fas fa-hands-helping" style="margin-left: 10px;"></i></h3>
+                        </div>
+                        
+                        <div class="variable-animation" style="padding: 30px;">
+                            <p style="text-align: center; font-weight: bold; font-size: 1.2em; margin-bottom: 25px;">Assistive technology helps people with disabilities:</p>
+                            
+                            <div class="icon-box">
+                                <div class="icon-container">
+                                    <i class="fas fa-wheelchair"></i>
+                                </div>
+                                <div class="icon-text">
+                                    <h4>Mobility Aids</h4>
+                                    <p>Wheelchairs, walkers, and specialized grips to help people move around</p>
+                                </div>
+                            </div>
+                            
+                            <div class="icon-box">
+                                <div class="icon-container">
+                                    <i class="fas fa-deaf"></i>
+                                </div>
+                                <div class="icon-text">
+                                    <h4>Hearing Devices</h4>
+                                    <p>Hearing aids and audio amplifiers to help people hear better</p>
+                                </div>
+                            </div>
+                            
+                            <div class="icon-box">
+                                <div class="icon-container">
+                                    <i class="fas fa-utensils"></i>
+                                </div>
+                                <div class="icon-text">
+                                    <h4>Adaptive Utensils</h4>
+                                    <p>Special grips and tools to help people eat and drink independently</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="interactive-card">
+                        <div class="element-header" style="margin: -35px -35px 30px -35px; padding: 20px 25px;">
+                            <div class="element-number">2</div>
+                            <h3>The Challenge Process <i class="fas fa-tasks" style="margin-left: 10px;"></i></h3>
+                        </div>
+                        
+                        <p style="font-size: 1.2em; text-align: center; font-weight: 600; margin-bottom: 20px;">To complete the make:able challenge, you will:</p>
+                        
+                        <div style="text-align: left; margin: 20px 0;">
+                            <div class="step-item">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h4>Find a person with a genuine need</h4>
+                                    <p>Identify someone who could benefit from an assistive device</p>
+                                </div>
+                            </div>
+                            
+                            <div class="step-item">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h4>Understand their challenge</h4>
+                                    <p>Learn about the specific problems they face in daily activities</p>
+                                </div>
+                            </div>
+                            
+                            <div class="step-item">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h4>Design a solution using 3D printing</h4>
+                                    <p>Create a custom device that addresses their specific needs</p>
+                                </div>
+                            </div>
+                            
+                            <div class="step-item">
+                                <div class="step-number">4</div>
+                                <div class="step-content">
+                                    <h4>Test and refine your design</h4>
+                                    <p>Get feedback and improve your solution based on user testing</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Video Placeholder -->
+                <div class="interactive-card" style="margin-top: 30px;">
+                    <div class="element-header" style="margin: -35px -35px 30px -35px; padding: 20px 25px;">
+                        <div class="element-number">3</div>
+                        <h3>Introduction Video <i class="fas fa-video" style="margin-left: 10px;"></i></h3>
+                    </div>
+                    
+                    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 8px;">
+                        <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/RhfGJduOlrw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                
+                <!-- Common Problems and Traditional Solutions -->
+                <div class="interactive-card" style="margin-top: 30px;">
+                    <div class="element-header" style="margin: -35px -35px 30px -35px; padding: 20px 25px;">
+                        <div class="element-number">4</div>
+                        <h3>Problems with Traditional Assistive Technology <i class="fas fa-exclamation-triangle" style="margin-left: 10px;"></i></h3>
+                    </div>
+                    
+                    <div class="two-column-grid" style="margin-top: 0;">
+                        <div class="interactive-card" style="border-left: 4px solid var(--accent-color);">
+                            <h4><i class="fas fa-dollar-sign" style="margin-right: 10px;"></i> Expensive</h4>
+                            <p>Many assistive devices cost hundreds or thousands of dollars, making them inaccessible to many people who need them.</p>
+                            <div style="text-align: center; margin-top: 15px;">
+                                <i class="fas fa-money-bill-wave" style="font-size: 4em; color: var(--accent-color); opacity: 0.7;"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="interactive-card" style="border-left: 4px solid var(--accent-color);">
+                            <h4><i class="fas fa-clone" style="margin-right: 10px;"></i> One-Size-Fits-All</h4>
+                            <p>Mass-produced devices aren't tailored to individual needs and may not work well for everyone.</p>
+                            <div style="text-align: center; margin-top: 15px;">
+                                <i class="fas fa-people-group" style="font-size: 4em; color: var(--accent-color); opacity: 0.7;"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="interactive-card" style="border-left: 4px solid var(--accent-color);">
+                            <h4><i class="fas fa-hourglass-half" style="margin-right: 10px;"></i> Long Wait Times</h4>
+                            <p>It can take months to get custom devices through traditional manufacturing methods.</p>
+                            <div style="text-align: center; margin-top: 15px;">
+                                <i class="fas fa-clock" style="font-size: 4em; color: var(--accent-color); opacity: 0.7;"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="interactive-card" style="border-left: 4px solid var(--accent-color);">
+                            <h4><i class="fas fa-tools" style="margin-right: 10px;"></i> Difficult to Modify</h4>
+                            <p>Once made, traditional devices can be hard to adjust or repair if they break or need changes.</p>
+                            <div style="text-align: center; margin-top: 15px;">
+                                <i class="fas fa-screwdriver-wrench" style="font-size: 4em; color: var(--accent-color); opacity: 0.7;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CHEW 1: See-Think-Wonder Case Study Analysis -->
+        <section id="chew1" class="tab-content light-section">
+            <h1>CHEW 1: SEE-THINK-WONDER CASE STUDY ANALYSIS <i class="fas fa-search" style="margin-left: 15px;"></i></h1>
+            
+            <div class="chew-section">
+                <div class="chew-badge">STUDENT ACTIVITY</div>
+                <div class="timer-badge"><i class="fas fa-clock"></i> 15 mins</div>
+                
+                <h3>Explore Inspiring Case Studies</h3>
+                
+                <div class="activity-goal">
+                    <h4><i class="fas fa-bullseye" style="color: var(--chew-color);"></i> Activity Goals</h4>
+                    <ul style="list-style-type: none; padding-left: 0;">
+                        <li><i class="fas fa-angle-right" style="margin-right: 12px; color: var(--chew-color);"></i> Analyze existing assistive technology solutions created through 3D printing</li>
+                        <li><i class="fas fa-angle-right" style="margin-right: 12px; color: var(--chew-color);"></i> Use the See-Think-Wonder thinking routine to process what you observe</li>
+                        <li><i class="fas fa-angle-right" style="margin-right: 12px; color: var(--chew-color);"></i> Identify elements that could inspire your own project</li>
+                    </ul>
+                </div>
+                
+                <!-- Case Study 1 -->
+                <div class="interactive-card">
+                    <div class="element-header" style="margin: -35px -35px 30px -35px; padding: 20px 25px;">
+                        <div class="element-number">1</div>
+                        <h3>Case Study 1: Customised Gripping Aid <i class="fas fa-hand-holding" style="margin-left: 10px;"></i></h3>
+                    </div>
+
+                    <div style="text-align: center; margin-bottom: 20px;">
+                        <div style="display: inline-block; background-color: white; padding: 15px 30px; border-radius: 30px; font-weight: bold; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                            <i class="fas fa-clipboard-check" style="color: var(--chew-color); margin-right: 10px;"></i> Record any notes in OneNote, Word, or Microsoft Whiteboard. You can paste these in the "Get Inspired" part of your assessment.
+                        </div>
+                    </div>
+
+                    <div class="two-column-grid">
+                        <div>
+                            <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 8px;">
+                                <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/PdtgmsVuVJQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        
+                        <div class="see-think-wonder">
+                            <div class="stw-section">
+                                <h4><i class="fas fa-eye" style="color: var(--chew-color);"></i> See</h4>
+                                <p>What do you observe in the video?</p>
+                                <ul style="padding-left: 20px; font-style: italic; color: #555;">
+                                    <li>"I notice that the device is..."</li>
+                                    <li>"I can see that the user is trying to..."</li>
+                                    <li>"The 3D printed object appears to have..."</li>
+                                    <li>"I observed the way that the person..."</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="stw-section">
+                                <h4><i class="fas fa-brain" style="color: var(--chew-color);"></i> Think</h4>
+                                <p>What do you think about what you observed?</p>
+                                <ul style="padding-left: 20px; font-style: italic; color: #555;">
+                                    <li>"I think this design works well because..."</li>
+                                    <li>"The problem it solves seems to be..."</li>
+                                    <li>"This might be difficult for the user if..."</li>
+                                    <li>"The most creative aspect is probably..."</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="stw-section">
+                                <h4><i class="fas fa-question-circle" style="color: var(--chew-color);"></i> Wonder</h4>
+                                <p>What questions do you have?</p>
+                                <ul style="padding-left: 20px; font-style: italic; color: #555;">
+                                    <li>"I wonder how they came up with this idea..."</li>
+                                    <li>"I'm curious about how long it took to..."</li>
+                                    <li>"What if they had designed it differently by..."</li>
+                                    <li>"How might this design be improved to..."</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Case Study 2 -->
+                <div class="interactive-card" style="margin-top: 30px;">
+                    <div class="element-header" style="margin: -35px -35px 30px -35px; padding: 20px 25px;">
+                        <div class="element-number">2</div>
+                        <h3>Case Study 2: Arm Attachment <i class="fas fa-pen" style="margin-left: 10px;"></i></h3>
+                    </div>
+
+                    <div style="text-align: center; margin-bottom: 20px;">
+                        <div style="display: inline-block; background-color: white; padding: 15px 30px; border-radius: 30px; font-weight: bold; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                            <i class="fas fa-clipboard-check" style="color: var(--chew-color); margin-right: 10px;"></i> Record any notes in OneNote, Word, or Microsoft Whiteboard. You can paste these in the "Get Inspired" part of your assessment.
+                        </div>
+                    </div>
+                    
+                    <div class="two-column-grid">
+                        <div>
+                            <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 8px;">
+                                <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/3I-cceqMmfM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        
+                        <div class="see-think-wonder">
+                            <div class="stw-section">
+                                <h4><i class="fas fa-eye" style="color: var(--chew-color);"></i> See</h4>
+                                <p>What do you observe in the video?</p>
+                                <ul style="padding-left: 20px; font-style: italic; color: #555;">
+                                    <li>"The design seems to focus on..."</li>
+                                    <li>"I notice that the user's hand position is..."</li>
+                                    <li>"The material appears to be..."</li>
+                                    <li>"I can see that this device helps with..."</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="stw-section">
+                                <h4><i class="fas fa-brain" style="color: var(--chew-color);"></i> Think</h4>
+                                <p>What do you think about what you observed?</p>
+                                <ul style="padding-left: 20px; font-style: italic; color: #555;">
+                                    <li>"I think the most important feature is..."</li>
+                                    <li>"This design could be helpful for people who..."</li>
+                                    <li>"The way it's shaped seems to address the problem of..."</li>
+                                    <li>"I believe this works well because..."</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="stw-section">
+                                <h4><i class="fas fa-question-circle" style="color: var(--chew-color);"></i> Wonder</h4>
+                                <p>What questions do you have?</p>
+                                <ul style="padding-left: 20px; font-style: italic; color: #555;">
+                                    <li>"I wonder how comfortable this is for extended use..."</li>
+                                    <li>"Could this design be adapted for other tools like..."</li>
+                                    <li>"What changes would be needed for someone with..."</li>
+                                    <li>"How might different materials affect the..."</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CHUNK 2: Benefits of 3D Printing for Assistive Technology -->
+        <section id="chunk2" class="tab-content dark-section">
+            <h1>CHUNK 2: BENEFITS OF 3D PRINTING FOR ASSISTIVE TECHNOLOGY <i class="fas fa-print" style="margin-left: 15px;"></i></h1>
+            
+            <div class="chunk-section">
+                <div class="chunk-badge">TEACHER CHUNK</div>
+                <div class="timer-badge"><i class="fas fa-clock"></i> 15 mins</div>
+                
+                <h3>Why 3D Printing is Revolutionary for Assistive Technology</h3>
+                
+                <p>3D printing offers unique advantages when creating assistive devices compared to traditional manufacturing methods.</p>
+                
+                <!-- Benefits Cards -->
+                <div id="benefits-container" class="card">
+                    <div class="elements-grid" style="display: grid; grid-template-columns: repeat(2, 1fr);">
+                        <div class="element-card active-benefit" style="background-color: #f0f7ff; transition: all 0.3s ease;" onclick="showBenefitDetails(1)">
+                            <div class="element-header">
+                                <div class="element-number">1</div>
+                                <h3>CUSTOMIZATION <i class="fas fa-user-cog" style="margin-left: 12px;"></i></h3>
+                            </div>
+                            <div class="element-content">
+                                <p>3D printing allows devices to be tailored exactly to an individual's body and needs</p>
+                            </div>
+                        </div>
+                        
+                        <div class="element-card" style="background-color: #f0fff4; transition: all 0.3s ease;" onclick="showBenefitDetails(2)">
+                            <div class="element-header">
+                                <div class="element-number">2</div>
+                                <h3>COST-EFFECTIVE <i class="fas fa-dollar-sign" style="margin-left: 12px;"></i></h3>
+                            </div>
+                            <div class="element-content">
+                                <p>Creating custom devices with 3D printing is much cheaper than traditional manufacturing</p>
+                            </div>
+                        </div>
+                        
+                        <div class="element-card" style="background-color: #fff7f0; transition: all 0.3s ease;" onclick="showBenefitDetails(3)">
+                            <div class="element-header">
+                                <div class="element-number">3</div>
+                                <h3>RAPID PROTOTYPING <i class="fas fa-fast-forward" style="margin-left: 12px;"></i></h3>
+                            </div>
+                            <div class="element-content">
+                                <p>Designs can be quickly tested, modified, and printed again to find the best solution</p>
+                            </div>
+                        </div>
+                        
+                        <div class="element-card" style="background-color: #f0f0ff; transition: all 0.3s ease;" onclick="showBenefitDetails(4)">
+                            <div class="element-header">
+                                <div class="element-number">4</div>
+                                <h3>LIGHTWEIGHT <i class="fas fa-feather" style="margin-left: 12px;"></i></h3>
+                            </div>
+                            <div class="element-content">
+                                <p>3D printed objects can be strong but lightweight, making them comfortable to use</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Benefit Details Section -->
+                <div class="interactive-card" style="margin-top: 30px;">
+                    <div id="benefit-details">
+                        <!-- Benefit 1 Details -->
+                        <div id="benefit-1-details" class="benefit-detail-section">
+                            <div class="element-header" style="margin: -35px -35px 30px -35px; padding: 20px 25px;">
+                                <div class="element-number">5</div>
+                                <h3>Customization in Detail <i class="fas fa-user-cog" style="margin-left: 10px;"></i></h3>
+                            </div>
+                            
+                            <div class="two-column-grid">
+                                <div>
+                                    <h4>Why It Matters</h4>
+                                    <ul>
+                                        <li>Every person's body is different</li>
+                                        <li>Mass-produced items often don't fit well</li>
+                                        <li>Proper fit means better function and comfort</li>
+                                        <li>Can address very specific challenges</li>
+                                    </ul>
+                                    
+                                    
+                                </div>
+                                
+                                <div style="display: flex; align-items: center; justify-content: center;">
+                                    <div style="text-align: center;">
+                                        <div id="customization-animation" style="width: 200px; height: 200px; background-color: #f0f7ff; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; position: relative;">
+                                            <i class="fas fa-user-cog" style="font-size: 5em; color: var(--accent-color);"></i>
+                                            <div class="orbit" style="position: absolute; width: 100%; height: 100%; border-radius: 50%; border: 2px dashed var(--accent-color); animation: rotate 10s linear infinite;"></div>
+                                        </div>
+                                        <p style="font-weight: bold;">Custom fit = Better function</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Benefit 2 Details -->
+                        <div id="benefit-2-details" class="benefit-detail-section" style="display: none;">
+                            <div class="element-header" style="margin: -35px -35px 30px -35px; padding: 20px 25px;">
+                                <div class="element-number">2</div>
+                                <h3>Cost-Effectiveness in Detail <i class="fas fa-dollar-sign" style="margin-left: 10px;"></i></h3>
+                            </div>
+                            
+                            <div class="two-column-grid">
+                                <div>
+                                    <h4>Why It Matters</h4>
+                                    <ul>
+                                        <li>Traditional custom devices can cost hundreds or thousands of dollars</li>
+                                        <li>3D printing materials are relatively inexpensive</li>
+                                        <li>Makes assistive technology accessible to more people</li>
+                                        <li>Replacements and repairs are affordable</li>
+                                    </ul>
+                                    
+                                    <div style="margin-top: 20px;">
+                                        <h4>Real-World Example</h4>
+                                        <p>A professional prosthetic hand can cost $10,000+, but a functional 3D printed version can be made for under $50 in materials.</p>
+                                    </div>
+                                </div>
+                                
+                                <div style="display: flex; align-items: center; justify-content: center;">
+                                    <div style="text-align: center;">
+                                        <div style="width: 200px; height: 200px; background-color: #f0fff4; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+                                            <div style="position: relative;">
+                                                <i class="fas fa-dollar-sign" style="font-size: 5em; color: var(--accent-color);"></i>
+                                                <i class="fas fa-arrow-down" style="position: absolute; right: -20px; bottom: -20px; font-size: 2em; color: green;"></i>
+                                            </div>
+                                        </div>
+                                        <p style="font-weight: bold;">Lower cost = Greater access</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Benefit 3 Details -->
+                        <div id="benefit-3-details" class="benefit-detail-section" style="display: none;">
+                            <div class="element-header" style="margin: -35px -35px 30px -35px; padding: 20px 25px;">
+                                <div class="element-number">3</div>
+                                <h3>Rapid Prototyping in Detail <i class="fas fa-fast-forward" style="margin-left: 10px;"></i></h3>
+                            </div>
+                            
+                            <div class="two-column-grid">
+                                <div>
+                                    <h4>Why It Matters</h4>
+                                    <ul>
+                                        <li>Can quickly test multiple design ideas</li>
+                                        <li>Get immediate feedback from users</li>
+                                        <li>Make adjustments and print again in hours, not weeks</li>
+                                        <li>Leads to more refined, effective final products</li>
+                                    </ul>
+                                    
+                                    <div style="margin-top: 20px;">
+                                        <h4>Real-World Example</h4>
+                                        <p>A student created 5 different versions of a button-pusher device in a single week, getting feedback from the user each time to perfect the design.</p>
+                                    </div>
+                                </div>
+                                
+                                <div style="display: flex; align-items: center; justify-content: center;">
+                                    <div style="text-align: center;">
+                                        <div style="width: 200px; height: 200px; background-color: #fff7f0; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+                                            <div id="iteration-container" style="position: relative; width: 120px; height: 120px;">
+                                                <div style="position: absolute; top: 0; left: 0; width: 60px; height: 60px; background-color: #ffcc88; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+                                                    <span>V1</span>
+                                                </div>
+                                                <div style="position: absolute; top: 15px; left: 15px; width: 60px; height: 60px; background-color: #ffbb66; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+                                                    <span>V2</span>
+                                                </div>
+                                                <div style="position: absolute; top: 30px; left: 30px; width: 60px; height: 60px; background-color: #ff9933; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+                                                    <span>V3</span>
+                                                </div>
+                                                <div style="position: absolute; top: 45px; left: 45px; width: 60px; height: 60px; background-color: #ff7700; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+                                                    <span>V4</span>
+                                                </div>
+                                                <div style="position: absolute; top: 60px; left: 60px; width: 60px; height: 60px; background-color: #ff5500; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white;">
+                                                    <span>V5</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p style="font-weight: bold;">Quick iterations = Better results</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Benefit 4 Details -->
+                        <div id="benefit-4-details" class="benefit-detail-section" style="display: none;">
+                            <div class="element-header" style="margin: -35px -35px 30px -35px; padding: 20px 25px;">
+                                <div class="element-number">4</div>
+                                <h3>Lightweight Design in Detail <i class="fas fa-feather" style="margin-left: 10px;"></i></h3>
+                            </div>
+                            
+                            <div class="two-column-grid">
+                                <div>
+                                    <h4>Why It Matters</h4>
+                                    <ul>
+                                        <li>Heavy devices can cause fatigue and discomfort</li>
+                                        <li>3D printing can create hollow or honeycomb structures</li>
+                                        <li>Reduces material while maintaining strength</li>
+                                        <li>Especially important for devices used for extended periods</li>
+                                    </ul>
+                                    
+                                    <div style="margin-top: 20px;">
+                                        <h4>Real-World Example</h4>
+                                        <p>A student designed a lightweight arm brace with a honeycomb structure that provided support while being comfortable enough to wear all day.</p>
+                                    </div>
+                                </div>
+                                
+                                <div style="display: flex; align-items: center; justify-content: center;">
+                                    <div style="text-align: center;">
+                                        <div style="width: 200px; height: 200px; background-color: #f0f0ff; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+                                            <div style="position: relative;">
+                                                <i class="fas fa-feather" style="font-size: 5em; color: var(--accent-color);"></i>
+                                                <div style="position: absolute; top: -20px; right: -20px; width: 40px; height: 40px; background-color: #e8e8ff; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                                                    <i class="fas fa-plus" style="color: var(--accent-color);"></i>
+                                                </div>
+                                                <div style="position: absolute; bottom: -20px; right: -20px; width: 40px; height: 40px; background-color: #e8e8ff; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                                                    <i class="fas fa-tachometer-alt" style="color: var(--accent-color);"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p style="font-weight: bold;">Lightweight + Strong = Comfortable use</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CHEW 2: Collaborative Benefits Mapping -->
+        <section id="chew2" class="tab-content light-section">
+            <h1>CHEW 2: COLLABORATIVE BENEFITS MAPPING <i class="fas fa-project-diagram" style="margin-left: 15px;"></i></h1>
+            
+            <div class="chew-section">
+                <div class="chew-badge">STUDENT ACTIVITY</div>
+                <div class="timer-badge"><i class="fas fa-clock"></i> 15 mins</div>
+                
+                <h3>Create a Mind Map of 3D Printing Benefits</h3>
+                
+                <div class="activity-goal">
+                    <h4><i class="fas fa-bullseye" style="color: var(--chew-color);"></i> Activity Goals</h4>
+                    <ul style="list-style-type: none; padding-left: 0;">
+                        <li><i class="fas fa-angle-right" style="margin-right: 12px; color: var(--chew-color);"></i> Work in groups to brainstorm benefits of 3D printing for assistive technology</li>
+                        <li><i class="fas fa-angle-right" style="margin-right: 12px; color: var(--chew-color);"></i> Connect benefits to real-world examples and implications</li>
+                        <li><i class="fas fa-angle-right" style="margin-right: 12px; color: var(--chew-color);"></i> Develop a clear explanation of why 3D printing is valuable for this application</li>
+                    </ul>
+                </div>
+                
+                <div class="interactive-card">
+                    <div class="element-header" style="margin: -35px -35px 30px -35px; padding: 20px 25px;">
+                        <div class="element-number">1</div>
+                        <h3>Group Mind Mapping <i class="fas fa-sitemap" style="margin-left: 10px;"></i></h3>
+                    </div>
+                    
+                    <div style="text-align: center; margin-bottom: 20px;">
+                        <p style="font-size: 1.2em; font-weight: 600;">In groups of 3-4, create a mind map centered on:</p>
+                        <div style="background-color: var(--chew-color); color: white; display: inline-block; padding: 15px 30px; border-radius: 30px; font-size: 1.3em; font-weight: bold; margin: 15px 0;">
+                            Why 3D Printing for Assistive Technology?
+                        </div>
+                    </div>
+                    
+                    <div style="background-color: rgba(16, 185, 129, 0.1); border-radius: var(--border-radius); padding: 25px; margin: 25px 0;">
+                        <h4 style="color: var(--chew-color);"><i class="fas fa-tasks" style="margin-right: 10px;"></i> Instructions:</h4>
+                        <ol style="text-align: left; margin-bottom: 0;">
+                            <li>Use a large sheet of paper and markers</li>
+                            <li>Write "Why 3D Printing for Assistive Technology?" in the center</li>
+                            <li>Add branches with benefits, examples, and connections</li>
+                            <li>After 10 minutes, rotate to another group's mind map and add one new insight</li>
+                            <li>Return to your original map and finalize your ideas</li>
+                        </ol>
+                    </div>
+                    
+                    <div style="text-align: center;">
+                        <i class="fas fa-sitemap" style="font-size: 6em; color: var(--chew-color); opacity: 0.6;"></i>
+                    </div>
+                </div>
+                
+                <div class="interactive-card" style="margin-top: 30px;">
+                    <div class="element-header" style="margin: -35px -35px 30px -35px; padding: 20px 25px;">
+                        <div class="element-number">2</div>
+                        <h3>Individual Reflection <i class="fas fa-pencil-alt" style="margin-left: 10px;"></i></h3>
+                    </div>
+                    
+                    <p style="font-size: 1.2em; text-align: center; margin-bottom: 20px;">Using the ideas from your mind map, prepare your own answer to the question:</p>
+                    
+                    <div style="background-color: rgba(16, 185, 129, 0.1); border-radius: var(--border-radius); padding: 25px; margin: 25px 0;">
+                        <p style="font-size: 1.3em; font-weight: 600; text-align: center; margin-bottom: 20px; color: var(--chew-color);">Why is 3D printing valuable for assistive technology?</p>
+                        
+                        <div style="text-align: center; margin-bottom: 20px;">
+                            <div style="display: inline-block; background-color: white; padding: 15px 30px; border-radius: 30px; font-weight: bold; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                                <i class="fas fa-clipboard-check" style="color: var(--chew-color); margin-right: 10px;"></i> Complete this section in your assessment worksheet
+                            </div>
+                        </div>
+                        
+                        <p style="font-weight: 600; margin-bottom: 10px;">Sentence Starters for Your Worksheet:</p>
+                        <ul style="text-align: left;">
+                            <li>"3D printing is ideal for assistive technology because it allows for _____________."</li>
+                            <li>"Unlike traditional manufacturing, 3D printing can _____________ which benefits users by _____________."</li>
+                            <li>"One advantage of using 3D printing for assistive devices is _____________, which matters because _____________."</li>
+                            <li>"For people with disabilities, customized 3D printed solutions offer _____________ that standard products cannot."</li>
+                            <li>"The most important benefit I learned about is _____________ because _____________."</li>
+                            <li>"If I were designing assistive technology, I would use 3D printing to _____________."</li>
+                            <li>"The cost difference between traditional and 3D printed assistive devices is important because _____________."</li>
+                            <li>"What makes 3D printing revolutionary for assistive technology is _____________."</li>
+                        </ul>
+                        
+                        <div style="margin-top: 20px; background-color: rgba(16, 185, 129, 0.1); border-radius: 8px; padding: 15px; text-align: center;">
+                            <p style="margin: 0;"><i class="fas fa-info-circle" style="color: var(--chew-color); margin-right: 10px;"></i> <strong>Take a photo of your group mind map</strong> and include it in your assessment worksheet along with your written reflection.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CHUNK 3: Getting Started with the make:able Challenge -->
+        <section id="chunk3" class="tab-content dark-section">
+            <h1>CHUNK 3: GETTING STARTED WITH THE MAKE:ABLE CHALLENGE <i class="fas fa-flag-checkered" style="margin-left: 15px;"></i></h1>
+            
+            <div class="chunk-section">
+                <div class="chunk-badge">TEACHER CHUNK</div>
+                <div class="timer-badge"><i class="fas fa-clock"></i> 10 mins</div>
+                
+                <h3>The Design Thinking Process</h3>
+                
+                <p>To create a successful make:able project, you'll follow a design thinking process that keeps the user at the center of your work.</p>
+                
+                <div class="interactive-card">
+                    <div class="element-header" style="margin: -35px -35px 30px -35px; padding: 20px 25px;">
+                        <div class="element-number">1</div>
+                        <h3>Design Thinking Steps <i class="fas fa-lightbulb" style="margin-left: 10px;"></i></h3>
+                    </div>
+                    
+                    <div id="design-thinking-process" class="process-steps">
+                        <div class="process-step active" onclick="showProcessStep(1)">
+                            <div class="process-step-number">1</div>
+                            <div class="process-step-content">
+                                <h4>Empathize</h4>
+                                <p>Find and understand a user with a genuine need</p>
+                            </div>
+                        </div>
+                        
+                        <div class="process-step" onclick="showProcessStep(2)">
+                            <div class="process-step-number">2</div>
+                            <div class="process-step-content">
+                                <h4>Define</h4>
+                                <p>Clearly articulate the problem to be solved</p>
+                            </div>
+                        </div>
+                        
+                        <div class="process-step" onclick="showProcessStep(3)">
+                            <div class="process-step-number">3</div>
+                            <div class="process-step-content">
+                                <h4>Ideate</h4>
+                                <p>Brainstorm possible solutions</p>
+                            </div>
+                        </div>
+                        
+                        <div class="process-step" onclick="showProcessStep(4)">
+                            <div class="process-step-number">4</div>
+                            <div class="process-step-content">
+                                <h4>Prototype</h4>
+                                <p>Create models and test designs</p>
+                            </div>
+                        </div>
+                        
+                        <div class="process-step" onclick="showProcessStep(5)">
+                            <div class="process-step-number">5</div>
+                            <div class="process-step-content">
+                                <h4>Test & Refine</h4>
+                                <p>Gather feedback and improve the design</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="process-step-details">
+                        <!-- Step 1 Details -->
+                        <div id="step-1-details" class="process-detail active">
+                            <h4>Empathize</h4>
+                            <div class="two-column-grid">
+                                <div>
+                                    <p>In this phase, you'll:</p>
+                                    <ul>
+                                        <li>Find a person with a disability or limitation</li>
+                                        <li>Interview them about their challenges</li>
+                                        <li>Observe how they currently handle tasks</li>
+                                        <li>Build empathy for their experience</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <div style="background-color: rgba(0,0,0,0.05); padding: 15px; border-radius: 8px;">
+                                        <h5 style="margin-top: 0;"><i class="fas fa-question-circle" style="color: var(--accent-color); margin-right: 8px;"></i> Key Questions:</h5>
+                                        <ul style="margin-bottom: 0;">
+                                            <li>What everyday tasks are difficult for them?</li>
+                                            <li>What existing solutions have they tried?</li>
+                                            <li>What would make the biggest difference in their daily life?</li>
+                                            <li>What are their preferences and priorities?</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 2 Details -->
+                        <div id="step-2-details" class="process-detail">
+                            <h4>Define</h4>
+                            <div class="two-column-grid">
+                                <div>
+                                    <p>In this phase, you'll:</p>
+                                    <ul>
+                                        <li>Analyze what you learned from your user</li>
+                                        <li>Define a clear problem statement</li>
+                                        <li>Focus on the specific need to address</li>
+                                        <li>Establish criteria for a successful solution</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <div style="background-color: rgba(0,0,0,0.05); padding: 15px; border-radius: 8px;">
+                                        <h5 style="margin-top: 0;"><i class="fas fa-pencil-alt" style="color: var(--accent-color); margin-right: 8px;"></i> Problem Statement Format:</h5>
+                                        <p style="font-style: italic; margin-bottom: 0;">[User name] needs a way to [accomplish task] because [reason why it's important].</p>
+                                        <p>Example: "Sarah needs a way to hold her paintbrush steadily because her hand tremor makes it difficult to enjoy her favorite hobby."</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 3 Details -->
+                        <div id="step-3-details" class="process-detail">
+                            <h4>Ideate</h4>
+                            <div class="two-column-grid">
+                                <div>
+                                    <p>In this phase, you'll:</p>
+                                    <ul>
+                                        <li>Brainstorm many possible solutions</li>
+                                        <li>Think creatively without limitations</li>
+                                        <li>Consider how 3D printing capabilities could help</li>
+                                        <li>Involve your user in generating ideas</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <div style="background-color: rgba(0,0,0,0.05); padding: 15px; border-radius: 8px;">
+                                        <h5 style="margin-top: 0;"><i class="fas fa-lightbulb" style="color: var(--accent-color); margin-right: 8px;"></i> Brainstorming Tips:</h5>
+                                        <ul style="margin-bottom: 0;">
+                                            <li>Aim for quantity over quality initially</li>
+                                            <li>Build on others' ideas</li>
+                                            <li>Avoid judging ideas too early</li>
+                                            <li>Use sketches to communicate concepts</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 4 Details -->
+                        <div id="step-4-details" class="process-detail">
+                            <h4>Prototype</h4>
+                            <div class="two-column-grid">
+                                <div>
+                                    <p>In this phase, you'll:</p>
+                                    <ul>
+                                        <li>Select the most promising ideas to develop</li>
+                                        <li>Create simple models or mock-ups first</li>
+                                        <li>Use CAD software to design 3D models</li>
+                                        <li>3D print initial prototypes</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <div style="background-color: rgba(0,0,0,0.05); padding: 15px; border-radius: 8px;">
+                                        <h5 style="margin-top: 0;"><i class="fas fa-cube" style="color: var(--accent-color); margin-right: 8px;"></i> Prototyping Considerations:</h5>
+                                        <ul style="margin-bottom: 0;">
+                                            <li>Start simple and iterate</li>
+                                            <li>Consider print orientation for strength</li>
+                                            <li>Test different infill patterns/densities</li>
+                                            <li>Think about how pieces will connect</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 5 Details -->
+                        <div id="step-5-details" class="process-detail">
+                            <h4>Test & Refine</h4>
+                            <div class="two-column-grid">
+                                <div>
+                                    <p>In this phase, you'll:</p>
+                                    <ul>
+                                        <li>Have your user test the prototype</li>
+                                        <li>Collect specific feedback</li>
+                                        <li>Make improvements based on testing</li>
+                                        <li>Repeat the process until the design works well</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <div style="background-color: rgba(0,0,0,0.05); padding: 15px; border-radius: 8px;">
+                                        <h5 style="margin-top: 0;"><i class="fas fa-sync-alt" style="color: var(--accent-color); margin-right: 8px;"></i> Refinement Questions:</h5>
+                                        <ul style="margin-bottom: 0;">
+                                            <li>Is it comfortable to use?</li>
+                                            <li>Does it accomplish the task effectively?</li>
+                                            <li>Is it durable enough?</li>
+                                            <li>What could be improved?</li>
+                                            <li>Are there any unexpected issues?</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="interactive-card" style="margin-top: 30px;">
+                    <div class="element-header" style="margin: -35px -35px 30px -35px; padding: 20px 25px;">
+                        <div class="element-number">2</div>
+                        <h3>What Makes a Successful Project <i class="fas fa-trophy" style="margin-left: 10px;"></i></h3>
+                    </div>
+                    
+                    <div class="two-column-grid">
+                        <div class="interactive-card" style="border-left: 4px solid var(--accent-color);">
+                            <h4><i class="fas fa-check-circle" style="color: var(--accent-color); margin-right: 10px;"></i> Do</h4>
+                            <ul>
+                                <li>Address a real need for a specific person</li>
+                                <li>Use 3D printing in a way that showcases its advantages</li>
+                                <li>Keep the design simple but effective</li>
+                                <li>Document your process and iterations</li>
+                                <li>Include the user throughout the design process</li>
+                                <li>Test your design with the actual user</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="interactive-card" style="border-left: 4px solid var(--bad-color);">
+                            <h4><i class="fas fa-times-circle" style="color: var(--bad-color); margin-right: 10px;"></i> Don't</h4>
+                            <ul>
+                                <li>Create a solution without a specific user in mind</li>
+                                <li>Design something that could be made more easily without 3D printing</li>
+                                <li>Make the design unnecessarily complex</li>
+                                <li>Wait until the end to test with your user</li>
+                                <li>Forget to document your design process</li>
+                                <li>Give up when your first design doesn't work perfectly</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="interactive-card" style="margin-top: 30px;">
+                    <div class="element-header" style="margin: -35px -35px 30px -35px; padding: 20px 25px;">
+                        <div class="element-number">3</div>
+                        <h3>Finding a User <i class="fas fa-users" style="margin-left: 10px;"></i></h3>
+                    </div>
+                    
+                    <p style="font-size: 1.2em; margin-bottom: 20px;">Think about potential users you could design for:</p>
+                    
+                    <div class="variable-animation" style="padding: 30px;">
+                        <div class="card-carousel">
+                            <div class="carousel-card active">
+                                <div class="carousel-icon">
+                                    <i class="fas fa-home"></i>
+                                </div>
+                                <h4>Family Members</h4>
+                                <p>Do you have relatives with physical limitations who could benefit from assistive technology?</p>
+                            </div>
+                            
+                            <div class="carousel-card">
+                                <div class="carousel-icon">
+                                    <i class="fas fa-school"></i>
+                                </div>
+                                <h4>School Community</h4>
+                                <p>Are there students or staff at your school who face physical challenges?</p>
+                            </div>
+                            
+                            <div class="carousel-card">
+                                <div class="carousel-icon">
+                                    <i class="fas fa-place-of-worship"></i>
+                                </div>
+                                <h4>Community Organizations</h4>
+                                <p>Local community centers, religious organizations, or senior centers might connect you with potential users</p>
+                            </div>
+                            
+                            <div class="carousel-card">
+                                <div class="carousel-icon">
+                                    <i class="fas fa-hand-holding-heart"></i>
+                                </div>
+                                <h4>Support Groups</h4>
+                                <p>Local organizations that support people with specific disabilities might help you connect with a user</p>
+                            </div>
+                        </div>
+                        
+                        <div class="carousel-navigation">
+                            <button class="carousel-btn" onclick="prevCard()"><i class="fas fa-chevron-left"></i></button>
+                            <div class="carousel-indicators">
+                                <span class="indicator active"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                            </div>
+                            <button class="carousel-btn" onclick="nextCard()"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CHEW 3: Reflection and Initial Planning -->
+        <section id="chew3" class="tab-content light-section">
+            <h1>CHEW 3: REFLECTION AND INITIAL PLANNING <i class="fas fa-clipboard-check" style="margin-left: 15px;"></i></h1>
+            
+            <div class="chew-section">
+                <div class="chew-badge">STUDENT ACTIVITY</div>
+                <div class="timer-badge"><i class="fas fa-clock"></i> 15 mins</div>
+                
+                <h3>Reflect on What You've Learned</h3>
+                
+                <div class="activity-goal">
+                    <h4><i class="fas fa-bullseye" style="color: var(--chew-color);"></i> Activity Goals</h4>
+                    <ul style="list-style-type: none; padding-left: 0;">
+                        <li><i class="fas fa-angle-right" style="margin-right: 12px; color: var(--chew-color);"></i> Summarize key takeaways from the lesson</li>
+                        <li><i class="fas fa-angle-right" style="margin-right: 12px; color: var(--chew-color);"></i> Begin planning for your make:able project</li>
+                        <li><i class="fas fa-angle-right" style="margin-right: 12px; color: var(--chew-color);"></i> Identify next steps and potential users</li>
+                    </ul>
+                </div>
+                
+                <div class="interactive-card">
+                    <div class="element-header" style="margin: -35px -35px 30px -35px; padding: 20px 25px;">
+                        <div class="element-number">1</div>
+                        <h3>Complete Your Checklist <i class="fas fa-tasks" style="margin-left: 10px;"></i></h3>
+                    </div>
+                    
+                    <p style="font-size: 1.2em; margin-bottom: 20px;">Check each item that you understand or have completed:</p>
+                    
+                    <div style="background-color: rgba(16, 185, 129, 0.1); border-radius: var(--border-radius); padding: 25px; margin: 25px 0;">
+                        <div class="checklist">
+                            <div class="checklist-item">
+                                <input type="checkbox" id="check1">
+                                <label for="check1">I understand what the make:able challenge is about</label>
+                            </div>
+                            
+                            <div class="checklist-item">
+                                <input type="checkbox" id="check2">
+                                <label for="check2">I can explain what assistive technology is</label>
+                            </div>
+                            
+                            <div class="checklist-item">
+                                <input type="checkbox" id="check3">
+                                <label for="check3">I can identify at least 2 benefits of using 3D printing for assistive technology</label>
+                            </div>
+                            
+                            <div class="checklist-item">
+                                <input type="checkbox" id="check4">
+                                <label for="check4">I've analyzed case studies and found elements that inspired me</label>
+                            </div>
+                            
+                            <div class="checklist-item">
+                                <input type="checkbox" id="check5">
+                                <label for="check5">I understand the design thinking process we'll follow</label>
+                            </div>
+                            
+                            <div class="checklist-item">
+                                <input type="checkbox" id="check6">
+                                <label for="check6">I have ideas about who I might design for</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="interactive-card" style="margin-top: 30px;">
+                    <div class="element-header" style="margin: -35px -35px 30px -35px; padding: 20px 25px;">
+                        <div class="element-number">2</div>
+                        <h3>Share and Reflect <i class="fas fa-comments" style="margin-left: 10px;"></i></h3>
+                    </div>
+                    
+                    <div style="background-color: rgba(16, 185, 129, 0.1); border-radius: var(--border-radius); padding: 25px; margin: 25px 0;">
+                        <p style="font-size: 1.2em; font-weight: 600; text-align: center; margin-bottom: 20px; color: var(--chew-color);">In pairs, share:</p>
+                        
+                        <div style="text-align: center; margin-bottom: 20px;">
+                            <div style="display: inline-block; background-color: white; padding: 15px 30px; border-radius: 30px; font-weight: bold; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                                Do you know anyone who could benefit from assistive technology, and what you could design for them?
+                            </div>
+                        </div>
+                        
+                        <p style="text-align: center;">Listen carefully to your partner's response and be prepared to share what they said with the class if asked.</p>
+                        
+                        <div style="margin-top: 20px; background-color: white; border-radius: 8px; padding: 15px; text-align: left;">
+                            <p style="font-weight: 600; margin-bottom: 5px;">Sentence starters for your discussion:</p>
+                            <ul style="padding-left: 20px; font-style: italic; color: #555;">
+                                <li>"I know someone who struggles with _____________."</li>
+                                <li>"I could design a _______________ that would help them to _______________."</li>
+                                <li>"The biggest challenge they face is _______________."</li>
+                                <li>"A 3D printed solution would be better than existing options because _______________."</li>
+                                <li>"I'm interested in this problem because _______________."</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card" style="margin-bottom: 30px;">
+                <h3>Key Takeaways <i class="fas fa-check-circle" style="margin-left: 10px;"></i></h3>
+                
+                <div style="background-color: rgba(0,0,0,0.05); border-radius: var(--border-radius); padding: 20px; margin-top: 25px;">
+                    <h4 style="margin-top: 0;"><i class="fas fa-lightbulb" style="color: var(--accent-color); margin-right: 10px;"></i> What We've Learned Today</h4>
+                    <ul style="list-style-type: none; padding-left: 0;">
+                        <li><i class="fas fa-check" style="margin-right: 12px; color: var(--good-color);"></i> Assistive technology helps people with disabilities perform everyday tasks</li>
+                        <li><i class="fas fa-check" style="margin-right: 12px; color: var(--good-color);"></i> 3D printing offers unique advantages for creating assistive devices</li>
+                        <li><i class="fas fa-check" style="margin-right: 12px; color: var(--good-color);"></i> The make:able challenge gives us a chance to design solutions for real people</li>
+                        <li><i class="fas fa-check" style="margin-right: 12px; color: var(--good-color);"></i> We'll follow a design thinking process: Empathize, Define, Ideate, Prototype, Test & Refine</li>
+                        <li><i class="fas fa-check" style="margin-right: 12px; color: var(--good-color);"></i> Case studies can inspire our own designs</li>
+                        <li><i class="fas fa-check" style="margin-right: 12px; color: var(--good-color);"></i> Our projects can make a real difference in someone's life</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Navigation
+        document.addEventListener('DOMContentLoaded', function() {
+            // Tab switching
+            document.querySelectorAll('.tab-button').forEach(button => {
+                button.addEventListener('click', function() {
+                    const tab = this.getAttribute('data-tab');
+                    
+                    // Remove active class from all buttons and tabs
+                    document.querySelectorAll('.tab-button').forEach(btn => {
+                        btn.classList.remove('active');
+                    });
+                    document.querySelectorAll('.tab-content').forEach(content => {
+                        content.classList.remove('active');
+                    });
+                    
+                    // Add active class to selected button and tab
+                    this.classList.add('active');
+                    document.getElementById(tab).classList.add('active');
+                });
+            });
+        });
+        
+        // 3D Printing Benefits Display
+        function showBenefitDetails(benefitNum) {
+            // Hide all benefit details
+            document.querySelectorAll('.benefit-detail-section').forEach(section => {
+                section.style.display = 'none';
+            });
+            
+            // Show selected benefit detail
+            document.getElementById(`benefit-${benefitNum}-details`).style.display = 'block';
+            
+            // Update active benefit card
+            document.querySelectorAll('.element-card').forEach(card => {
+                card.classList.remove('active-benefit');
+            });
+            
+            // Get the cards and set the active one
+            const cards = document.querySelectorAll('.element-card');
+            cards[benefitNum - 1].classList.add('active-benefit');
+        }
+        
+        // Design Thinking Process Steps
+        function showProcessStep(stepNum) {
+            // Hide all step details
+            document.querySelectorAll('.process-detail').forEach(detail => {
+                detail.classList.remove('active');
+            });
+            
+            // Show selected step detail
+            document.getElementById(`step-${stepNum}-details`).classList.add('active');
+            
+            // Update active step
+            document.querySelectorAll('.process-step').forEach(step => {
+                step.classList.remove('active');
+            });
+            
+            // Get the steps and set the active one
+            const steps = document.querySelectorAll('.process-step');
+            steps[stepNum - 1].classList.add('active');
+        }
+        
+        // User carousel
+        let currentCard = 0;
+        const totalCards = 4;
+        
+        function showCard(index) {
+            // Hide all cards
+            document.querySelectorAll('.carousel-card').forEach(card => {
+                card.classList.remove('active');
+            });
+            
+            // Hide all indicators
+            document.querySelectorAll('.indicator').forEach(indicator => {
+                indicator.classList.remove('active');
+            });
+            
+            // Show selected card and indicator
+            const cards = document.querySelectorAll('.carousel-card');
+            const indicators = document.querySelectorAll('.indicator');
+            
+            cards[index].classList.add('active');
+            indicators[index].classList.add('active');
+            
+            currentCard = index;
+        }
+        
+        function nextCard() {
+            let nextIndex = (currentCard + 1) % totalCards;
+            showCard(nextIndex);
+        }
+        
+        function prevCard() {
+            let prevIndex = (currentCard - 1 + totalCards) % totalCards;
+            showCard(prevIndex);
+        }
+    </script>
+    
+    <style>
+        /* Additional Styles for 3D Printing Lesson */
+        
+        /* Process Steps */
+        .process-steps {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        
+        .process-step {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            background-color: rgba(0,0,0,0.03);
+            padding: 15px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .process-step:hover {
+            background-color: rgba(0,0,0,0.05);
+        }
+        
+        .process-step.active {
+            background-color: var(--accent-color);
+            color: white;
+        }
+        
+        .process-step-number {
+            width: 40px;
+            height: 40px;
+            background-color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: var(--accent-color);
+            border: 2px solid var(--accent-color);
+        }
+        
+        .process-step.active .process-step-number {
+            background-color: white;
+            color: var(--accent-color);
+        }
+        
+        .process-step-content h4 {
+            margin: 0 0 5px 0;
+        }
+        
+        .process-step-content p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+        
+        .process-detail {
+            display: none;
+            background-color: rgba(0,0,0,0.03);
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+        
+        .process-detail.active {
+            display: block;
+        }
+        
+        .process-detail h4 {
+            margin-top: 0;
+            color: var(--accent-color);
+        }
+        
+        /* See-Think-Wonder */
+        .see-think-wonder {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .stw-section {
+            background-color: rgba(0,0,0,0.03);
+            padding: 15px;
+            border-radius: 8px;
+        }
+        
+        .stw-section h4 {
+            margin-top: 0;
+        }
+        
+        .note-area {
+            background-color: white;
+            min-height: 40px;
+            padding: 10px;
+            border-radius: 5px;
+            font-style: italic;
+            color: #888;
+        }
+        
+        /* Inspiration Circles */
+        .inspiration-circles {
+            display: flex;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .inspiration-circle {
+            width: 40px;
+            height: 40px;
+            background-color: white;
+            border: 2px solid var(--chew-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: var(--chew-color);
+        }
+        
+        /* Step Items */
+        .step-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .step-number {
+            width: 30px;
+            height: 30px;
+            background-color: var(--accent-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: white;
+            flex-shrink: 0;
+        }
+        
+        .step-content h4 {
+            margin-top: 0;
+            margin-bottom: 5px;
+        }
+        
+        .step-content p {
+            margin: 0;
+        }
+        
+        /* Checklist */
+        .checklist {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .checklist-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .checklist-item input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+        }
+        
+        /* Active Benefit */
+        .element-card.active-benefit {
+            border: 2px solid var(--accent-color);
+            box-shadow: 0 4px 8px rgba(0, 38, 84, 0.1);
+        }
+        
+        /* Card Carousel */
+        .card-carousel {
+            position: relative;
+            height: 200px;
+            margin-bottom: 20px;
+        }
+        
+        .carousel-card {
+            position: absolute;
+            width: 100%;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            opacity: 0;
+            transition: all 0.5s ease;
+            transform: translateX(50px);
+            visibility: hidden;
+        }
+        
+        .carousel-card.active {
+            opacity: 1;
+            transform: translateX(0);
+            visibility: visible;
+        }
+        
+        .carousel-icon {
+            width: 60px;
+            height: 60px;
+            background-color: var(--accent-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+        
+        .carousel-icon i {
+            font-size: 2em;
+            color: white;
+        }
+        
+        .carousel-navigation {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+        
+        .carousel-btn {
+            background-color: var(--accent-color);
+            color: white;
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .carousel-indicators {
+            display: flex;
+            gap: 8px;
+        }
+        
+        .indicator {
+            width: 10px;
+            height: 10px;
+            background-color: #ccc;
+            border-radius: 50%;
+        }
+        
+        .indicator.active {
+            background-color: var(--accent-color);
+        }
+        
+        /* Animation for customization icon */
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        
+        .orbit {
+            animation: rotate 20s linear infinite;
+        }
+    </style>
+</body>
+</html>
