@@ -1,0 +1,1812 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developing Empathy for End Users</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/inter-ui/3.19.3/inter.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Favicon Icons -->
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
+</head>
+<body>
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar" style="overflow-y: auto; overflow-x: hidden;">
+        <div class="sidebar-logo">DEVELOPING EMPATHY FOR END USERS</div>
+        <a href="index.html" class="home-button">
+            <i class="fas fa-home"></i>
+            HOME
+        </a>
+        <div class="sidebar-nav">
+            <button class="tab-button active" data-tab="lisc">
+                <i class="fas fa-bullseye"></i>
+                LI/SC
+            </button>
+            <button class="tab-button" data-tab="chunk1">
+                <i class="fas fa-heart"></i>
+                INTRO
+            </button>
+            <button class="tab-button" data-tab="chew1">
+                <i class="fas fa-tools"></i>
+                METHODS
+            </button>
+            <button class="tab-button" data-tab="chunk2">
+                <i class="fas fa-file-alt"></i>
+                DOCUMENT
+            </button>
+            <button class="tab-button" data-tab="chew2">
+                <i class="fas fa-user-circle"></i>
+                PERSPECTIVE
+            </button>
+            <button class="tab-button" data-tab="chunk3">
+                <i class="fas fa-question-circle"></i>
+                CHALLENGE
+            </button>
+            <button class="tab-button" data-tab="chew3">
+                <i class="fas fa-drafting-compass"></i>
+                DESIGN
+            </button>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Learning Intentions and Success Criteria section -->
+        <section id="lisc" class="tab-content active light-section">
+            <h1>LEARNING INTENTIONS & SUCCESS CRITERIA <i class="fas fa-bullseye" style="margin-left: 15px;"></i></h1>
+            
+            <div class="card">
+                <div class="element-header" style="margin: -35px -40px 30px -40px; padding: 25px 35px;">
+                    <div class="element-number">1</div>
+                    <h3>Learning Intentions <i class="fas fa-bullseye" style="margin-left: 15px; color: var(--accent-color);"></i></h3>
+                </div>
+                
+                <ul>
+                    <li><i class="fas fa-check-circle" style="color: var(--accent-color); margin-right: 12px;"></i> Understand why empathy is important when designing for users with disabilities</li>
+                    <li><i class="fas fa-check-circle" style="color: var(--accent-color); margin-right: 12px;"></i> Learn methods for understanding and documenting user needs</li>
+                </ul>
+            </div>
+            
+            <div class="card">
+                <div class="element-header" style="margin: -35px -40px 30px -40px; padding: 25px 35px;">
+                    <div class="element-number">2</div>
+                    <h3>Success Criteria <i class="fas fa-trophy" style="margin-left: 15px; color: var(--accent-color);"></i></h3>
+                </div>
+                
+                <p>By the end of this lesson, you should be able to:</p>
+                
+                <ul>
+                    <li><i class="fas fa-star" style="color: var(--accent-color); margin-right: 12px;"></i> Use at least 2 different methods to understand an end user's needs</li>
+                    <li><i class="fas fa-star" style="color: var(--accent-color); margin-right: 12px;"></i> Create a clear design challenge based on your user's needs</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- CHUNK 1: Introduction to Empathy in Design -->
+        <section id="chunk1" class="tab-content dark-section">
+            <h1>CHUNK 1: INTRODUCTION TO EMPATHY IN DESIGN <i class="fas fa-heart" style="margin-left: 15px;"></i></h1>
+            
+            <div class="chunk-section">
+                <div class="chunk-badge">TEACHER CHUNK</div>
+                <div class="timer-badge"><i class="fas fa-clock"></i> 15 mins</div>
+                
+                <h3>Understanding Empathy in the Design Process</h3>
+                
+                <p>Empathy means understanding how other people feel and experience the world. It's a key part of designing products that truly help people with disabilities.</p>
+                
+                <div class="interactive-card">
+                    <div class="element-header" style="margin: -35px -35px 30px -35px; padding: 20px 25px;">
+                        <div class="element-number">1</div>
+                        <h3>Empathy vs. Sympathy <i class="fas fa-balance-scale" style="margin-left: 10px;"></i></h3>
+                    </div>
+                    
+                    <div class="variable-animation" style="padding: 30px;">
+                        <div class="two-column-grid">
+                            <div class="interactive-card" style="border-left: 4px solid #ff4d4f;">
+                                <h4><i class="fas fa-heart-broken" style="margin-right: 12px; color: #ff4d4f;"></i> Sympathy</h4>
+                                <ul>
+                                    <li>Feeling <strong>for</strong> someone</li>
+                                    <li>Staying at a distance</li>
+                                    <li>Often leads to pity</li>
+                                    <li>May make assumptions</li>
+                                    <li>Focuses on limitations</li>
+                                </ul>
+                                <div style="background-color: rgba(255, 77, 79, 0.1); padding: 15px; border-radius: var(--border-radius); text-align: center; font-weight: bold; margin-top: 15px;">
+                                    "That's too bad"
+                                </div>
+                            </div>
+                            
+                            <div class="interactive-card" style="border-left: 4px solid var(--good-color);">
+                                <h4><i class="fas fa-heart" style="margin-right: 12px; color: var(--good-color);"></i> Empathy</h4>
+                                <ul>
+                                    <li>Feeling <strong>with</strong> someone</li>
+                                    <li>Trying to understand their experience</li>
+                                    <li>Creates connection</li>
+                                    <li>Based on research and listening</li>
+                                    <li>Sees the whole person</li>
+                                </ul>
+                                <div style="background-color: rgba(82, 196, 26, 0.1); padding: 15px; border-radius: var(--border-radius); text-align: center; font-weight: bold; margin-top: 15px;">
+                                    "I'm trying to understand"
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="interactive-card">
+                    <div class="element-header" style="margin: -35px -35px 30px -35px; padding: 20px 25px;">
+                        <div class="element-number">2</div>
+                        <h3>Why Empathy Matters <i class="fas fa-question-circle" style="margin-left: 10px;"></i></h3>
+                    </div>
+                    
+                    <div class="variable-animation" style="padding: 30px;">
+                        <div class="icon-box">
+                            <div class="icon-container">
+                                <i class="fas fa-bullseye"></i>
+                            </div>
+                            <div class="icon-text">
+                                <h4>Better Solutions</h4>
+                                <p>Designs that come from empathy actually meet users' real needs, not what we guess they need</p>
+                            </div>
+                        </div>
+                        
+                        <div class="icon-box">
+                            <div class="icon-container">
+                                <i class="fas fa-user-check"></i>
+                            </div>
+                            <div class="icon-text">
+                                <h4>User Dignity</h4>
+                                <p>Products made with empathy respect users' abilities and independence, not just focus on their limitations</p>
+                            </div>
+                        </div>
+                        
+                        <div class="icon-box">
+                            <div class="icon-container">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <div class="icon-text">
+                                <h4>Innovation</h4>
+                                <p>Really understanding users often leads to surprising and creative solutions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Examples of Design with vs. without Empathy -->
+                <div class="interactive-card" style="margin-top: 30px;">
+                    <div class="element-header" style="margin: -35px -35px 30px -35px; padding: 20px 25px;">
+                        <div class="element-number">3</div>
+                        <h3>Design With vs. Without Empathy <i class="fas fa-not-equal" style="margin-left: 10px;"></i></h3>
+                    </div>
+                    
+                    <div class="variable-animation" style="padding: 30px;">
+                        <div class="code-step-container">
+                            <div class="code-step-header" style="background-color: #002654; color: white; padding: 15px 20px; border-radius: var(--border-radius) var(--border-radius) 0 0; display: flex; justify-content: space-between; align-items: center; font-weight: bold;">
+                                <span style="font-size: 1.3em;">Design Examples</span>
+                                <span id="design-indicator" style="font-size: 1.3em;">Example 1 of 2</span>
+                            </div>
+                            
+                            <div class="code-step-content">
+                                <!-- Example 1 -->
+                                <div id="design-step-1" class="variable-update-step active">
+                                    <h4 style="text-align: center; font-size: 1.8em; margin: 25px 0; color: var(--accent-color);">Without vs. With Empathy: Can Openers</h4>
+                                    <div class="two-column-grid">
+                                        <div class="interactive-card" style="border-left: 4px solid var(--bad-color);">
+                                            <h4><i class="fas fa-times-circle" style="color: var(--bad-color); margin-right: 10px;"></i> Without Empathy</h4>
+                                            <div style="height: 450px; display: flex; align-items: center; justify-content: center; overflow: hidden; margin-bottom: 15px; border-radius: var(--border-radius);">
+                                                <img src="https://m.media-amazon.com/images/I/61xXnQiVZGL._AC_UF894,1000_QL80_.jpg" alt="Standard can opener" style="width: 100%; object-fit: cover;">
+                                            </div>
+                                            <p><strong>Standard Can Opener:</strong> Requires fine motor control and hand strength, making it difficult for users with arthritis or hand limitations.</p>
+                                            <div style="background-color: rgba(255, 77, 79, 0.1); padding: 15px; border-radius: var(--border-radius); margin-top: 15px;">
+                                                <p style="margin: 0;"><i class="fas fa-exclamation-circle" style="color: var(--bad-color); margin-right: 8px;"></i> <strong>Problem:</strong> Designed assuming all users have typical hand dexterity and strength.</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="interactive-card" style="border-left: 4px solid var(--good-color);">
+                                            <h4><i class="fas fa-check-circle" style="color: var(--good-color); margin-right: 10px;"></i> With Empathy</h4>
+                                            <div style="height: 450px; display: flex; align-items: center; justify-content: center; overflow: hidden; margin-bottom: 15px; border-radius: var(--border-radius);">
+                                                <img src="https://mobilityshopdirect.com.au/cdn/shop/files/Dext_ring_can_pull_opener.jpg?v=1728264560" alt="Adaptive can opener" style="width: 100%; object-fit: cover;">
+                                            </div>
+                                            <p><strong>Easy-Grip Can Opener:</strong> Designed with a lever mechanism that requires less strength and precision.</p>
+                                            <div style="background-color: rgba(82, 196, 26, 0.1); padding: 15px; border-radius: var(--border-radius); margin-top: 15px;">
+                                                <p style="margin: 0;"><i class="fas fa-lightbulb" style="color: var(--good-color); margin-right: 8px;"></i> <strong>Improvement:</strong> Designed after understanding the challenges faced by users with limited hand strength.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Example 2 -->
+                                <div id="design-step-2" class="variable-update-step">
+                                    <h4 style="text-align: center; font-size: 1.8em; margin: 25px 0; color: var(--accent-color);">Without vs. With Empathy: Water Bottles</h4>
+                                    <div class="two-column-grid">
+                                        <div class="interactive-card" style="border-left: 4px solid var(--bad-color);">
+                                            <h4><i class="fas fa-times-circle" style="color: var(--bad-color); margin-right: 10px;"></i> Without Empathy</h4>
+                                            <div style="height: 450px; display: flex; align-items: center; justify-content: center; overflow: hidden; margin-bottom: 15px; border-radius: var(--border-radius);">
+                                                <img src="https://www.ikea.com/au/en/images/products/ikea-365-water-bottle-dark-grey__0916298_pe785100_s5.jpg" alt="Standard water bottle" style="width: 100%; object-fit: cover;">
+                                            </div>
+                                            <p><strong>Standard Water Bottle:</strong> Requires a strong grip to open and may be difficult to hold for someone with limited hand mobility.</p>
+                                            <div style="background-color: rgba(255, 77, 79, 0.1); padding: 15px; border-radius: var(--border-radius); margin-top: 15px;">
+                                                <p style="margin: 0;"><i class="fas fa-exclamation-circle" style="color: var(--bad-color); margin-right: 8px;"></i> <strong>Problem:</strong> Designs that prioritize looks or cost over accessibility.</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="interactive-card" style="border-left: 4px solid var(--good-color);">
+                                            <h4><i class="fas fa-check-circle" style="color: var(--good-color); margin-right: 10px;"></i> With Empathy</h4>
+                                            <div style="height: 450px; display: flex; align-items: center; justify-content: center; overflow: hidden; margin-bottom: 15px; border-radius: var(--border-radius);">
+                                                <img src="https://shop.disabilityhorizons.com/wp-content/uploads/2019/09/hydrant_01.jpg" alt="Adaptive water bottle" style="width: 100%; object-fit: cover;">
+                                            </div>
+                                            <p><strong>Accessible Water Bottle:</strong> Features a design with a handle and drinking tube that works for users with different abilities.</p>
+                                            <div style="background-color: rgba(82, 196, 26, 0.1); padding: 15px; border-radius: var(--border-radius); margin-top: 15px;">
+                                                <p style="margin: 0;"><i class="fas fa-lightbulb" style="color: var(--good-color); margin-right: 8px;"></i> <strong>Improvement:</strong> Designed after observing users struggle with standard bottles.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="step-navigation">
+                                <button id="prev-design-btn" class="step-btn" onclick="prevDesignStep()" disabled>
+                                    <i class="fas fa-chevron-left"></i> Previous
+                                </button>
+                                <button id="next-design-btn" class="step-btn" onclick="nextDesignStep()">
+                                    Next <i class="fas fa-chevron-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Video Testimonial -->
+                <div class="interactive-card" style="margin-top: 30px;">
+                    <div class="element-header" style="margin: -35px -35px 30px -35px; padding: 20px 25px;">
+                        <div class="element-number">4</div>
+                        <h3>Hear from End Users <i class="fas fa-video" style="margin-left: 10px;"></i></h3>
+                    </div>
+                    
+                    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: var(--border-radius); margin: 0 30px 20px 30px;">
+                        <iframe src="https://www.youtube.com/embed/g2m97gPI70I?si=bRYaVCzOzNvP4rXn&amp;start=146" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    
+                    <div style="background-color: rgba(0,0,0,0.05); border-radius: var(--border-radius); padding: 15px; margin: 0 30px 30px 30px;">
+                        <p style="margin: 0;"><i class="fas fa-quote-left" style="color: var(--accent-color); margin-right: 10px;"></i> Listening to people with disabilities talk about their experiences is one of the most powerful ways to develop empathy. Pay attention to both the challenges they describe and the solutions they've already created for themselves.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h3>Why Empathy Matters in Design <i class="fas fa-heart" style="margin-left: 10px;"></i></h3>
+                <div class="elements-grid" style="display: grid; grid-template-columns: repeat(2, 1fr);">
+                    <div class="element-card" style="background-color: #f0f7ff; transition: all 0.3s ease;">
+                        <div class="element-header">
+                            <div class="element-number">1</div>
+                            <h3>BETTER PRODUCTS <i class="fas fa-award" style="margin-left: 12px;"></i></h3>
+                        </div>
+                        <div class="element-content">
+                            <p>Products designed with empathy solve real needs rather than assumed ones</p>
+                            <div style="text-align: center; margin-top: 15px;">
+                                <i class="fas fa-bullseye" style="font-size: 2.5em; color: var(--accent-color);"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="element-card" style="background-color: #f0fff4; transition: all 0.3s ease;">
+                        <div class="element-header">
+                            <div class="element-number">2</div>
+                            <h3>USER DIGNITY <i class="fas fa-user-shield" style="margin-left: 12px;"></i></h3>
+                        </div>
+                        <div class="element-content">
+                            <p>Empathetic design respects the whole person and their independence</p>
+                            <div style="text-align: center; margin-top: 15px;">
+                                <i class="fas fa-hands-helping" style="font-size: 2.5em; color: var(--accent-color);"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="element-card" style="background-color: #fff7f0; transition: all 0.3s ease;">
+                        <div class="element-header">
+                            <div class="element-number">3</div>
+                            <h3>INNOVATIVE SOLUTIONS <i class="fas fa-lightbulb" style="margin-left: 12px;"></i></h3>
+                        </div>
+                        <div class="element-content">
+                            <p>Understanding users deeply often leads to unexpected creative solutions</p>
+                            <div style="text-align: center; margin-top: 15px;">
+                                <i class="fas fa-magic" style="font-size: 2.5em; color: var(--accent-color);"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="element-card" style="background-color: #f0f0ff; transition: all 0.3s ease;">
+                        <div class="element-header">
+                            <div class="element-number">4</div>
+                            <h3>INCLUSIVE DESIGN <i class="fas fa-universal-access" style="margin-left: 12px;"></i></h3>
+                        </div>
+                        <div class="element-content">
+                            <p>Empathy helps us create products that work for diverse users with many abilities</p>
+                            <div style="text-align: center; margin-top: 15px;">
+                                <i class="fas fa-users" style="font-size: 2.5em; color: var(--accent-color);"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CHEW 1: Empathy Methods Explorer -->
+        <section id="chew1" class="tab-content light-section">
+            <h1>CHEW 1: EMPATHY METHODS EXPLORER <i class="fas fa-sync-alt" style="margin-left: 15px;"></i></h1>
+            
+            <div class="chew-section">
+                <div class="chew-badge">STUDENT ACTIVITY</div>
+                <div class="timer-badge"><i class="fas fa-clock"></i> 20 mins</div>
+                
+                <h3>Explore Different Ways to Develop Empathy</h3>
+                
+                <div class="activity-goal">
+                    <h4><i class="fas fa-bullseye" style="color: var(--chew-color);"></i> Activity Goals</h4>
+                    <ul style="list-style-type: none; padding-left: 0;">
+                        <li><i class="fas fa-angle-right" style="margin-right: 12px; color: var(--chew-color);"></i> Learn about 6 different methods for understanding your user</li>
+                        <li><i class="fas fa-angle-right" style="margin-right: 12px; color: var(--chew-color);"></i> Understand the good and bad points of each method</li>
+                        <li><i class="fas fa-angle-right" style="margin-right: 12px; color: var(--chew-color);"></i> Choose methods that will work best for your project</li>
+                    </ul>
+                </div>
+                
+                <div class="interactive-card">
+                    <div class="element-header" style="margin: -35px -35px 30px -35px; padding: 20px 25px;">
+                        <div class="element-number">1</div>
+                        <h3>Empathy Methods Explorer <i class="fas fa-compass" style="margin-left: 10px;"></i></h3>
+                    </div>
+                    
+                    <p style="font-size: 1.2em; text-align: center; margin-bottom: 20px;">Click each method to learn more:</p>
+                    
+                    <div class="method-tabs" style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin: 0 20px 20px 20px;">
+                        <button class="method-tab active" onclick="showMethod(1)">
+                            <i class="fas fa-search"></i> Online Research
+                        </button>
+                        <button class="method-tab" onclick="showMethod(2)">
+                            <i class="fas fa-comments"></i> User Interview
+                        </button>
+                        <button class="method-tab" onclick="showMethod(3)">
+                            <i class="fas fa-theater-masks"></i> Simulations
+                        </button>
+                        <button class="method-tab" onclick="showMethod(4)">
+                            <i class="fas fa-eye"></i> Observations
+                        </button>
+                        <button class="method-tab" onclick="showMethod(5)">
+                            <i class="fas fa-map"></i> Challenge Map
+                        </button>
+                        <button class="method-tab" onclick="showMethod(6)">
+                            <i class="fas fa-brain"></i> Empathy Map
+                        </button>
+                    </div>
+                    
+                    <!-- Method content -->
+                    <div id="method-content" class="method-content" style="margin: 0 20px 20px 20px;">
+                        <!-- Method 1: Online Research -->
+                        <div id="method-1" class="method-details active">
+                            <h4><i class="fas fa-search" style="color: var(--accent-color); margin-right: 10px;"></i> Online Research</h4>
+                            
+                            <div style="margin-bottom: 20px; background-color: rgba(0,0,0,0.03); padding: 15px; border-radius: var(--border-radius);">
+                                <h5 style="margin-top: 0;">What it is:</h5>
+                                <p style="margin-bottom: 0;">Looking for information online about specific disabilities, existing solutions, and user experiences.</p>
+                            </div>
+                            
+                            <div style="margin-bottom: 20px; background-color: rgba(0,0,0,0.03); padding: 15px; border-radius: var(--border-radius);">
+                                <h5 style="margin-top: 0;">Example:</h5>
+                                <p style="margin-bottom: 0;">Researching arthritis to understand how it affects hand movements and reading forums where people with arthritis discuss their daily challenges.</p>
+                            </div>
+                            
+                            <div class="two-column-grid">
+                                <div class="interactive-card" style="border-left: 4px solid var(--good-color);">
+                                    <h5 style="margin-top: 0;">Pros:</h5>
+                                    <ul>
+                                        <li>Easy to start with</li>
+                                        <li>Lots of information available</li>
+                                        <li>Can do before meeting your user</li>
+                                        <li>Helps you ask better questions later</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="interactive-card" style="border-left: 4px solid var(--bad-color);">
+                                    <h5 style="margin-top: 0;">Cons:</h5>
+                                    <ul>
+                                        <li>Not specific to your user</li>
+                                        <li>Information may not be reliable</li>
+                                        <li>Might lead to wrong assumptions</li>
+                                        <li>Not as good as talking to someone directly</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div style="margin-top: 20px; background-color: rgba(0,0,0,0.03); padding: 15px; border-radius: var(--border-radius);">
+                                <h5 style="margin-top: 0;">Best Resources:</h5>
+                                <ul>
+                                    <li>Medical websites (Mayo Clinic, WebMD)</li>
+                                    <li>Disability organization websites</li>
+                                    <li>Forums and social media groups</li>
+                                    <li>YouTube videos of people sharing experiences</li>
+                                    <li>Academic research papers</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <!-- Method 2: User Interview -->
+                        <div id="method-2" class="method-details">
+                            <h4><i class="fas fa-comments" style="color: var(--accent-color); margin-right: 10px;"></i> User Interview</h4>
+                            
+                            <div style="margin-bottom: 20px; background-color: rgba(0,0,0,0.03); padding: 15px; border-radius: var(--border-radius);">
+                                <h5 style="margin-top: 0;">What it is:</h5>
+                                <p style="margin-bottom: 0;">Having a conversation with your user to understand their experiences, challenges, and needs.</p>
+                            </div>
+                            
+                            <div style="margin-bottom: 20px; background-color: rgba(0,0,0,0.03); padding: 15px; border-radius: var(--border-radius);">
+                                <h5 style="margin-top: 0;">Example:</h5>
+                                <p style="margin-bottom: 0;">Sitting down with a user who has limited hand mobility and asking about their daily routines, challenges, and how they've adapted.</p>
+                            </div>
+                            
+                            <div class="two-column-grid">
+                                <div class="interactive-card" style="border-left: 4px solid var(--good-color);">
+                                    <h5 style="margin-top: 0;">Pros:</h5>
+                                    <ul>
+                                        <li>Get information directly from your user</li>
+                                        <li>Builds relationship and trust</li>
+                                        <li>Can ask follow-up questions</li>
+                                        <li>Hear about challenges in their own words</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="interactive-card" style="border-left: 4px solid var(--bad-color);">
+                                    <h5 style="margin-top: 0;">Cons:</h5>
+                                    <ul>
+                                        <li>People may not always know what they need</li>
+                                        <li>Needs good questions prepared in advance</li>
+                                        <li>Can take a lot of time</li>
+                                        <li>Some users may find it hard to talk about challenges</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div style="margin-top: 20px; background-color: rgba(0,0,0,0.03); padding: 15px; border-radius: var(--border-radius);">
+                                <h5 style="margin-top: 0;">Good Interview Questions:</h5>
+                                <ul>
+                                    <li>"Can you walk me through your typical day?"</li>
+                                    <li>"What activities do you find most challenging?"</li>
+                                    <li>"What solutions have you tried before?"</li>
+                                    <li>"What do you wish people understood about your experience?"</li>
+                                    <li>"What would make the biggest difference in your daily life?"</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <!-- Method 3: Simulations -->
+                        <div id="method-3" class="method-details">
+                            <h4><i class="fas fa-theater-masks" style="color: var(--accent-color); margin-right: 10px;"></i> Simulations</h4>
+                            
+                            <div style="margin-bottom: 20px; background-color: rgba(0,0,0,0.03); padding: 15px; border-radius: var(--border-radius);">
+                                <h5 style="margin-top: 0;">What it is:</h5>
+                                <p style="margin-bottom: 0;">Trying to experience aspects of a disability yourself to better understand the physical or sensory challenges.</p>
+                            </div>
+                            
+                            <div style="margin-bottom: 20px; background-color: rgba(0,0,0,0.03); padding: 15px; border-radius: var(--border-radius);">
+                                <h5 style="margin-top: 0;">Example:</h5>
+                                <p style="margin-bottom: 0;">Wearing thick gloves to simulate limited hand dexterity and then trying to use everyday objects like pens, scissors, or zippers.</p>
+                            </div>
+                            
+                            <div class="two-column-grid">
+                                <div class="interactive-card" style="border-left: 4px solid var(--good-color);">
+                                    <h5 style="margin-top: 0;">Pros:</h5>
+                                    <ul>
+                                        <li>Gives you first-hand experience of challenges</li>
+                                        <li>Helps identify issues you might not think to ask about</li>
+                                        <li>Makes the experience more real</li>
+                                        <li>Can reveal insights about existing products</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="interactive-card" style="border-left: 4px solid var(--bad-color);">
+                                    <h5 style="margin-top: 0;">Cons:</h5>
+                                    <ul>
+                                        <li>Only simulates physical aspects, not the whole lived experience</li>
+                                        <li>Can be too simplified</li>
+                                        <li>May create misunderstandings about the disability</li>
+                                        <li>Should be done respectfully</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div style="margin-top: 20px; background-color: rgba(0,0,0,0.03); padding: 15px; border-radius: var(--border-radius);">
+                                <h5 style="margin-top: 0;">Common Simulations:</h5>
+                                <ul>
+                                    <li>Thick gloves for hand mobility limitations</li>
+                                    <li>Glasses smeared with Vaseline for vision impairment</li>
+                                    <li>Earplugs for hearing impairment</li>
+                                    <li>Using only one hand for tasks</li>
+                                    <li>Using a wheelchair to navigate spaces</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <!-- Method 4: Observations -->
+                        <div id="method-4" class="method-details">
+                            <h4><i class="fas fa-eye" style="color: var(--accent-color); margin-right: 10px;"></i> Observations</h4>
+                            
+                            <div style="margin-bottom: 20px; background-color: rgba(0,0,0,0.03); padding: 15px; border-radius: var(--border-radius);">
+                                <h5 style="margin-top: 0;">What it is:</h5>
+                                <p style="margin-bottom: 0;">Watching your user as they do activities in their normal environment without interrupting them.</p>
+                            </div>
+                            
+                            <div style="margin-bottom: 20px; background-color: rgba(0,0,0,0.03); padding: 15px; border-radius: var(--border-radius);">
+                                <h5 style="margin-top: 0;">Example:</h5>
+                                <p style="margin-bottom: 0;">Observing someone with limited mobility as they prepare a meal, noticing which tasks are difficult and what adaptations they've already made.</p>
+                            </div>
+                            
+                            <div class="two-column-grid">
+                                <div class="interactive-card" style="border-left: 4px solid var(--good-color);">
+                                    <h5 style="margin-top: 0;">Pros:</h5>
+                                    <ul>
+                                        <li>See actual behavior, not just what people say</li>
+                                        <li>Notice workarounds and adaptations</li>
+                                        <li>Identify challenges the user may not mention</li>
+                                        <li>Understand environmental factors</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="interactive-card" style="border-left: 4px solid var(--bad-color);">
+                                    <h5 style="margin-top: 0;">Cons:</h5>
+                                    <ul>
+                                        <li>Can feel intrusive</li>
+                                        <li>Takes time</li>
+                                        <li>People may act differently when being watched</li>
+                                        <li>Requires permission and trust</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div style="margin-top: 20px; background-color: rgba(0,0,0,0.03); padding: 15px; border-radius: var(--border-radius);">
+                                <h5 style="margin-top: 0;">What to Look For:</h5>
+                                <ul>
+                                    <li>Points where they have difficulty or hesitate</li>
+                                    <li>Creative adaptations already in use</li>
+                                    <li>Environmental factors that help or hinder</li>
+                                    <li>Emotional responses (frustration, satisfaction)</li>
+                                    <li>How much time and effort tasks require</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <!-- Method 5: Challenge Map -->
+                        <div id="method-5" class="method-details">
+                            <h4><i class="fas fa-map" style="color: var(--accent-color); margin-right: 10px;"></i> Challenge Map</h4>
+                            
+                            <div style="margin-bottom: 20px; background-color: rgba(0,0,0,0.03); padding: 15px; border-radius: var(--border-radius);">
+                                <h5 style="margin-top: 0;">What it is:</h5>
+                                <p style="margin-bottom: 0;">Creating a visual map of challenges your user faces throughout their day or during specific activities.</p>
+                            </div>
+                            
+                            <div style="margin-bottom: 20px; background-color: rgba(0,0,0,0.03); padding: 15px; border-radius: var(--border-radius);">
+                                <h5 style="margin-top: 0;">Example:</h5>
+                                <p style="margin-bottom: 0;">Mapping out all the steps involved in cooking a meal, identifying pain points and rating the difficulty of each step for your user.</p>
+                            </div>
+                            
+                            <div class="two-column-grid">
+                                <div class="interactive-card" style="border-left: 4px solid var(--good-color);">
+                                    <h5 style="margin-top: 0;">Pros:</h5>
+                                    <ul>
+                                        <li>Creates a visual overview of challenges</li>
+                                        <li>Helps prioritize which problems to solve</li>
+                                        <li>Shows connections between different challenges</li>
+                                        <li>Can do with your user to check understanding</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="interactive-card" style="border-left: 4px solid var(--bad-color);">
+                                    <h5 style="margin-top: 0;">Cons:</h5>
+                                    <ul>
+                                        <li>Requires prior knowledge about the user's routine</li>
+                                        <li>Can be complex for multiple activities</li>
+                                        <li>Might miss challenges if your mapping isn't detailed enough</li>
+                                        <li>Needs verification from the user</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div style="margin-top: 20px; background-color: rgba(0,0,0,0.03); padding: 15px; border-radius: var(--border-radius);">
+                                <h5 style="margin-top: 0;">How to Create:</h5>
+                                <ul>
+                                    <li>List activities in order of when they happen</li>
+                                    <li>Break activities into detailed steps</li>
+                                    <li>Mark each step as easy/medium/difficult</li>
+                                    <li>Note specific challenges at each step</li>
+                                    <li>Identify environmental factors that may impact difficulty</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <!-- Method 6: Empathy Map -->
+                        <div id="method-6" class="method-details">
+                            <h4><i class="fas fa-brain" style="color: var(--accent-color); margin-right: 10px;"></i> Empathy Map</h4>
+                            
+                            <div style="margin-bottom: 20px; background-color: rgba(0,0,0,0.03); padding: 15px; border-radius: var(--border-radius);">
+                                <h5 style="margin-top: 0;">What it is:</h5>
+                                <p style="margin-bottom: 0;">A visual tool that helps you organize what you've learned about your user in four categories: what they say, do, think, and feel.</p>
+                            </div>
+                            
+                            <div style="margin-bottom: 20px; background-color: rgba(0,0,0,0.03); padding: 15px; border-radius: var(--border-radius);">
+                                <h5 style="margin-top: 0;">Example:</h5>
+                                <p style="margin-bottom: 0;">Creating a chart with four sections about a user with arthritis: what they say about their condition, what you observe them doing, what you think they're thinking, and how they might be feeling.</p>
+                            </div>
+                            
+                            <div class="two-column-grid">
+                                <div class="interactive-card" style="border-left: 4px solid var(--good-color);">
+                                    <h5 style="margin-top: 0;">Pros:</h5>
+                                    <ul>
+                                        <li>Organizes information in a structured way</li>
+                                        <li>Considers both observable and emotional aspects</li>
+                                        <li>Helps identify differences between what people say and do</li>
+                                        <li>Creates a shareable document of user insights</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="interactive-card" style="border-left: 4px solid var(--bad-color);">
+                                    <h5 style="margin-top: 0;">Cons:</h5>
+                                    <ul>
+                                        <li>Requires guesses about thoughts and feelings</li>
+                                        <li>Needs verification from the user</li>
+                                        <li>Might oversimplify complex experiences</li>
+                                        <li>Works best after gathering other data</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div style="margin-top: 20px; background-color: rgba(0,0,0,0.03); padding: 15px; border-radius: var(--border-radius);">
+                                <h5 style="margin-top: 0;">Empathy Map Sections:</h5>
+                                <ul>
+                                    <li><strong>SAYS:</strong> Quotes and statements from the user</li>
+                                    <li><strong>DOES:</strong> Actions and behaviors you observe</li>
+                                    <li><strong>THINKS:</strong> What they might be thinking</li>
+                                    <li><strong>FEELS:</strong> Emotions they might experience</li>
+                                    <li>Sometimes includes "Pains" and "Gains" sections</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="interactive-card" style="margin-top: 30px;">
+                    <div class="element-header" style="margin: -35px -35px 30px -35px; padding: 20px 25px;">
+                        <div class="element-number">2</div>
+                        <h3>Choose Your Methods <i class="fas fa-check-square" style="margin-left: 10px;"></i></h3>
+                    </div>
+                    
+                    <p style="font-size: 1.2em; text-align: center; margin-bottom: 20px;">Based on what you've learned, which methods will you use?</p>
+                    
+                    <div style="background-color: rgba(16, 185, 129, 0.1); padding: 25px; border-radius: var(--border-radius); margin: 0 20px 20px 20px;">
+                        <p style="margin-bottom: 15px; font-weight: 600;">In your Make:able workbook or in OneNote, Word, or Microsoft Whiteboard, check the methods you plan to use for your project. For each method you select, briefly explain why it will be helpful for understanding your specific user.</p>
+                        
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-top: 20px;">
+                            <div style="background-color: white; padding: 15px; border-radius: var(--border-radius); display: flex; align-items: center; gap: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                                <div style="width: 40px; height: 40px; background-color: var(--chew-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white;">
+                                    <i class="fas fa-search"></i>
+                                </div>
+                                <div style="font-weight: 600;">Online Research</div>
+                            </div>
+                            
+                            <div style="background-color: white; padding: 15px; border-radius: var(--border-radius); display: flex; align-items: center; gap: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                                <div style="width: 40px; height: 40px; background-color: var(--chew-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white;">
+                                    <i class="fas fa-comments"></i>
+                                </div>
+                                <div style="font-weight: 600;">User Interview</div>
+                            </div>
+                            
+                            <div style="background-color: white; padding: 15px; border-radius: var(--border-radius); display: flex; align-items: center; gap: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                                <div style="width: 40px; height: 40px; background-color: var(--chew-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white;">
+                                    <i class="fas fa-theater-masks"></i>
+                                </div>
+                                <div style="font-weight: 600;">Simulations</div>
+                            </div>
+                            
+                            <div style="background-color: white; padding: 15px; border-radius: var(--border-radius); display: flex; align-items: center; gap: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                                <div style="width: 40px; height: 40px; background-color: var(--chew-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white;">
+                                    <i class="fas fa-eye"></i>
+                                </div>
+                                <div style="font-weight: 600;">Observations</div>
+                            </div>
+                            
+                            <div style="background-color: white; padding: 15px; border-radius: var(--border-radius); display: flex; align-items: center; gap: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                                <div style="width: 40px; height: 40px; background-color: var(--chew-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white;">
+                                    <i class="fas fa-map"></i>
+                                </div>
+                                <div style="font-weight: 600;">Challenge Map</div>
+                            </div>
+                            
+                            <div style="background-color: white; padding: 15px; border-radius: var(--border-radius); display: flex; align-items: center; gap: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                                <div style="width: 40px; height: 40px; background-color: var(--chew-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white;">
+                                    <i class="fas fa-brain"></i>
+                                </div>
+                                <div style="font-weight: 600;">Empathy Map</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CHUNK 2: Understanding and Documenting User Needs -->
+        <section id="chunk2" class="tab-content dark-section">
+            <h1>CHUNK 2: UNDERSTANDING AND DOCUMENTING USER NEEDS <i class="fas fa-clipboard-list" style="margin-left: 15px;"></i></h1>
+            
+            <div class="chunk-section">
+                <div class="chunk-badge">TEACHER CHUNK</div>
+                <div class="timer-badge"><i class="fas fa-clock"></i> 15 mins</div>
+                
+                <h3>Effective Documentation of Empathy Research</h3>
+                
+                <p>Recording what you learn about your user is essential. Good documentation helps you remember key insights and share them with others.</p>
+                
+                <div class="interactive-card">
+                    <div class="element-header" style="margin: -35px -35px 30px -35px; padding: 20px 25px;">
+                        <div class="element-number">1</div>
+                        <h3>Asking Effective Questions <i class="fas fa-question-circle" style="margin-left: 10px;"></i></h3>
+                    </div>
+                    
+                    <h4 style="margin: 20px 0 30px 0; text-align: center;">Good questions lead to better insights about your user's needs:</h4>
+                    
+                    <div class="two-column-grid" style="margin: 0 20px 20px 20px;">
+                        <div class="interactive-card" style="border-left: 4px solid var(--bad-color);">
+                            <h4><i class="fas fa-times-circle" style="color: var(--bad-color); margin-right: 10px;"></i> Ineffective Questions</h4>
+                            
+                            <div style="background-color: rgba(255, 77, 79, 0.05); padding: 15px; border-radius: var(--border-radius); margin-bottom: 15px;">
+                                <p style="margin: 0 0 5px 0;"><strong>Closed:</strong> "Do you have trouble opening jars?"</p>
+                                <p style="margin: 0; color: var(--bad-color); font-style: italic; font-size: 0.9em;">Only allows yes/no answers, doesn't explore details</p>
+                            </div>
+                            
+                            <div style="background-color: rgba(255, 77, 79, 0.05); padding: 15px; border-radius: var(--border-radius); margin-bottom: 15px;">
+                                <p style="margin: 0 0 5px 0;"><strong>Leading:</strong> "Don't you find it frustrating when you can't open packages?"</p>
+                                <p style="margin: 0; color: var(--bad-color); font-style: italic; font-size: 0.9em;">Suggests the answer and emotional response</p>
+                            </div>
+                            
+                            <div style="background-color: rgba(255, 77, 79, 0.05); padding: 15px; border-radius: var(--border-radius); margin-bottom: 15px;">
+                                <p style="margin: 0 0 5px 0;"><strong>Too General:</strong> "What's it like having a disability?"</p>
+                                <p style="margin: 0; color: var(--bad-color); font-style: italic; font-size: 0.9em;">Too broad to get specific, useful insights</p>
+                            </div>
+                            
+                            <div style="background-color: rgba(255, 77, 79, 0.05); padding: 15px; border-radius: var(--border-radius);">
+                                <p style="margin: 0 0 5px 0;"><strong>Solution-Focused:</strong> "Would a jar opener with a bigger handle help you?"</p>
+                                <p style="margin: 0; color: var(--bad-color); font-style: italic; font-size: 0.9em;">Jumps to solutions before understanding the problem</p>
+                            </div>
+                        </div>
+                        
+                        <div class="interactive-card" style="border-left: 4px solid var(--good-color);">
+                            <h4><i class="fas fa-check-circle" style="color: var(--good-color); margin-right: 10px;"></i> Effective Questions</h4>
+                            
+                            <div style="background-color: rgba(82, 196, 26, 0.05); padding: 15px; border-radius: var(--border-radius); margin-bottom: 15px;">
+                                <p style="margin: 0 0 5px 0;"><strong>Open-Ended:</strong> "Could you describe your experience with kitchen tasks?"</p>
+                                <p style="margin: 0; color: var(--good-color); font-style: italic; font-size: 0.9em;">Encourages detailed responses</p>
+                            </div>
+                            
+                            <div style="background-color: rgba(82, 196, 26, 0.05); padding: 15px; border-radius: var(--border-radius); margin-bottom: 15px;">
+                                <p style="margin: 0 0 5px 0;"><strong>Specific:</strong> "What's your process for opening a jar of sauce?"</p>
+                                <p style="margin: 0; color: var(--good-color); font-style: italic; font-size: 0.9em;">Focuses on concrete examples and processes</p>
+                            </div>
+                            
+                            <div style="background-color: rgba(82, 196, 26, 0.05); padding: 15px; border-radius: var(--border-radius); margin-bottom: 15px;">
+                                <p style="margin: 0 0 5px 0;"><strong>Behavior-Based:</strong> "What do you do when you encounter a package you can't open?"</p>
+                                <p style="margin: 0; color: var(--good-color); font-style: italic; font-size: 0.9em;">Reveals workarounds and adaptations</p>
+                            </div>
+                            
+                            <div style="background-color: rgba(82, 196, 26, 0.05); padding: 15px; border-radius: var(--border-radius);">
+                                <p style="margin: 0 0 5px 0;"><strong>Emotion-Exploring:</strong> "How do you feel when you need to ask for help with everyday tasks?"</p>
+                                <p style="margin: 0; color: var(--good-color); font-style: italic; font-size: 0.9em;">Uncovers emotional needs and priorities</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="interactive-card" style="margin-top: 30px;">
+                    <div class="element-header" style="margin: -35px -35px 30px -35px; padding: 20px 25px;">
+                        <div class="element-number">2</div>
+                        <h3>Documentation Methods <i class="fas fa-file-alt" style="margin-left: 10px;"></i></h3>
+                    </div>
+                    
+                    <div class="variable-animation" style="padding: 30px;">
+                        <div class="code-step-container">
+                            <div class="code-step-header">
+                                <span>Documentation Methods</span>
+                                <span id="doc-indicator">Method 1 of 3</span>
+                            </div>
+                            
+                            <div class="code-step-content">
+                                <!-- Method 1: Written Notes -->
+<div id="doc-step-1" class="variable-update-step active">
+    <h4 style="text-align: center; font-size: 1.8em; margin-bottom: 25px; color: var(--accent-color);">Written Notes</h4>
+    <div class="two-column-grid">
+        <div style="display: flex; align-items: center; justify-content: center; margin-bottom: 15px;">
+            <div style="width: 200px; height: 200px; background-color: rgba(0,38,84,0.1); border-radius: var(--border-radius); display: flex; align-items: center; justify-content: center;">
+                <i class="fas fa-clipboard-list" style="font-size: 8em; color: var(--accent-color);"></i>
+            </div>
+        </div>
+        
+        <div>
+            <div style="background-color: rgba(0,0,0,0.03); padding: 15px; border-radius: var(--border-radius); margin-bottom: 15px;">
+                <h5 style="margin-top: 0; font-size: 1.3em; color: var(--accent-color);">Best Practices:</h5>
+                <ul style="margin-bottom: 0;">
+                    <li>Use the user's exact words when possible (direct quotes)</li>
+                    <li>Separate observations from your interpretations</li>
+                    <li>Include date, time, and context</li>
+                    <li>Note non-verbal cues (facial expressions, tone of voice)</li>
+                    <li>Organize by themes or activities</li>
+                </ul>
+            </div>
+            
+            <div style="background-color: rgba(0,0,0,0.03); padding: 15px; border-radius: var(--border-radius);">
+                <h5 style="margin-top: 0; font-size: 1.3em; color: var(--accent-color);">When to Use:</h5>
+                <ul style="margin-bottom: 0;">
+                    <li>During interviews</li>
+                    <li>While observing</li>
+                    <li>For recording quick insights</li>
+                    <li>When other recording methods aren't appropriate</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div style="background-color: rgba(0,0,0,0.05); padding: 15px; border-radius: var(--border-radius); margin-top: 20px;">
+        <p style="margin: 0;"><i class="fas fa-lightbulb" style="color: var(--accent-color); margin-right: 8px;"></i> <strong>Pro Tip:</strong> Create a template beforehand with sections for different types of information (quotes, observations, questions, insights) to help organize your notes as you take them.</p>
+    </div>
+</div>
+
+<!-- Method 2: Photos & Videos -->
+<div id="doc-step-2" class="variable-update-step">
+    <h4 style="text-align: center; font-size: 1.8em; margin-bottom: 25px; color: var(--accent-color);">Photos & Videos</h4>
+    <div class="two-column-grid">
+        <div style="display: flex; align-items: center; justify-content: center; margin-bottom: 15px;">
+            <div style="width: 200px; height: 200px; background-color: rgba(0,38,84,0.1); border-radius: var(--border-radius); display: flex; align-items: center; justify-content: center;">
+                <div style="display: flex; flex-direction: row; gap: 25px;">
+                    <i class="fas fa-camera" style="font-size: 6em; color: var(--accent-color);"></i>
+                    <i class="fas fa-video" style="font-size: 6em; color: var(--accent-color);"></i>
+                </div>
+            </div>
+        </div>
+        
+        <div>
+            <div style="background-color: rgba(0,0,0,0.03); padding: 15px; border-radius: var(--border-radius); margin-bottom: 15px;">
+                <h5 style="margin-top: 0; font-size: 1.3em; color: var(--accent-color);">Best Practices:</h5>
+                <ul style="margin-bottom: 0;">
+                    <li>Always get permission before recording</li>
+                    <li>Focus on activities and environments, not just the person</li>
+                    <li>Capture the "before, during, after" of challenging tasks</li>
+                    <li>Take photos of existing tools, adaptations, and workarounds</li>
+                    <li>Add notes to photos to explain context</li>
+                </ul>
+            </div>
+            
+            <div style="background-color: rgba(0,0,0,0.03); padding: 15px; border-radius: var(--border-radius);">
+                <h5 style="margin-top: 0; font-size: 1.3em; color: var(--accent-color);">When to Use:</h5>
+                <ul style="margin-bottom: 0;">
+                    <li>To capture complex processes</li>
+                    <li>To show environmental context</li>
+                    <li>When words alone don't convey the situation</li>
+                    <li>To record demonstrations of tasks</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div style="background-color: rgba(0,0,0,0.05); padding: 15px; border-radius: var(--border-radius); margin-top: 20px;">
+        <p style="margin: 0;"><i class="fas fa-lightbulb" style="color: var(--accent-color); margin-right: 8px;"></i> <strong>Pro Tip:</strong> Create a short video of your user performing a challenging task, then review it together to get their commentary on what's happening and how they feel during each step.</p>
+    </div>
+</div>
+
+<!-- Method 3: Visual Maps & Diagrams -->
+<div id="doc-step-3" class="variable-update-step">
+    <h4 style="text-align: center; font-size: 1.8em; margin-bottom: 25px; color: var(--accent-color);">Visual Maps & Diagrams</h4>
+    <div class="two-column-grid">
+        <div style="display: flex; align-items: center; justify-content: center; margin-bottom: 15px;">
+            <div style="width: 200px; height: 200px; background-color: rgba(0,38,84,0.1); border-radius: var(--border-radius); display: flex; align-items: center; justify-content: center;">
+                <i class="fas fa-project-diagram" style="font-size: 8em; color: var(--accent-color);"></i>
+            </div>
+        </div>
+        
+        <div>
+            <div style="background-color: rgba(0,0,0,0.03); padding: 15px; border-radius: var(--border-radius); margin-bottom: 15px;">
+                <h5 style="margin-top: 0; font-size: 1.3em; color: var(--accent-color);">Best Practices:</h5>
+                <ul style="margin-bottom: 0;">
+                    <li>Use consistent symbols and color coding</li>
+                    <li>Include a legend for your symbols</li>
+                    <li>Focus on relationships between elements</li>
+                    <li>Rate severity of pain points (e.g., 1-5 scale)</li>
+                    <li>Review with your user to verify accuracy</li>
+                </ul>
+            </div>
+            
+            <div style="background-color: rgba(0,0,0,0.03); padding: 15px; border-radius: var(--border-radius);">
+                <h5 style="margin-top: 0; font-size: 1.3em; color: var(--accent-color);">When to Use:</h5>
+                <ul style="margin-bottom: 0;">
+                    <li>To show connections between activities</li>
+                    <li>To map processes and identify pain points</li>
+                    <li>To organize complex information</li>
+                    <li>When collaborating with others</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div style="background-color: rgba(0,0,0,0.05); padding: 15px; border-radius: var(--border-radius); margin-top: 20px;">
+        <p style="margin: 0;"><i class="fas fa-lightbulb" style="color: var(--accent-color); margin-right: 8px;"></i> <strong>Pro Tip:</strong> Create your maps digitally or with sticky notes so you can easily reorganize information as you learn more about your user's experiences.</p>
+    </div>
+</div>
+<br>
+                            </div>
+                            
+                            <div class="step-navigation">
+                                <button id="prev-doc-btn" class="step-btn" onclick="prevDocStep()" disabled>
+                                    <i class="fas fa-chevron-left"></i> Previous
+                                </button>
+                                <button id="next-doc-btn" class="step-btn" onclick="nextDocStep()">
+                                    Next <i class="fas fa-chevron-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="interactive-card" style="margin-top: 30px;">
+                    <div class="element-header" style="margin: -35px -35px 30px -35px; padding: 20px 25px;">
+                        <div class="element-number">3</div>
+                        <h3>Finding Patterns & Insights <i class="fas fa-chart-line" style="margin-left: 10px;"></i></h3>
+                    </div>
+                    
+                    <p style="font-size: 1.2em; margin-bottom: 20px; padding: 0 20px;">After collecting information, you need to find patterns and extract meaningful insights:</p>
+                    
+                    <div style="padding: 0 20px 20px 20px;">
+                        <div style="display: flex; align-items: center; background-color: white; border-radius: var(--border-radius); padding: 20px; margin-bottom: 15px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                            <div style="width: 40px; height: 40px; background-color: var(--accent-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; margin-right: 15px;">1</div>
+                            <div>
+                                <h4 style="margin: 0 0 5px 0;">Organize Your Data</h4>
+                                <p style="margin: 0 0 10px 0;">Group similar information together by themes, activities, or types of challenges.</p>
+                                <div style="background-color: rgba(0,0,0,0.03); padding: 10px; border-radius: 5px;">
+                                    <p style="margin: 0; font-style: italic;"><strong>Example:</strong> Group all notes about "kitchen activities," "personal care," and "mobility" separately.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div style="display: flex; align-items: center; background-color: white; border-radius: var(--border-radius); padding: 20px; margin-bottom: 15px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                            <div style="width: 40px; height: 40px; background-color: var(--accent-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; margin-right: 15px;">2</div>
+                            <div>
+                                <h4 style="margin: 0 0 5px 0;">Look for Patterns</h4>
+                                <p style="margin: 0 0 10px 0;">Identify recurring challenges, workarounds, or preferences across different activities.</p>
+                                <div style="background-color: rgba(0,0,0,0.03); padding: 10px; border-radius: 5px;">
+                                    <p style="margin: 0; font-style: italic;"><strong>Example:</strong> Notice that grip strength is a challenge in multiple activities: opening jars, holding utensils, and turning doorknobs.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div style="display: flex; align-items: center; background-color: white; border-radius: var(--border-radius); padding: 20px; margin-bottom: 15px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                            <div style="width: 40px; height: 40px; background-color: var(--accent-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; margin-right: 15px;">3</div>
+                            <div>
+                                <h4 style="margin: 0 0 5px 0;">Identify Contradictions</h4>
+                                <p style="margin: 0 0 10px 0;">Note when what a user says contradicts their behavior or when there are conflicting needs.</p>
+                                <div style="background-color: rgba(0,0,0,0.03); padding: 10px; border-radius: 5px;">
+                                    <p style="margin: 0; font-style: italic;"><strong>Example:</strong> User says independence is most important but hesitates to use assistive devices in public due to concerns about appearance.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div style="display: flex; align-items: center; background-color: white; border-radius: var(--border-radius); padding: 20px; margin-bottom: 15px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                            <div style="width: 40px; height: 40px; background-color: var(--accent-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; margin-right: 15px;">4</div>
+                            <div>
+                                <h4 style="margin: 0 0 5px 0;">Distinguish Explicit vs. Implicit Needs</h4>
+                                <p style="margin: 0 0 10px 0;">Recognize both stated needs and unstated needs you observe.</p>
+                                <div style="background-color: rgba(0,0,0,0.03); padding: 10px; border-radius: 5px;">
+                                    <p style="margin: 0; font-style: italic;"><strong>Example:</strong> <br>Explicit: "I need something to help me open jars." <br>Implicit: User wants solutions that don't look medical or draw attention to their disability.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div style="display: flex; align-items: center; background-color: white; border-radius: var(--border-radius); padding: 20px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                            <div style="width: 40px; height: 40px; background-color: var(--accent-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; margin-right: 15px;">5</div>
+                            <div>
+                                <h4 style="margin: 0 0 5px 0;">Prioritize Insights</h4>
+                                <p style="margin: 0 0 10px 0;">Determine which needs have the greatest impact on the user's quality of life.</p>
+                                <div style="background-color: rgba(0,0,0,0.03); padding: 10px; border-radius: 5px;">
+                                    <p style="margin: 0; font-style: italic;"><strong>Example:</strong> Rank insights based on frequency (occurs daily), severity (causes pain), and emotional impact (causes frustration or embarrassment).</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CHEW 2: Step Inside Thinking Routine -->
+        <section id="chew2" class="tab-content light-section">
+            <h1>CHEW 2: STEP INSIDE THINKING ROUTINE <i class="fas fa-user-circle" style="margin-left: 15px;"></i></h1>
+            
+            <div class="chew-section">
+                <div class="chew-badge">STUDENT ACTIVITY</div>
+                <div class="timer-badge"><i class="fas fa-clock"></i> 25 mins</div>
+                
+                <h3>Step Inside Your End User's Experience</h3>
+                
+                <div class="activity-goal">
+                    <h4><i class="fas fa-bullseye" style="color: var(--chew-color);"></i> Activity Goals</h4>
+                    <ul style="list-style-type: none; padding-left: 0;">
+                        <li><i class="fas fa-angle-right" style="margin-right: 12px; color: var(--chew-color);"></i> Deepen your understanding of your end user's experience</li>
+                        <li><i class="fas fa-angle-right" style="margin-right: 12px; color: var(--chew-color);"></i> Examine their perceptions, knowledge, and concerns</li>
+                        <li><i class="fas fa-angle-right" style="margin-right: 12px; color: var(--chew-color);"></i> Develop empathy tips to guide your research</li>
+                    </ul>
+                </div>
+                
+                <div class="interactive-card">
+                    <div class="element-header" style="margin: -35px -35px 30px -35px; padding: 20px 25px;">
+                        <div class="element-number">1</div>
+                        <h3>Step Inside Thinking Routine <i class="fas fa-shoe-prints" style="margin-left: 10px;"></i></h3>
+                    </div>
+                    
+                    <p style="font-size: 1.2em; text-align: center; margin-bottom: 20px;">Use this thinking routine to deeply consider your end user's perspective:</p>
+                    
+                    <div class="step-tabs" style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin: 0 20px 20px 20px;">
+                        <button class="step-tab active" onclick="showStep(1)">
+                            <i class="fas fa-eye"></i> What might they perceive?
+                        </button>
+                        <button class="step-tab" onclick="showStep(2)">
+                            <i class="fas fa-brain"></i> What might they know/believe?
+                        </button>
+                        <button class="step-tab" onclick="showStep(3)">
+                            <i class="fas fa-heart"></i> What might they care about?
+                        </button>
+                    </div>
+                    
+                    <!-- Step content -->
+                    <div id="step-content" class="step-content" style="margin: 0 20px 20px 20px;">
+                        <!-- Step 1: Perceive -->
+                        <div id="step-1" class="step-details active">
+                            <h4><i class="fas fa-eye" style="color: var(--accent-color); margin-right: 10px;"></i> What might they perceive? (See, hear, feel)</h4>
+                            <p>Consider the physical sensations and experiences your user encounters daily:</p>
+                            
+                            <div class="two-column-grid">
+                                <div class="interactive-card" style="border-left: 4px solid var(--chew-color);">
+                                    <h5><i class="fas fa-question-circle" style="color: var(--chew-color); margin-right: 8px;"></i> Questions to Consider:</h5>
+                                    <ul>
+                                        <li>What physical sensations might they experience?</li>
+                                        <li>How might their environment look or sound to them?</li>
+                                        <li>What textures, objects, or environments might be challenging?</li>
+                                        <li>How might their disability affect what they perceive?</li>
+                                        <li>What might be tiring, painful, or uncomfortable?</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="interactive-card" style="border-left: 4px solid var(--chew-color);">
+                                    <h5><i class="fas fa-edit" style="color: var(--chew-color); margin-right: 8px;"></i> Sentence Starters:</h5>
+                                    <ul>
+                                        <li>"From their perspective, everyday objects might feel..."</li>
+                                        <li>"They might experience frustration when they see..."</li>
+                                        <li>"Their perception of [activity] might be affected by..."</li>
+                                        <li>"Physical sensations they might experience include..."</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div style="background-color: rgba(0,0,0,0.05); border-radius: var(--border-radius); padding: 15px; margin-top: 20px;">
+                                <p style="margin: 0;">Complete this section in your Make:able workbook, or in OneNote, Word, or Microsoft Whiteboard.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 2: Know/Believe -->
+                        <div id="step-2" class="step-details">
+                            <h4><i class="fas fa-brain" style="color: var(--accent-color); margin-right: 10px;"></i> What might they know or believe?</h4>
+                            <p>Think about their understanding of their situation and possibilities:</p>
+                            
+                            <div class="two-column-grid">
+                                <div class="interactive-card" style="border-left: 4px solid var(--chew-color);">
+                                    <h5><i class="fas fa-question-circle" style="color: var(--chew-color); margin-right: 8px;"></i> Questions to Consider:</h5>
+                                    <ul>
+                                        <li>What knowledge do they have about their condition?</li>
+                                        <li>What do they believe is possible or impossible for them?</li>
+                                        <li>What experiences have shaped their beliefs?</li>
+                                        <li>What assumptions might they make about new tools or technologies?</li>
+                                        <li>What might they know about existing solutions?</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="interactive-card" style="border-left: 4px solid var(--chew-color);">
+                                    <h5><i class="fas fa-edit" style="color: var(--chew-color); margin-right: 8px;"></i> Sentence Starters:</h5>
+                                    <ul>
+                                        <li>"They might believe that..."</li>
+                                        <li>"Based on their experiences, they might think..."</li>
+                                        <li>"They probably know a lot about..."</li>
+                                        <li>"They might have assumptions about..."</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div style="background-color: rgba(0,0,0,0.05); border-radius: var(--border-radius); padding: 15px; margin-top: 20px;">
+                                <p style="margin: 0;">Complete this section in your Make:able workbook, or in OneNote, Word, or Microsoft Whiteboard.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 3: Care -->
+                        <div id="step-3" class="step-details">
+                            <h4><i class="fas fa-heart" style="color: var(--accent-color); margin-right: 10px;"></i> What might they care about?</h4>
+                            <p>Consider their priorities, values, and emotional needs:</p>
+                            
+                            <div class="two-column-grid">
+                                <div class="interactive-card" style="border-left: 4px solid var(--chew-color);">
+                                    <h5><i class="fas fa-question-circle" style="color: var(--chew-color); margin-right: 8px;"></i> Questions to Consider:</h5>
+                                    <ul>
+                                        <li>What might be most important to them in daily life?</li>
+                                        <li>What emotions might they experience throughout the day?</li>
+                                        <li>What might cause them anxiety, frustration, or joy?</li>
+                                        <li>How might they feel about asking for or receiving help?</li>
+                                        <li>What aspects of their identity might be important to them?</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="interactive-card" style="border-left: 4px solid var(--chew-color);">
+                                    <h5><i class="fas fa-edit" style="color: var(--chew-color); margin-right: 8px;"></i> Sentence Starters:</h5>
+                                    <ul>
+                                        <li>"They might care deeply about..."</li>
+                                        <li>"It might be emotionally important for them to..."</li>
+                                        <li>"They might worry about..."</li>
+                                        <li>"They might feel proud when they can..."</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div style="background-color: rgba(0,0,0,0.05); border-radius: var(--border-radius); padding: 15px; margin-top: 20px;">
+                                <p style="margin: 0;">Complete this section in your Make:able workbook, or in OneNote, Word, or Microsoft Whiteboard.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="interactive-card" style="margin-top: 30px;">
+                    <div class="element-header" style="margin: -35px -35px 30px -35px; padding: 20px 25px;">
+                        <div class="element-number">2</div>
+                        <h3>Develop Empathy Tips <i class="fas fa-lightbulb" style="margin-left: 10px;"></i></h3>
+                    </div>
+                    
+                    <p style="font-size: 1.2em; margin-bottom: 20px;">Based on what you've learned about your user, create tips to guide your empathy research:</p>
+                    
+                    <div style="background-color: rgba(16, 185, 129, 0.1); padding: 20px; border-radius: var(--border-radius); margin: 0 20px 20px 20px;">
+                        <h4 style="margin-top: 0;"><i class="fas fa-star" style="margin-right: 10px; color: var(--chew-color);"></i> Empathy Tips</h4>
+                        
+                        <p>Work with a partner to develop 3-5 tips that will help you develop empathy for your specific user. Use these sentence starters:</p>
+                        
+                        <ul style="background-color: white; padding: 15px; border-radius: var(--border-radius); margin: 15px 0;">
+                            <li>"When developing empathy for my user, I need to remember..."</li>
+                            <li>"It's important to avoid assuming..."</li>
+                            <li>"I should focus on understanding..."</li>
+                            <li>"I need to be especially sensitive about..."</li>
+                            <li>"A mistake researchers often make is..."</li>
+                        </ul>
+                        
+                        <p style="margin-bottom: 0;">Record these tips in your Make:able workbook or in OneNote, Word, or Microsoft Whiteboard.</p>
+                    </div>
+                    
+                    <div style="background-color: rgba(0,0,0,0.05); border-radius: var(--border-radius); padding: 15px; margin: 0 20px 20px 20px;">
+                        <p style="margin: 0;"><i class="fas fa-lightbulb" style="color: var(--accent-color); margin-right: 10px;"></i> <strong>Example:</strong> "When developing empathy for my user with arthritis, I need to remember that their pain levels may change from day to day, so what works on a good day might not work on a bad day."</p>
+                    </div>
+                </div>
+                
+                <div class="interactive-card" style="margin-top: 30px;">
+                    <div class="element-header" style="margin: -35px -35px 30px -35px; padding: 20px 25px;">
+                        <div class="element-number">3</div>
+                        <h3>Documentation Strategy <i class="fas fa-clipboard-check" style="margin-left: 10px;"></i></h3>
+                    </div>
+                    
+                    <p style="font-size: 1.2em; margin-bottom: 20px;">Plan how you will collect and organize information about your user:</p>
+                    
+                    <div style="background-color: rgba(16, 185, 129, 0.1); padding: 20px; border-radius: var(--border-radius); margin: 0 20px 20px 20px;">
+                        <h4 style="margin-top: 0;"><i class="fas fa-file-alt" style="margin-right: 10px; color: var(--chew-color);"></i> Documentation Strategy</h4>
+                        
+                        <p>Outline your plan for documenting what you learn. Include:</p>
+                        
+                        <ol style="background-color: white; padding: 15px 15px 15px 40px; border-radius: var(--border-radius); margin: 15px 0;">
+                            <li>What methods you'll use to record information (notes, photos, videos, etc.)</li>
+                            <li>How you'll organize your findings (categories, themes, timeline)</li>
+                            <li>Tools you'll need (notebook, camera, recording app, etc.)</li>
+                            <li>How you'll involve your user in reviewing your documentation</li>
+                        </ol>
+                        
+                        <p style="margin-bottom: 0;">Record your strategy in your Make:able workbook or in OneNote, Word, or Microsoft Whiteboard.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CHUNK 3: Framing Design Challenges -->
+        <section id="chunk3" class="tab-content dark-section">
+            <h1>CHUNK 3: FRAMING DESIGN CHALLENGES <i class="fas fa-bullseye" style="margin-left: 15px;"></i></h1>
+            
+            <div class="chunk-section">
+                <div class="chunk-badge">TEACHER CHUNK</div>
+                <div class="timer-badge"><i class="fas fa-clock"></i> 10 mins</div>
+                
+                <h3>From Empathy to Design Opportunities</h3>
+                
+                <p>After gathering empathy insights, you need to frame a specific design challenge that will guide your solution.</p>
+                
+                <div class="interactive-card">
+                    <div class="element-header" style="margin: -35px -35px 30px -35px; padding: 20px 25px;">
+                        <div class="element-number">1</div>
+                        <h3>The "How Might We" Format <i class="fas fa-question-circle" style="margin-left: 10px;"></i></h3>
+                    </div>
+                    
+                    <p style="font-size: 1.2em; text-align: center; margin-bottom: 20px;">The "How Might We" (HMW) format is a powerful way to frame design challenges because it:</p>
+                    
+                    <div class="variable-animation" style="padding: 30px;">
+                        <div class="two-column-grid">
+                            <div class="icon-box">
+                                <div class="icon-container">
+                                    <i class="fas fa-lock-open"></i>
+                                </div>
+                                <div class="icon-text">
+                                    <h4>Suggests Possibility</h4>
+                                    <p>"Might" implies there are multiple solutions</p>
+                                </div>
+                            </div>
+                            
+                            <div class="icon-box">
+                                <div class="icon-container">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <div class="icon-text">
+                                    <h4>Encourages Collaboration</h4>
+                                    <p>"We" makes it a team effort</p>
+                                </div>
+                            </div>
+                            
+                            <div class="icon-box">
+                                <div class="icon-container">
+                                    <i class="fas fa-balance-scale"></i>
+                                </div>
+                                <div class="icon-text">
+                                    <h4>Provides Focus</h4>
+                                    <p>Narrows the problem to something specific</p>
+                                </div>
+                            </div>
+                            
+                            <div class="icon-box">
+                                <div class="icon-container">
+                                    <i class="fas fa-lightbulb"></i>
+                                </div>
+                                <div class="icon-text">
+                                    <h4>Inspires Action</h4>
+                                    <p>Turns problems into opportunities</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div style="background-color: rgba(0,0,0,0.05); border-radius: var(--border-radius); padding: 15px; margin: 0 30px 30px 30px;">
+                        
+                        <p style="margin: 0; text-align: center;"><i class="fas fa-lightbulb" style="color: var(--accent-color); margin-right: 10px;"></i> <strong>Format:</strong> "How might we [action verb] [specific user] to [desired outcome] [context/constraint]?"</p>
+                    </div>
+                </div>
+                
+                <div class="interactive-card" style="margin-top: 30px;">
+                    <div class="element-header" style="margin: -35px -35px 30px -35px; padding: 20px 25px;">
+                        <div class="element-number">2</div>
+                        <h3>Challenge Framing Examples <i class="fas fa-file-alt" style="margin-left: 10px;"></i></h3>
+                    </div>
+                    
+                    <div style="padding: 0 20px 20px 20px;">
+                        <div style="display: flex; background-color: white; border-radius: var(--border-radius); overflow: hidden; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); margin-bottom: 15px;">
+                            <div style="writing-mode: vertical-lr; transform: rotate(180deg); padding: 10px; background-color: var(--bad-color); color: white; font-weight: bold; display: flex; align-items: center; justify-content: center; min-width: 40px;">
+                                TOO BROAD
+                            </div>
+                            <div style="padding: 15px; border-left: 4px solid var(--bad-color);">
+                                <p style="font-weight: 600; margin: 0 0 10px 0;">How might we help people with disabilities?</p>
+                                <p style="font-style: italic; margin: 0; font-size: 0.9em;">Problem: Too general, doesn't say which user, need, or situation.</p>
+                            </div>
+                        </div>
+                        
+                        <div style="display: flex; background-color: white; border-radius: var(--border-radius); overflow: hidden; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); margin-bottom: 15px;">
+                            <div style="writing-mode: vertical-lr; transform: rotate(180deg); padding: 10px; background-color: var(--bad-color); color: white; font-weight: bold; display: flex; align-items: center; justify-content: center; min-width: 40px;">
+                                TOO NARROW
+                            </div>
+                            <div style="padding: 15px; border-left: 4px solid var(--bad-color);">
+                                <p style="font-weight: 600; margin: 0 0 10px 0;">How might we design a red pencil grip for John?</p>
+                                <p style="font-style: italic; margin: 0; font-size: 0.9em;">Problem: Too specific, already includes a solution (pencil grip) and limits creativity.</p>
+                            </div>
+                        </div>
+                        
+                        <div style="display: flex; background-color: white; border-radius: var(--border-radius); overflow: hidden; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); margin-bottom: 15px;">
+                            <div style="writing-mode: vertical-lr; transform: rotate(180deg); padding: 10px; background-color: var(--good-color); color: white; font-weight: bold; display: flex; align-items: center; justify-content: center; min-width: 40px;">
+                                JUST RIGHT
+                            </div>
+                            <div style="padding: 15px; border-left: 4px solid var(--good-color);">
+                                <p style="font-weight: 600; margin: 0 0 10px 0;">How might we enable Sarah to write for extended periods without pain?</p>
+                                <p style="font-style: italic; margin: 0; font-size: 0.9em;">Good: Names specific user, clear need, measurable outcome, but still open to many possible solutions.</p>
+                            </div>
+                        </div>
+                        
+                        <div style="display: flex; background-color: white; border-radius: var(--border-radius); overflow: hidden; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                            <div style="writing-mode: vertical-lr; transform: rotate(180deg); padding: 10px; background-color: var(--good-color); color: white; font-weight: bold; display: flex; align-items: center; justify-content: center; min-width: 40px;">
+                                JUST RIGHT
+                            </div>
+                            <div style="padding: 15px; border-left: 4px solid var(--good-color);">
+                                <p style="font-weight: 600; margin: 0 0 10px 0;">How might we help Alex open food packages independently while maintaining dignity?</p>
+                                <p style="font-style: italic; margin: 0; font-size: 0.9em;">Good: Addresses both functional need (opening packages) and emotional need (dignity), specific to user.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="interactive-card" style="margin-top: 30px;">
+                    <div class="element-header" style="margin: -35px -35px 30px -35px; padding: 20px 25px;">
+                        <div class="element-number">3</div>
+                        <h3>Design Criteria <i class="fas fa-clipboard-list" style="margin-left: 10px;"></i></h3>
+                    </div>
+                    
+                    <p style="font-size: 1.2em; text-align: center; margin-bottom: 20px;">Design criteria define what a successful solution must achieve:</p>
+                    
+                    <div class="two-column-grid" style="margin: 0 20px 20px 20px;">
+                        <div class="interactive-card">
+                            <h4><i class="fas fa-star" style="color: var(--accent-color); margin-right: 10px;"></i> Functional Criteria</h4>
+                            <p>Related to how the solution works and performs</p>
+                            
+                            <div style="background-color: rgba(0,0,0,0.05); padding: 15px; border-radius: var(--border-radius); margin-top: 15px;">
+                                <h5 style="margin-top: 0;">Examples:</h5>
+                                <ul style="margin-bottom: 0;">
+                                    <li>"Must be operable with one hand"</li>
+                                    <li>"Should reduce required grip strength by 50%"</li>
+                                    <li>"Must be waterproof"</li>
+                                    <li>"Should weigh less than 200g"</li>
+                                    <li>"Must fit standard jar sizes (5-10cm diameter)"</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="interactive-card">
+                            <h4><i class="fas fa-heart" style="color: var(--accent-color); margin-right: 10px;"></i> Emotional Criteria</h4>
+                            <p>Related to how the solution makes the user feel</p>
+                            
+                            <div style="background-color: rgba(0,0,0,0.05); padding: 15px; border-radius: var(--border-radius); margin-top: 15px;">
+                                <h5 style="margin-top: 0;">Examples:</h5>
+                                <ul style="margin-bottom: 0;">
+                                    <li>"Should not look medical or draw attention"</li>
+                                    <li>"Must preserve user's dignity and independence"</li>
+                                    <li>"Should be aesthetically pleasing to the user"</li>
+                                    <li>"Must not cause embarrassment in public settings"</li>
+                                    <li>"Should give user confidence in their abilities"</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div style="text-align: center; margin: 0 20px 20px 20px;">
+                        <a href="https://cbuckley-aidans.github.io/design-thinking/define.html" target="_blank" style="display: inline-block; background-color: var(--accent-color); color: white; padding: 12px 20px; border-radius: 30px; text-decoration: none; font-weight: bold; transition: background-color 0.3s;">
+                            <i class="fas fa-external-link-alt" style="margin-right: 8px;"></i> Learn More About Creating Effective Design Criteria
+                        </a>
+                    </div>
+                    
+                    <div style="display: flex; background-color: rgba(0,0,0,0.05); border-radius: var(--border-radius); padding: 15px; margin: 0 20px 20px 20px; align-items: center;">
+                        <i class="fas fa-lightbulb" style="color: var(--accent-color); margin-right: 15px; font-size: 1.5em;"></i>
+                        <p style="margin: 0;">When developing criteria, prioritize them as "must have" (essential), "should have" (important), and "could have" (nice to have but not essential).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CHEW 3: From Empathy to Design Opportunities -->
+        <section id="chew3" class="tab-content light-section">
+            <h1>CHEW 3: FROM EMPATHY TO DESIGN OPPORTUNITIES <i class="fas fa-drafting-compass" style="margin-left: 15px;"></i></h1>
+            
+            <div class="chew-section">
+                <div class="chew-badge">STUDENT ACTIVITY</div>
+                <div class="timer-badge"><i class="fas fa-clock"></i> 15 mins</div>
+                
+                <h3>Frame Your Design Challenge</h3>
+                
+                <div class="activity-goal">
+                    <h4><i class="fas fa-bullseye" style="color: var(--chew-color);"></i> Activity Goals</h4>
+                    <ul style="list-style-type: none; padding-left: 0;">
+                        <li><i class="fas fa-angle-right" style="margin-right: 12px; color: var(--chew-color);"></i> Create effective "How Might We" statements</li>
+                        <li><i class="fas fa-angle-right" style="margin-right: 12px; color: var(--chew-color);"></i> Develop design criteria based on user needs</li>
+                        <li><i class="fas fa-angle-right" style="margin-right: 12px; color: var(--chew-color);"></i> Get feedback to improve your challenge framing</li>
+                    </ul>
+                </div>
+                
+                <div class="interactive-card">
+                    <div class="element-header" style="margin: -35px -35px 30px -35px; padding: 20px 25px;">
+                        <div class="element-number">1</div>
+                        <h3>Draft "How Might We" Statements <i class="fas fa-pencil-alt" style="margin-left: 10px;"></i></h3>
+                    </div>
+                    
+                    <p style="font-size: 1.2em; text-align: center; margin-bottom: 20px;">Based on what you know about your user, create 2-3 possible "How Might We" statements:</p>
+                    
+                    <div style="background-color: rgba(16, 185, 129, 0.1); padding: 20px; border-radius: var(--border-radius); margin: 0 20px 20px 20px;">
+                        <h4 style="margin-top: 0;"><i class="fas fa-clipboard-list" style="margin-right: 10px; color: var(--chew-color);"></i> HMW Statement Guidelines</h4>
+                        
+                        <p>Create statements that:</p>
+                        <ol style="background-color: white; padding: 15px 15px 15px 40px; border-radius: var(--border-radius); margin: 15px 0;">
+                            <li>Name your specific user</li>
+                            <li>Address a clear need or challenge</li>
+                            <li>Include a desired outcome</li>
+                            <li>Are neither too broad nor too narrow</li>
+                            <li>Don't include a specific solution yet</li>
+                        </ol>
+                        
+                        <p style="margin-bottom: 0;">Write your HMW statements in your Make:able workbook or on sticky notes.</p>
+                    </div>
+                    
+                    <div style="background-color: rgba(0,0,0,0.05); border-radius: var(--border-radius); padding: 15px; margin: 0 20px 20px 20px;">
+                        <h5 style="margin-top: 0;"><i class="fas fa-lightbulb" style="color: var(--accent-color); margin-right: 10px;"></i> Helpful Templates:</h5>
+                        <ul style="margin-bottom: 0;">
+                            <li>"How might we help [user] to [accomplish task] without [current limitation]?"</li>
+                            <li>"How might we enable [user] to [meet need] in a way that [important criteria]?"</li>
+                            <li>"How might we improve [user]'s experience of [activity] so that [desired outcome]?"</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="interactive-card" style="margin-top: 30px;">
+                    <div class="element-header" style="margin: -35px -35px 30px -35px; padding: 20px 25px;">
+                        <div class="element-number">2</div>
+                        <h3>Peer Feedback <i class="fas fa-comments" style="margin-left: 10px;"></i></h3>
+                    </div>
+                    
+                    <p style="font-size: 1.2em; text-align: center; margin-bottom: 20px;">Share your HMW statements with a small group for feedback:</p>
+                    
+                    <div style="background-color: rgba(16, 185, 129, 0.1); padding: 20px; border-radius: var(--border-radius); margin: 0 20px 20px 20px;">
+                        <h4 style="margin-top: 0;"><i class="fas fa-users" style="margin-right: 10px; color: var(--chew-color);"></i> Feedback Process</h4>
+                        
+                        <ol style="margin-bottom: 15px;">
+                            <li>Form groups of 3-4 students</li>
+                            <li>Take turns sharing your HMW statements</li>
+                            <li>For each statement, group members should provide feedback using these criteria:</li>
+                        </ol>
+                        
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(600px, 1fr)); gap: 15px; margin: 15px 0;">
+                            <div style="background-color: white; padding: 15px; border-radius: var(--border-radius); display: flex; align-items: center; gap: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                                <div style="width: 40px; height: 40px; background-color: var(--chew-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white;">
+                                    <i class="fas fa-user-check"></i>
+                                </div>
+                                <p style="margin: 0;">Is it specific to the user's needs?</p>
+                            </div>
+                            
+                            <div style="background-color: white; padding: 15px; border-radius: var(--border-radius); display: flex; align-items: center; gap: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                                <div style="width: 40px; height: 40px; background-color: var(--chew-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white;">
+                                    <i class="fas fa-ruler"></i>
+                                </div>
+                                <p style="margin: 0;">Is it neither too broad nor too narrow?</p>
+                            </div>
+                            
+                            <div style="background-color: white; padding: 15px; border-radius: var(--border-radius); display: flex; align-items: center; gap: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                                <div style="width: 40px; height: 40px; background-color: var(--chew-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white;">
+                                    <i class="fas fa-route"></i>
+                                </div>
+                                <p style="margin: 0;">Does it allow for multiple possible solutions?</p>
+                            </div>
+                            
+                            <div style="background-color: white; padding: 15px; border-radius: var(--border-radius); display: flex; align-items: center; gap: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                                <div style="width: 40px; height: 40px; background-color: var(--chew-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white;">
+                                    <i class="fas fa-tasks"></i>
+                                </div>
+                                <p style="margin: 0;">Is it actionable?</p>
+                            </div>
+                        </div>
+                        
+                        <p style="margin-bottom: 0;">Use the feedback to improve your HMW statement. Choose the strongest one to move forward with.</p>
+                    </div>
+                </div>
+                
+                <div class="interactive-card" style="margin-top: 30px;">
+                    <div class="element-header" style="margin: -35px -35px 30px -35px; padding: 20px 25px;">
+                        <div class="element-number">3</div>
+                        <h3>Develop Design Criteria <i class="fas fa-list-ul" style="margin-left: 10px;"></i></h3>
+                    </div>
+                    
+                    <p style="font-size: 1.2em; text-align: center; margin-bottom: 20px;">Based on your user research and challenge statement, develop criteria for your solution:</p>
+                    
+                    <div style="background-color: rgba(16, 185, 129, 0.1); padding: 20px; border-radius: var(--border-radius); margin: 0 20px 20px 20px;">
+                        <h4 style="margin-top: 0;"><i class="fas fa-clipboard-check" style="margin-right: 10px; color: var(--chew-color);"></i> Initial Design Criteria</h4>
+                        
+                        <p>Develop 4-6 criteria that your solution should meet, using these prompts:</p>
+                        
+                        <div style="margin: 15px 0;">
+                            <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 10px;">
+                                <div style="padding: 5px 10px; border-radius: 5px; font-weight: bold; font-size: 0.9em; color: white; background-color: #ff4d4f; min-width: 70px; text-align: center;">MUST</div>
+                                <p style="margin: 0;">The solution must... (essential requirements)</p>
+                            </div>
+                            
+                            <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 10px;">
+                                <div style="padding: 5px 10px; border-radius: 5px; font-weight: bold; font-size: 0.9em; color: white; background-color: #faad14; min-width: 70px; text-align: center;">SHOULD</div>
+                                <p style="margin: 0;">The solution should... (important but not essential)</p>
+                            </div>
+                            
+                            <div style="display: flex; align-items: center; gap: 15px;">
+                                <div style="padding: 5px 10px; border-radius: 5px; font-weight: bold; font-size: 0.9em; color: white; background-color: #52c41a; min-width: 70px; text-align: center;">COULD</div>
+                                <p style="margin: 0;">It would be beneficial if the solution could... (nice to have features)</p>
+                            </div>
+                        </div>
+                        
+                        <p>Include both functional criteria (how it works) and emotional criteria (how it makes the user feel).</p>
+                        
+                        <p style="margin-bottom: 0;">Record your design criteria in your Make:able workbook on page 8-9.</p>
+                    </div>
+                    
+                    <div style="text-align: center; margin: 0 20px 20px 20px;">
+                        <a href="https://cbuckley-aidans.github.io/design-thinking/define.html" target="_blank" style="display: inline-block; background-color: var(--accent-color); color: white; padding: 10px 15px; border-radius: 20px; text-decoration: none; font-weight: bold; font-size: 0.9em;">
+                            <i class="fas fa-external-link-alt" style="margin-right: 5px;"></i> Learn more about creating effective design criteria
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="interactive-card" style="margin-top: 30px;">
+                    <div class="element-header" style="margin: -35px -35px 30px -35px; padding: 20px 25px;">
+                        <div class="element-number">4</div>
+                        <h3>3-2-1 Reflection <i class="fas fa-pen-fancy" style="margin-left: 10px;"></i></h3>
+                    </div>
+                    
+                    <p style="font-size: 1.2em; text-align: center; margin-bottom: 20px;">Complete this quick reflection about what you've learned:</p>
+                    
+                    <div style="padding: 0 20px 20px 20px;">
+                        <div style="display: flex; align-items: center; background-color: rgba(16, 185, 129, 0.1); border-radius: var(--border-radius); padding: 15px; margin-bottom: 15px;">
+                            <div style="width: 40px; height: 40px; background-color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2em; color: var(--chew-color); border: 2px solid var(--chew-color); margin-right: 15px;">3</div>
+                            <div style="font-weight: 600;">Three things you've learned about your user</div>
+                        </div>
+                        
+                        <div style="display: flex; align-items: center; background-color: rgba(16, 185, 129, 0.1); border-radius: var(--border-radius); padding: 15px; margin-bottom: 15px;">
+                            <div style="width: 40px; height: 40px; background-color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2em; color: var(--chew-color); border: 2px solid var(--chew-color); margin-right: 15px;">2</div>
+                            <div style="font-weight: 600;">Two methods you want to use to develop deeper empathy</div>
+                        </div>
+                        
+                        <div style="display: flex; align-items: center; background-color: rgba(16, 185, 129, 0.1); border-radius: var(--border-radius); padding: 15px; margin-bottom: 15px;">
+                            <div style="width: 40px; height: 40px; background-color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2em; color: var(--chew-color); border: 2px solid var(--chew-color); margin-right: 15px;">1</div>
+                            <div style="font-weight: 600;">One challenge you anticipate in the empathy process</div>
+                        </div>
+                        
+                        <div style="background-color: rgba(0,0,0,0.05); border-radius: var(--border-radius); padding: 15px;">
+                            <p style="margin: 0;">Complete this reflection in your Make:able workbook on page 7 in the insight section, or in OneNote, Word, or Microsoft Whiteboard.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h3>Key Takeaways <i class="fas fa-check-circle" style="margin-left: 10px;"></i></h3>
+                
+                <div style="background-color: rgba(0,0,0,0.05); border-radius: var(--border-radius); padding: 20px; margin: 20px 0;">
+                    <h4 style="margin-top: 0;"><i class="fas fa-lightbulb" style="color: var(--accent-color); margin-right: 10px;"></i> What We've Learned Today</h4>
+                    <ul style="margin: 0; padding-left: 0; list-style-type: none;">
+                        <li><i class="fas fa-check" style="margin-right: 12px; color: var(--good-color);"></i> Empathy means understanding users' experiences from their point of view</li>
+                        <li><i class="fas fa-check" style="margin-right: 12px; color: var(--good-color);"></i> Using different empathy methods helps us get a fuller picture</li>
+                        <li><i class="fas fa-check" style="margin-right: 12px; color: var(--good-color);"></i> Good documentation helps organize findings and spot patterns</li>
+                        <li><i class="fas fa-check" style="margin-right: 12px; color: var(--good-color);"></i> "How Might We" statements turn insights into design opportunities</li>
+                        <li><i class="fas fa-check" style="margin-right: 12px; color: var(--good-color);"></i> Design criteria define what success looks like for your solution</li>
+                        <li><i class="fas fa-check" style="margin-right: 12px; color: var(--good-color);"></i> The best assistive technology addresses both practical and emotional needs</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Navigation
+        document.addEventListener('DOMContentLoaded', function() {
+            // Tab switching
+            document.querySelectorAll('.tab-button').forEach(button => {
+                button.addEventListener('click', function() {
+                    const tab = this.getAttribute('data-tab');
+                    
+                    // Remove active class from all buttons and tabs
+                    document.querySelectorAll('.tab-button').forEach(btn => {
+                        btn.classList.remove('active');
+                    });
+                    document.querySelectorAll('.tab-content').forEach(content => {
+                        content.classList.remove('active');
+                    });
+                    
+                    // Add active class to selected button and tab
+                    this.classList.add('active');
+                    document.getElementById(tab).classList.add('active');
+                });
+            });
+            
+            // Initialize first tabs for each section
+            currentDesignStep = 1;
+            totalDesignSteps = 2;
+            
+            currentDocStep = 1;
+            totalDocSteps = 3;
+        });
+        
+        // Design Examples Steps
+        let currentDesignStep = 1;
+        const totalDesignSteps = 2;
+        
+        function nextDesignStep() {
+            if (currentDesignStep < totalDesignSteps) {
+                // Hide current step
+                document.getElementById(`design-step-${currentDesignStep}`).classList.remove('active');
+                
+                // Show next step
+                currentDesignStep++;
+                document.getElementById(`design-step-${currentDesignStep}`).classList.add('active');
+                
+                // Update indicator and buttons
+                document.getElementById('design-indicator').textContent = `Example ${currentDesignStep} of ${totalDesignSteps}`;
+                document.getElementById('prev-design-btn').disabled = false;
+                
+                if (currentDesignStep === totalDesignSteps) {
+                    document.getElementById('next-design-btn').disabled = true;
+                }
+            }
+        }
+        
+        function prevDesignStep() {
+            if (currentDesignStep > 1) {
+                // Hide current step
+                document.getElementById(`design-step-${currentDesignStep}`).classList.remove('active');
+                
+                // Show previous step
+                currentDesignStep--;
+                document.getElementById(`design-step-${currentDesignStep}`).classList.add('active');
+                
+                // Update indicator and buttons
+                document.getElementById('design-indicator').textContent = `Example ${currentDesignStep} of ${totalDesignSteps}`;
+                document.getElementById('next-design-btn').disabled = false;
+                
+                if (currentDesignStep === 1) {
+                    document.getElementById('prev-design-btn').disabled = true;
+                }
+            }
+        }
+        
+        // Documentation Steps
+        let currentDocStep = 1;
+        const totalDocSteps = 3;
+        
+        function nextDocStep() {
+            if (currentDocStep < totalDocSteps) {
+                // Hide current step
+                document.getElementById(`doc-step-${currentDocStep}`).classList.remove('active');
+                
+                // Show next step
+                currentDocStep++;
+                document.getElementById(`doc-step-${currentDocStep}`).classList.add('active');
+                
+                // Update indicator and buttons
+                document.getElementById('doc-indicator').textContent = `Method ${currentDocStep} of ${totalDocSteps}`;
+                document.getElementById('prev-doc-btn').disabled = false;
+                
+                if (currentDocStep === totalDocSteps) {
+                    document.getElementById('next-doc-btn').disabled = true;
+                }
+            }
+        }
+        
+        function prevDocStep() {
+            if (currentDocStep > 1) {
+                // Hide current step
+                document.getElementById(`doc-step-${currentDocStep}`).classList.remove('active');
+                
+                // Show previous step
+                currentDocStep--;
+                document.getElementById(`doc-step-${currentDocStep}`).classList.add('active');
+                
+                // Update indicator and buttons
+                document.getElementById('doc-indicator').textContent = `Method ${currentDocStep} of ${totalDocSteps}`;
+                document.getElementById('next-doc-btn').disabled = false;
+                
+                if (currentDocStep === 1) {
+                    document.getElementById('prev-doc-btn').disabled = true;
+                }
+            }
+        }
+        
+        // Method tabs
+        function showMethod(methodNum) {
+            // Hide all method details
+            document.querySelectorAll('.method-details').forEach(method => {
+                method.classList.remove('active');
+            });
+            
+            // Show selected method
+            document.getElementById(`method-${methodNum}`).classList.add('active');
+            
+            // Update active tab
+            document.querySelectorAll('.method-tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            document.querySelectorAll('.method-tab')[methodNum - 1].classList.add('active');
+        }
+        
+        // Step Inside tabs
+        function showStep(stepNum) {
+            // Hide all step details
+            document.querySelectorAll('.step-details').forEach(step => {
+                step.classList.remove('active');
+            });
+            
+            // Show selected step
+            document.getElementById(`step-${stepNum}`).classList.add('active');
+            
+            // Update active tab
+            document.querySelectorAll('.step-tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            document.querySelectorAll('.step-tab')[stepNum - 1].classList.add('active');
+        }
+    </script>
+    
+    <style>
+        /* Method tabs styling */
+        .method-tab {
+            background-color: rgba(0,0,0,0.05);
+            border: none;
+            padding: 14px 20px;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 1.1em;
+            transition: all 0.3s ease;
+            min-width: 160px;
+            text-align: center;
+        }
+        
+        .method-tab:hover {
+            background-color: rgba(0,0,0,0.1);
+        }
+        
+        .method-tab.active {
+            background-color: var(--accent-color);
+            color: white;
+        }
+        
+        .method-details {
+            display: none;
+            background-color: rgba(0,0,0,0.03);
+            padding: 20px;
+            border-radius: var(--border-radius);
+        }
+        
+        .method-details.active {
+            display: block;
+        }
+        
+        /* Step tabs styling */
+        .step-tab {
+            background-color: rgba(0,0,0,0.05);
+            border: none;
+            padding: 14px 20px;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 1.1em;
+            transition: all 0.3s ease;
+            min-width: 180px;
+            text-align: center;
+        }
+        
+        .step-tab:hover {
+            background-color: rgba(0,0,0,0.1);
+        }
+        
+        .step-tab.active {
+            background-color: var(--accent-color);
+            color: white;
+        }
+        
+        .step-details {
+            display: none;
+            background-color: rgba(0,0,0,0.03);
+            padding: 20px;
+            border-radius: var(--border-radius);
+        }
+        
+        .step-details.active {
+            display: block;
+        }
+    </style>
+</body>
+</html>
