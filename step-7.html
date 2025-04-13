@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make:able - Step 07: Test + Iterate</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Assume this has the base styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/inter-ui/3.19.3/inter.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Favicon Icons -->
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
+
+    <style>
+        /* Reusing styles from previous examples where applicable */
+        .method-explanation { background-color: rgba(0,0,0,0.03); padding: 15px; border-radius: var(--border-radius); margin-bottom: 15px; border-left: 4px solid var(--accent-color); }
+        .method-explanation h5 { margin-top: 0; color: var(--accent-color); font-size: 1.1em; }
+        .method-explanation p { margin-bottom: 5px; font-size: 0.95em; }
+        .method-explanation ul { margin-top: 5px; margin-bottom: 0; padding-left: 20px; font-size: 0.95em; }
+
+        .iteration-step { background-color: #f0f7ff; border: 1px solid #cce4ff; padding: 15px; border-radius: var(--border-radius); margin-bottom: 15px;}
+        .iteration-step h5 { color: #096dd9; margin-top: 0; display: flex; align-items: center; gap: 8px;}
+
+        .feature-item { background-color: #f6ffed; border: 1px solid #b7eb8f; padding: 10px 15px; border-radius: var(--border-radius); margin-bottom: 10px; }
+        .feature-item strong { color: #389e0d; }
+
+        .checklist-item-ti { /* ti for test-iterate */
+            display: flex;
+            align-items: start;
+            gap: 15px;
+            margin-bottom: 15px;
+            padding: 10px;
+            background-color: rgba(0,0,0,0.02);
+            border-radius: var(--border-radius);
+        }
+        .checklist-item-ti input[type="checkbox"] {
+            margin-top: 4px;
+            transform: scale(1.4);
+            accent-color: var(--accent-color);
+        }
+        .checklist-item-ti label {
+            font-size: 1em;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <!-- Sidebar Navigation - Focused on Test & Iterate Tabs -->
+    <aside class="sidebar" style="overflow-y: auto; overflow-x: hidden;">
+        <div class="sidebar-logo">TEST & ITERATE STAGE</div>
+        <a href="index.html" class="home-button">
+            <i class="fas fa-home"></i>
+            HOME
+        </a>
+        <div class="sidebar-nav">
+            <button class="tab-button active" data-tab="testing-prep">
+                <i class="fas fa-clipboard-list"></i>
+                PAGE 15
+            </button>
+            <button class="tab-button" data-tab="testing-iterations">
+                <i class="fas fa-recycle"></i>
+                PAGES 16 - 18
+            </button>
+            <button class="tab-button" data-tab="testing-final">
+                <i class="fas fa-flag-checkered"></i>
+                PAGE 19
+            </button>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- Tab 1: Prep & Methods (Workbook Page 15 Guidance) -->
+        <section id="testing-prep" class="tab-content active light-section">
+            <h1><i class="fas fa-clipboard-list" style="margin-right: 15px;"></i>TEST + ITERATE: PREPARATION & METHODS</h1>
+            <p>Welcome to the Test and Iterate phase! This is where you test your prototype, learn what works (and what doesn't), and make improvements. It's all about learning and making your design better through cycles of testing and changing.</p>
+            <p>This section helps you prepare for testing by choosing methods, thinking about tips, and planning documentation for <strong>Workbook Page 15</strong>.</p>
+
+            <div class="card">
+                <div class="element-header" style="margin: -35px -40px 30px -40px; padding: 25px 35px;">
+                    <div class="element-number">1</div>
+                    <h3>Choosing Iteration Methods (Page 15) <i class="fas fa-vials" style="margin-left: 15px; color: var(--accent-color);"></i></h3>
+                </div>
+
+                <p>How will you test your prototype and figure out what needs changing? Page 15 lists different methods. Choose the ones that make sense for your project and tick them off.</p>
+
+                <!-- Explaining Iteration Methods -->
+                <div class="interactive-card">
+                    <div class="element-header" style="margin: -35px -35px 30px -35px; padding: 20px 25px;">
+                         <div class="element-number" style="background-color: var(--light-section-bg); color: var(--accent-color); border: 2px solid var(--accent-color);">A</div>
+                         <h3>Testing & Evaluation Methods Explained <i class="fas fa-info-circle" style="margin-left: 10px;"></i></h3>
+                    </div>
+                    <div style="padding: 0 20px 20px 20px;">
+                        <div class="method-explanation">
+                            <h5><i class="fas fa-user-check" style="margin-right: 8px; color: var(--accent-color);"></i> User Testing</h5>
+                            <p><strong>What:</strong> Watching your actual end user (or someone similar) try to use your prototype to complete a task.</p>
+                            <p><strong>How:</strong> Prepare your prototype. Ask the user to perform a specific task using it (e.g., "Try opening this jar using the device"). Observe them closely: Where do they struggle? What do they do easily? Ask open-ended questions afterwards ("What did you think?", "Was anything confusing?"). Record their actions and feedback.</p>
+                            <p><strong>Why:</strong> The BEST way to see if your design actually works for the intended person. Provides direct, real-world feedback.</p>
+                        </div>
+
+                        <div class="method-explanation">
+                            <h5><i class="fas fa-theater-masks" style="margin-right: 8px; color: var(--accent-color);"></i> Roleplay / Simulation</h5>
+                            <p><strong>What:</strong> You or your teammates try to use the prototype while pretending to have the user's challenges or limitations.</p>
+                            <p><strong>How:</strong> If your user has limited hand strength, maybe try using the prototype while wearing thick gloves. If they have vision impairment, try using it with blurry glasses (safely!). Act out the scenario the prototype is designed for.</p>
+                            <p><strong>Why:</strong> Helps you empathise and spot potential physical challenges, especially if direct user testing is difficult to arrange frequently.</p>
+                        </div>
+
+                         <div class="method-explanation">
+                           <h5><i class="fas fa-poll" style="margin-right: 8px; color: var(--accent-color);"></i> Survey</h5>
+                           <p><strong>What:</strong> Creating a set of written questions to ask people (maybe the user, their family, or even classmates for general feedback) about the prototype.</p>
+                           <p><strong>How:</strong> Write clear questions. Use rating scales (e.g., "On a scale of 1-5, how easy was it to use?") or open-ended questions ("What did you like most?"). Distribute the survey and collect responses.</p>
+                           <p><strong>Why:</strong> Good for gathering opinions from multiple people or getting feedback on specific aspects like appearance or perceived ease of use.</p>
+                        </div>
+
+                         <div class="method-explanation">
+                           <h5><i class="fas fa-clipboard-check" style="margin-right: 8px; color: var(--accent-color);"></i> Evaluation Matrix</h5>
+                           <p><strong>What:</strong> A table or chart where you rate your prototype against the Design Criteria you set earlier (e.g., Must Haves, Should Haves from Page 11).</p>
+                           <p><strong>How:</strong> List your key criteria down one side of a table. Create columns for scoring (e.g., "Doesn't Meet", "Partly Meets", "Fully Meets" or 1-5 score). Test your prototype yourself or with a user, then objectively score how well it meets each criterion.</p>
+                           <p><strong>Why:</strong> Provides a structured way to see if your design meets its goals. Helps identify specific areas needing improvement.</p>
+                        </div>
+
+                        <div class="method-explanation">
+                            <h5><i class="fas fa-chart-bar" style="margin-right: 8px; color: var(--accent-color);"></i> Importance Difficulty Matrix</h5>
+                            <p><strong>What:</strong> A chart used to decide which feedback points or potential changes to focus on next. You plot items based on how important they are vs. how difficult they are to implement.</p>
+                            <p><strong>How:</strong> After testing, list the problems found or potential improvements. Create a 2x2 grid (e.g., High Importance/Low Difficulty, High/High, Low/Low, Low/High). Discuss and place each item on the grid. Focus on High Importance / Low Difficulty items first!</p>
+                            <p><strong>Why:</strong> Helps prioritise changes, ensuring you work on the most impactful and achievable improvements first.</p>
+                        </div>
+
+                         <div class="method-explanation">
+                            <h5><i class="fas fa-cogs" style="margin-right: 8px; color: var(--accent-color);"></i> Feature Variation Models</h5>
+                            <p><strong>What:</strong> Creating slightly different versions of a specific part (feature) of your prototype to test which one works best.</p>
+                            <p><strong>How:</strong> Identify a key feature you want to improve (e.g., the handle shape, the button size). Design and 3D print 2-3 variations of just that part. Test each variation with users or through simulation to see which performs better.</p>
+                            <p><strong>Why:</strong> Allows focused testing and refinement of specific design elements without rebuilding the whole prototype each time.</p>
+                        </div>
+                         <p style="font-style: italic;">The "Star" spaces on Page 15 are for any other testing methods you might use.</p>
+                    </div>
+                </div>
+
+                <!-- Iteration Tips -->
+                <div class="interactive-card" style="margin-top: 30px;">
+                    <div class="element-header" style="margin: -35px -35px 30px -35px; padding: 20px 25px;">
+                        <div class="element-number" style="background-color: var(--light-section-bg); color: var(--accent-color); border: 2px solid var(--accent-color);">B</div>
+                        <h3>Iteration Tips (Page 15) <i class="fas fa-lightbulb" style="margin-left: 10px;"></i></h3>
+                    </div>
+                    <p style="padding: 0 20px 10px 20px;">Keep these tips in mind during testing and iteration. Write your key takeaways in the dotted lines on Page 15.</p>
+                    <ul style="padding: 0 40px 20px 40px;">
+                        <li><i class="fas fa-angle-right" style="color: var(--accent-color); margin-right: 8px;"></i> <strong>Focus on the User's Goal:</strong> Does the prototype help the user achieve what they need to do? That's the main measure of success.</li>
+                        <li><i class="fas fa-angle-right" style="color: var(--accent-color); margin-right: 8px;"></i> <strong>Test One Big Change at a Time:</strong> If you change too many things between tests, you won't know which change caused the improvement (or problem!).</li>
+                        <li><i class="fas fa-angle-right" style="color: var(--accent-color); margin-right: 8px;"></i> <strong>Failure is Learning:</strong> If your prototype breaks or doesn't work as expected, that's valuable information! Figure out *why* it failed and learn from it.</li>
+                        <li><i class="fas fa-angle-right" style="color: var(--accent-color); margin-right: 8px;"></i> <strong>Record Everything:</strong> Write down observations, quotes from users, measurements, what broke, what worked well. Good notes are crucial for making smart changes.</li>
+                         <li><i class="fas fa-angle-right" style="color: var(--accent-color); margin-right: 8px;"></i> <strong>Refer Back to Your Criteria:</strong> Check if your prototype is meeting the 'Must Have' criteria you set on Page 11. Use feedback to get closer to meeting them.</li>
+                    </ul>
+                </div>
+
+                 <!-- Documentation Strategy -->
+                 <div class="interactive-card" style="margin-top: 30px;">
+                    <div class="element-header" style="margin: -35px -35px 30px -35px; padding: 20px 25px;">
+                        <div class="element-number" style="background-color: var(--light-section-bg); color: var(--accent-color); border: 2px solid var(--accent-color);">C</div>
+                        <h3>Documentation Strategy (Page 15) <i class="fas fa-book-open" style="margin-left: 10px;"></i></h3>
+                    </div>
+                    <p style="padding: 0 20px 10px 20px;">How will you record your testing results and the changes you make? Plan this and write it in the box on Page 15.</p>
+                    <p style="padding: 0 20px 10px 20px;">Think about:</p>
+                     <ul style="padding: 0 40px 20px 40px;">
+                        <li><strong>What data to collect:</strong> User quotes? Observation notes? Photos/videos of testing? Success/failure rates? Measurements? Scores against criteria?</li>
+                        <li><strong>Tools:</strong> Observation sheets? Video camera? Survey forms (digital or paper)? Your workbook?</li>
+                        <li><strong>Organisation:</strong> How will you keep track of feedback for Iteration 1 vs. Iteration 2? How will you summarise the key findings?</li>
+                    </ul>
+                     <p style="padding: 0 20px 20px 20px;"><strong>Example Sentence Starters for your Plan:</strong></p>
+                     <ul style="padding: 0 40px 20px 40px; list-style-type: none;">
+                        <li><i class="fas fa-user-friends" style="margin-right: 8px; color: var(--accent-color);"></i> "During user testing, we will record [Type of data, e.g., observations and direct quotes] using [Tool, e.g., a shared document]."</li>
+                        <li><i class="fas fa-video" style="margin-right: 8px; color: var(--accent-color);"></i> "We plan to [Action, e.g., video record the user interaction (with permission)] to review later."</li>
+                        <li><i class="fas fa-highlighter" style="margin-right: 8px; color: var(--accent-color);"></i> "Key findings from each test will be summarised using [Method, e.g., bullet points focusing on problems and successes]."</li>
+                         <li><i class="fas fa-edit" style="margin-right: 8px; color: var(--accent-color);"></i> "Changes made for the next iteration will be documented with [Method, e.g., labelled sketches and notes] in the workbook."</li>
+                    </ul>
+                 </div>
+            </div>
+        </section>
+
+        <!-- Tab 2: Iteration Cycles (Workbook Pages 16-18 Guidance) -->
+        <section id="testing-iterations" class="tab-content light-section">
+             <h1><i class="fas fa-recycle" style="margin-right: 15px;"></i>TEST + ITERATE: ITERATION CYCLES</h1>
+             <p>This section explains the process for documenting each **Iteration Cycle** on <strong>Workbook Pages 16, 17, and 18</strong>. An iteration is one round of testing and improving.</p>
+
+             <div class="card">
+                <div class="element-header" style="margin: -35px -40px 30px -40px; padding: 25px 35px;">
+                    <div class="element-number">1</div>
+                    <h3>Understanding the Iteration Cycle <i class="fas fa-sync-alt" style="margin-left: 15px; color: var(--accent-color);"></i></h3>
+                </div>
+                <p>Each iteration page (16, 17, 18) follows a similar pattern: You show what you tested, summarise what you learned, and show how you improved it for the *next* round. Think of it like this:</p>
+
+                <div class="interactive-card" style="padding: 20px;">
+                    <div class="iteration-step">
+                         <h5><i class="fas fa-search"></i> Step 1: Document the 'Before' (Top of Page 16/17/18)</h5>
+                         <p>In the top section (with image placeholders):</p>
+                         <ul>
+                            <li>Sketch or add photos of the prototype version you are *about to test*.</li>
+                            <li>Briefly describe this version. What specific feature or aspect are you testing in this iteration?</li>
+                            <li><strong>Example:</strong> "Iteration 1: Testing the initial handle shape for comfort and grip."</li>
+                         </ul>
+                    </div>
+
+                    <div style="text-align: center; margin: 10px 0; color: var(--accent-color); font-size: 1.5em;">
+                         <i class="fas fa-arrow-down"></i>
+                    </div>
+
+                     <div class="iteration-step" style="background-color: #fffbe6; border-color: #ffe58f;">
+                         <h5 style="color: #d48806;"><i class="fas fa-comments"></i> Step 2: Summarise the Test & Feedback (Middle Box on Page 16/17/18)</h5>
+                         <p>In the rectangular box below the first images:</p>
+                         <ul>
+                            <li>Describe *how* you tested it (e.g., "User testing with Sarah," "Roleplay simulation using gloves").</li>
+                            <li>Summarise the key findings: What worked well? What problems occurred? What feedback did you get? Be specific!</li>
+                            <li><strong>Example:</strong> "Tested with Sarah. She found the handle too thin and hard to grip securely. It slipped when twisting. The overall size was good. Suggestion: Make handle thicker and add texture."</li>
+                         </ul>
+                    </div>
+
+                    <div style="text-align: center; margin: 10px 0; color: var(--accent-color); font-size: 1.5em;">
+                         <i class="fas fa-arrow-down"></i>
+                    </div>
+
+                    <div class="iteration-step" style="background-color: #f6ffed; border-color: #b7eb8f;">
+                        <h5 style="color: #389e0d;"><i class="fas fa-lightbulb"></i> Step 3: Document the 'After' - The Improvement (Bottom of Page 16/17/18)</h5>
+                        <p>Based on the feedback, you make changes! In the bottom section (with image placeholders):</p>
+                        <ul>
+                            <li>Sketch or add photos of the *new, improved* version of the prototype. Highlight the changes.</li>
+                            <li>Explain *what* you changed and *why* based on the feedback. This becomes the version you'll test in the *next* iteration (if you do one).</li>
+                            <li><strong>Example:</strong> "Iteration 1 Changes: Increased handle diameter by 5mm. Added cross-hatch texture using CAD software for better grip. Ready for Iteration 2 testing."</li>
+                        </ul>
+                    </div>
+                </div>
+                <p style="margin-top: 20px; font-style: italic;">You repeat this entire process for each iteration page you use in your workbook (Page 16 for the first test, Page 17 for the second, etc.). Not every project needs three full iterations – do as many as needed to get a good result!</p>
+            </div>
+        </section>
+
+        <!-- Tab 3: Final Summary (Workbook Page 19 Guidance) -->
+        <section id="testing-final" class="tab-content light-section">
+             <h1><i class="fas fa-flag-checkered" style="margin-right: 15px;"></i>TEST + ITERATE: FINAL SUMMARY & REFLECTION</h1>
+             <p>After completing your testing and iteration cycles, it's time to summarise your final design and reflect on the process using <strong>Workbook Page 19</strong>.</p>
+
+             <div class="card">
+                 <div class="element-header" style="margin: -35px -40px 30px -40px; padding: 25px 35px;">
+                    <div class="element-number">1</div>
+                    <h3>Final Product Summary (Page 19) <i class="fas fa-award" style="margin-left: 15px; color: var(--accent-color);"></i></h3>
+                </div>
+                <p>This is where you describe the final version of your assistive technology product after all the improvements.</p>
+
+                 <div class="interactive-card">
+                    <div class="element-header" style="margin: -35px -35px 30px -35px; padding: 20px 25px;">
+                         <div class="element-number" style="background-color: var(--light-section-bg); color: var(--accent-color); border: 2px solid var(--accent-color);">A</div>
+                         <h3>Writing the Summary <i class="fas fa-file-signature" style="margin-left: 10px;"></i></h3>
+                    </div>
+                    <p style="padding: 0 20px 10px 20px;">Think about:</p>
+                    <ul style="padding: 0 40px 20px 40px;">
+                        <li>What is the final product called?</li>
+                        <li>What specific problem does it solve for your user?</li>
+                        <li>How does it work in simple terms?</li>
+                        <li>What makes it suitable for your user (consider ergonomics, ease of use, aesthetics)?</li>
+                        <li>How did the iteration process improve it from the initial prototype?</li>
+                    </ul>
+                    <p style="padding: 0 20px 10px 20px;"><strong>Example Sentence Starters for the Summary Box on Page 19:</strong></p>
+                     <ul style="padding: 0 40px 20px 40px; list-style-type: none;">
+                         <li><i class="fas fa-play" style="margin-right: 8px; color: var(--accent-color);"></i> "Our final assistive technology is the 'GripEasy Jar Opener'."</li>
+                         <li><i class="fas fa-user" style="margin-right: 8px; color: var(--accent-color);"></i> "It is designed to help [User Name] independently open standard-sized jars, addressing their challenge with limited grip strength."</li>
+                         <li><i class="fas fa-cogs" style="margin-right: 8px; color: var(--accent-color);"></i> "The device works by..."</li>
+                         <li><i class="fas fa-thumbs-up" style="margin-right: 8px; color: var(--accent-color);"></i> "Through testing and iteration, we improved the handle comfort and ensured it requires minimal force to operate."</li>
+                    </ul>
+                 </div>
+            </div>
+
+             <div class="card">
+                 <div class="element-header" style="margin: -35px -40px 30px -40px; padding: 25px 35px;">
+                    <div class="element-number">2</div>
+                    <h3>Key Features (Page 19) <i class="fas fa-star" style="margin-left: 15px; color: var(--accent-color);"></i></h3>
+                </div>
+                <p>List the most important and distinct features of your final product. These should directly relate to how it helps the user and meets the design criteria.</p>
+
+                <div class="interactive-card">
+                     <div class="element-header" style="margin: -35px -35px 30px -35px; padding: 20px 25px;">
+                         <div class="element-number" style="background-color: var(--light-section-bg); color: var(--accent-color); border: 2px solid var(--accent-color);">B</div>
+                         <h3>Identifying Key Features <i class="fas fa-list" style="margin-left: 10px;"></i></h3>
+                     </div>
+                    <p style="padding: 0 20px 10px 20px;">Think about what makes your design special or effective. Aim for 3-5 clear, specific features.</p>
+                    <div style="padding: 0 20px 20px 20px;">
+                        <p><strong>Examples based on the 'GripEasy Jar Opener':</strong></p>
+                        <div class="feature-item"><strong>Feature 1:</strong> Ergonomically shaped handle designed for comfortable, low-force grip.</div>
+                        <div class="feature-item"><strong>Feature 2:</strong> Textured grip surface on handle to prevent slipping.</div>
+                        <div class="feature-item"><strong>Feature 3:</strong> Internal clamp mechanism fits standard 7-9cm jar lids securely.</div>
+                        <div class="feature-item"><strong>Feature 4:</strong> Single-piece 3D printed design for simplicity and durability.</div>
+                        <div class="feature-item"><strong>Feature 5:</strong> Wide base provides stability during use.</div>
+                    </div>
+                     <p style="padding: 0 20px 20px 20px; font-style: italic;">Write your product's key features in the spaces provided on Page 19.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                 <div class="element-header" style="margin: -35px -40px 30px -40px; padding: 25px 35px;">
+                    <div class="element-number">3</div>
+                    <h3>Checklist & Notes (Page 19) <i class="fas fa-clipboard-check" style="margin-left: 15px; color: var(--accent-color);"></i></h3>
+                </div>
+                 <p>The final part of Page 19 is for reflecting on your evaluation process.</p>
+
+                 <div class="interactive-card" style="margin-top: 30px;">
+                     <div class="element-header" style="margin: -35px -35px 30px -35px; padding: 20px 25px;">
+                         <div class="element-number" style="background-color: var(--light-section-bg); color: var(--accent-color); border: 2px solid var(--accent-color);">C</div>
+                         <h3>The Checklist Explained <i class="fas fa-tasks" style="margin-left: 10px;"></i></h3>
+                     </div>
+                     <p style="padding: 0 20px 10px 20px;">Let's break down the checklist items:</p>
+                      <ul style="padding: 0 40px 20px 40px;">
+                        <li><i class="fas fa-check" style="color: var(--accent-color); margin-right: 8px;"></i> <strong>"I evaluated the functionality, ergonomics, aesthetics and production methods of my prototype."</strong>
+                            <ul>
+                                <li><em>Functionality:</em> Does it do the job it's supposed to do?</li>
+                                <li><em>Ergonomics:</em> Is it comfortable and easy for the user to hold and operate?</li>
+                                <li><em>Aesthetics:</em> Does it look reasonably good (or at least not off-putting)?</li>
+                                <li><em>Production methods:</em> Did you consider how it was made (e.g., 3D printing quality, assembly)? Did you check if these were suitable?</li>
+                            </ul>
+                        </li>
+                        <li><i class="fas fa-check" style="color: var(--accent-color); margin-right: 8px;"></i> <strong>"I used my evaluation data to develop improved iterations of my prototype."</strong>
+                             <ul>
+                                <li>Did the feedback you collected during testing *actually* lead to specific changes and improvements in your later versions? (This is the core of iteration!)</li>
+                             </ul>
+                        </li>
+                    </ul>
+                     <p style="padding: 0 20px 20px 20px; font-style: italic;">Tick the boxes on Page 19 if you feel you completed these steps effectively.</p>
+                 </div>
+
+                 <div class="interactive-card" style="margin-top: 30px;">
+                     <div class="element-header" style="margin: -35px -35px 30px -35px; padding: 20px 25px;">
+                         <div class="element-number" style="background-color: var(--light-section-bg); color: var(--accent-color); border: 2px solid var(--accent-color);">D</div>
+                         <h3>Making Final Notes <i class="fas fa-pen-fancy" style="margin-left: 10px;"></i></h3>
+                     </div>
+                     <p style="padding: 0 20px 10px 20px;">Use the 'Notes' box on Page 19 for any final thoughts on the entire Test and Iterate process.</p>
+                      <p style="padding: 0 20px 10px 20px;">You could write about:</p>
+                       <ul style="padding: 0 40px 20px 40px;">
+                        <li>The biggest challenges faced during testing.</li>
+                        <li>The most surprising feedback you received.</li>
+                        <li>What you learned about the design process through iteration.</li>
+                        <li>Any ideas for future improvements beyond this project.</li>
+                        <li>How well the final product met the initial user needs.</li>
+                    </ul>
+                 </div>
+            </div>
+
+             
+        </section>
+
+    </main>
+
+    <script>
+        // Basic Tab Navigation Logic
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('.sidebar-nav .tab-button');
+            const contents = document.querySelectorAll('.main-content .tab-content');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', function() {
+                    const targetId = this.getAttribute('data-tab');
+
+                    // Update button active state
+                    tabs.forEach(t => t.classList.remove('active'));
+                    this.classList.add('active');
+
+                    // Update content active state
+                    contents.forEach(content => {
+                        if (content.id === targetId) {
+                            content.classList.add('active');
+                        } else {
+                            content.classList.remove('active');
+                        }
+                    });
+                });
+            });
+
+            // Ensure the first tab is active on load if none are pre-set
+            const activeTab = document.querySelector('.sidebar-nav .tab-button.active');
+            if (!activeTab && tabs.length > 0) {
+                tabs[0].click(); // Simulate a click on the first tab
+            } else if (activeTab){
+                 // Ensure the corresponding content is visible
+                 const activeContentId = activeTab.getAttribute('data-tab');
+                 const activeContent = document.getElementById(activeContentId);
+                 contents.forEach(content => content.classList.remove('active'));
+                 if(activeContent) activeContent.classList.add('active');
+            }
+        });
+    </script>
+</body>
+</html>
