@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make:able - Step 05: Idea Generation</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Assume this has the base styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/inter-ui/3.19.3/inter.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Favicon Icons -->
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
+
+    <style>
+        /* Additional styles if needed, but aiming to use only styles.css implied structure */
+        .method-explanation { background-color: rgba(0,0,0,0.03); padding: 15px; border-radius: var(--border-radius); margin-bottom: 15px; border-left: 4px solid var(--accent-color); }
+        .method-explanation h5 { margin-top: 0; color: var(--accent-color); font-size: 1.1em; }
+        .method-explanation p { margin-bottom: 5px; font-size: 0.95em; }
+        .method-explanation ul { margin-top: 5px; margin-bottom: 0; padding-left: 20px; font-size: 0.95em; }
+
+        .criteria-example-box { background-color: #f0f7ff; border: 1px solid #cce4ff; padding: 15px; border-radius: var(--border-radius); margin-top: 15px;}
+        .criteria-example-box h5 { color: #096dd9; margin-top: 0;}
+        .criteria-item { display: inline-block; background-color: white; border: 1px solid #ddd; padding: 5px 10px; border-radius: 15px; margin: 3px; font-size: 0.9em; }
+        .criteria-must { border-color: #f5222d; color: #f5222d; font-weight: bold;} /* Red for Must */
+        .criteria-should { border-color: #faad14; color: #faad14;} /* Orange for Should */
+        .criteria-could { border-color: #52c41a; color: #52c41a;} /* Green for Could */
+
+    </style>
+</head>
+<body>
+    <!-- Sidebar Navigation - Focused on Ideation Tabs -->
+    <aside class="sidebar" style="overflow-y: auto; overflow-x: hidden;">
+        <div class="sidebar-logo">IDEATION STAGE</div>
+        <a href="index.html" class="home-button">
+            <i class="fas fa-home"></i>
+            HOME
+        </a>
+        <div class="sidebar-nav">
+            <button class="tab-button active" data-tab="ideation-methods">
+                <i class="fas fa-tools"></i>
+                METHODS & TIPS
+            </button>
+            <button class="tab-button" data-tab="ideation-capture">
+                <i class="fas fa-camera-retro"></i>
+                CAPTURE IDEAS
+            </button>
+            <button class="tab-button" data-tab="ideation-refine">
+                <i class="fas fa-filter"></i>
+                REFINE
+            </button>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- Tab 1: Methods & Tips (Workbook Page 9 Guidance) -->
+        <section id="ideation-methods" class="tab-content active light-section">
+            <h1><i class="fas fa-tools" style="margin-right: 15px;"></i>IDEATION: METHODS & TIPS</h1>
+            <p>This section helps you understand and choose brainstorming methods, remember useful tips, and plan how to record your ideas, all for <strong>Workbook Page 9</strong>.</p>
+            <p><strong>Ideation</strong> is about generating lots of creative solutions to the design challenge you defined earlier.</p>
+
+            <div class="card">
+                <div class="element-header" style="margin: -35px -40px 30px -40px; padding: 25px 35px;">
+                    <div class="element-number">1</div>
+                    <h3>Choosing Your Brainstorming Methods (Page 9) <i class="fas fa-tasks" style="margin-left: 15px; color: var(--accent-color);"></i></h3>
+                </div>
+
+                <p>Your workbook lists several ways to brainstorm. Understanding them helps you pick the best ones for your team. Tick the ones you'll use on Page 9.</p>
+
+                 <!-- Explaining Methods -->
+                <div class="interactive-card">
+                    <div class="element-header" style="margin: -35px -35px 30px -35px; padding: 20px 25px;">
+                         <div class="element-number" style="background-color: var(--light-section-bg); color: var(--accent-color); border: 2px solid var(--accent-color);">A</div>
+                         <h3>Ideation Methods Explained <i class="fas fa-info-circle" style="margin-left: 10px;"></i></h3>
+                    </div>
+                    <div style="padding: 0 20px 20px 20px;">
+                        <div class="method-explanation">
+                            <h5><i class="fas fa-pencil-ruler" style="margin-right: 8px; color: var(--accent-color);"></i> Icon Sketching</h5>
+                            <p><strong>What:</strong> Quickly drawing simple pictures or symbols for ideas.</p>
+                            <p><strong>How:</strong> Everyone grabs markers and paper (or sticky notes). Set a timer (5-10 min). Draw as many solution ideas as possible. Use basic shapes, arrows, labels. It's about speed and visual communication, not perfect art.</p>
+                            <p><strong>Why:</strong> Fast, helps visualise concepts, great for people who think visually, can be less intimidating than writing.</p>
+                        </div>
+
+                        <div class="method-explanation">
+                            <h5><i class="fas fa-users" style="margin-right: 8px; color: var(--accent-color);"></i> Group Brainstorm</h5>
+                            <p><strong>What:</strong> The team calls out ideas spontaneously while one person writes them all down where everyone can see.</p>
+                            <p><strong>How:</strong> Gather around a whiteboard or large paper. Choose a scribe. Everyone calls out ideas related to the design challenge. Key rules: no criticism allowed, encourage wild ideas, build on others' thoughts ("Yes, and..."), aim for a high number of ideas.</p>
+                            <p><strong>Why:</strong> High energy, builds team collaboration, allows ideas to spark off each other quickly.</p>
+                        </div>
+
+                        <div class="method-explanation">
+                           <h5><i class="fas fa-layer-group" style="margin-right: 8px; color: var(--accent-color);"></i> Priority Diagramming</h5>
+                           <p><strong>What:</strong> Organising generated ideas on a chart based on factors like importance, feasibility (how easy it is to make), or user impact.</p>
+                           <p><strong>How:</strong> After brainstorming, write each distinct idea on a separate sticky note. Draw axes on a board (e.g., "Impact on User" vs. "Effort to Build"). Discuss as a team where each idea fits and place the notes on the chart.</p>
+                           <p><strong>Why:</strong> Helps visualise the potential of different ideas, aids in deciding which concepts to explore further, good for initial sorting.</p>
+                        </div>
+
+                        <div class="method-explanation">
+                           <h5><i class="fas fa-map-pin" style="margin-right: 8px; color: var(--accent-color);"></i> Dot Voting</h5>
+                           <p><strong>What:</strong> A quick, democratic way for the team to show preference for certain ideas after brainstorming.</p>
+                           <p><strong>How:</strong> Display all the ideas clearly (e.g., sticky notes on a wall). Give each team member a small number of dots (e.g., 3-5 stickers or marker dots). Everyone places their dots on the ideas they think are the strongest or most promising, without discussion initially. Tally the dots.</p>
+                           <p><strong>Why:</strong> Quick consensus building, gives everyone an equal voice, helps narrow down options efficiently.</p>
+                        </div>
+                         <p style="font-style: italic;">Remember to also consider the blank spaces on page 9 to add any other methods your team uses!</p>
+                    </div>
+                </div>
+
+                <!-- Ideation Tips -->
+                <div class="interactive-card" style="margin-top: 30px;">
+                    <div class="element-header" style="margin: -35px -35px 30px -35px; padding: 20px 25px;">
+                        <div class="element-number" style="background-color: var(--light-section-bg); color: var(--accent-color); border: 2px solid var(--accent-color);">B</div>
+                        <h3>Ideation Tips (Page 9) <i class="fas fa-lightbulb" style="margin-left: 10px;"></i></h3>
+                    </div>
+                    <p style="padding: 0 20px 10px 20px;">These tips help make brainstorming more effective. Write them (or similar ones) in the dotted lines on Page 9.</p>
+                    <ul style="padding: 0 40px 20px 40px;">
+                        <li><i class="fas fa-angle-right" style="color: var(--accent-color); margin-right: 8px;"></i> <strong>Defer Judgement:</strong> Don't criticise ideas during brainstorming (yours or others'). Just get them out! Analysis comes later.</li>
+                        <li><i class="fas fa-angle-right" style="color: var(--accent-color); margin-right: 8px;"></i> <strong>Encourage Wild Ideas:</strong> Sometimes the craziest ideas spark the most innovative solutions. It's easier to tone down a wild idea than to make a boring one exciting.</li>
+                        <li><i class="fas fa-angle-right" style="color: var(--accent-color); margin-right: 8px;"></i> <strong>Build on the Ideas of Others:</strong> Use "Yes, and..." thinking. Listen to teammates and see how you can combine or improve their concepts.</li>
+                        <li><i class="fas fa-angle-right" style="color: var(--accent-color); margin-right: 8px;"></i> <strong>Stay Focused on the Topic:</strong> Keep the main design challenge ("How Might We...") in mind to ensure ideas are relevant.</li>
+                         <li><i class="fas fa-angle-right" style="color: var(--accent-color); margin-right: 8px;"></i> <strong>One Conversation at a Time:</strong> Avoid side conversations during group brainstorms so everyone can hear and build on ideas.</li>
+                        <li><i class="fas fa-angle-right" style="color: var(--accent-color); margin-right: 8px;"></i> <strong>Be Visual:</strong> Sketch! Draw! Use diagrams! Visuals communicate complex ideas quickly.</li>
+                        <li><i class="fas fa-angle-right" style="color: var(--accent-color); margin-right: 8px;"></i> <strong>Go for Quantity:</strong> Aim for a large number of ideas. The more ideas you generate, the higher the chance of finding a truly great one.</li>
+                    </ul>
+                </div>
+
+                 <!-- Documentation Strategy -->
+                 <div class="interactive-card" style="margin-top: 30px;">
+                    <div class="element-header" style="margin: -35px -35px 30px -35px; padding: 20px 25px;">
+                        <div class="element-number" style="background-color: var(--light-section-bg); color: var(--accent-color); border: 2px solid var(--accent-color);">C</div>
+                        <h3>Documentation Strategy (Page 9) <i class="fas fa-save" style="margin-left: 10px;"></i></h3>
+                    </div>
+                    <p style="padding: 0 20px 10px 20px;">How will you capture all these ideas? Plan it out and write it in the box on Page 9.</p>
+                    <p style="padding: 0 20px 10px 20px;">Consider:</p>
+                     <ul style="padding: 0 40px 20px 40px;">
+                        <li><strong>Tools:</strong> Sticky notes? Whiteboard? Shared digital document (like OneNote or Google Docs)? Notebooks? Camera?</li>
+                        <li><strong>Process:</strong> Who will write/draw? Will you take photos? How will you ensure every idea is captured?</li>
+                        <li><strong>Storage:</strong> How will you keep the ideas safe and accessible for the next steps?</li>
+                    </ul>
+                     <p style="padding: 0 20px 20px 20px;"><strong>Example Sentence Starters for your Plan:</strong></p>
+                     <ul style="padding: 0 40px 20px 40px; list-style-type: none;">
+                        <li><i class="fas fa-pencil-alt" style="margin-right: 8px; color: var(--accent-color);"></i> "We will use [Tool, e.g., large sticky notes] during our [Method, e.g., group brainstorm]."</li>
+                        <li><i class="fas fa-user-edit" style="margin-right: 8px; color: var(--accent-color);"></i> "[Person's Name or Role, e.g., The Scribe] will be responsible for writing/drawing each idea clearly."</li>
+                        <li><i class="fas fa-camera" style="margin-right: 8px; color: var(--accent-color);"></i> "After the session, we will [Action, e.g., take photos of the whiteboard/notes]."</li>
+                         <li><i class="fas fa-archive" style="margin-right: 8px; color: var(--accent-color);"></i> "The ideas will be stored [Location, e.g., in our shared OneNote project folder]."</li>
+                    </ul>
+                 </div>
+            </div>
+        </section>
+
+        <!-- Tab 2: Capture Ideas (Workbook Page 10 Guidance) -->
+        <section id="ideation-capture" class="tab-content light-section">
+             <h1><i class="fas fa-camera-retro" style="margin-right: 15px;"></i>IDEATION: CAPTURE IDEAS</h1>
+             <p>This section guides you through documenting your top ideas and choosing the key one for <strong>Workbook Page 10</strong>.</p>
+
+             <div class="card">
+                <div class="element-header" style="margin: -35px -40px 30px -40px; padding: 25px 35px;">
+                    <div class="element-number">1</div>
+                    <h3>Documenting Your Top Ideas (Page 10) <i class="fas fa-pencil-ruler" style="margin-left: 15px; color: var(--accent-color);"></i></h3>
+                </div>
+                <p>After brainstorming and maybe doing some initial sorting (like dot voting or priority diagramming), select your team's top 4 most promising ideas. Page 10 provides space to sketch or describe each one clearly.</p>
+
+                <div class="interactive-card">
+                     <div class="element-header" style="margin: -35px -35px 30px -35px; padding: 20px 25px;">
+                         <div class="element-number" style="background-color: var(--light-section-bg); color: var(--accent-color); border: 2px solid var(--accent-color);">A</div>
+                         <h3>Sketching & Describing Clearly <i class="fas fa-comments" style="margin-left: 10px;"></i></h3>
+                     </div>
+                     <p style="padding: 0 20px 10px 20px;">The goal here is communication. Someone unfamiliar with your idea should be able to understand its basic concept from your entry on Page 10.</p>
+                     <div class="two-column-grid" style="padding: 0 20px 20px 20px;">
+                        <div style="background-color: rgba(0,0,0,0.03); padding: 15px; border-radius: var(--border-radius);">
+                             <h4><i class="fas fa-drafting-compass" style="color: var(--accent-color); margin-right: 8px;"></i> Sketching Tips:</h4>
+                             <ul style="font-size: 0.95em;">
+                                 <li>Use clear outlines.</li>
+                                 <li>Show scale if important (e.g., next to a hand).</li>
+                                 <li>Use labels and arrows for key parts.</li>
+                                 <li>Consider a simple sequence showing how it works.</li>
+                                 <li>Add brief text notes for explanation.</li>
+                             </ul>
+                        </div>
+                         <div style="background-color: rgba(0,0,0,0.03); padding: 15px; border-radius: var(--border-radius);">
+                             <h4><i class="fas fa-file-alt" style="color: var(--accent-color); margin-right: 8px;"></i> Describing Tips:</h4>
+                              <ul style="font-size: 0.95em;">
+                                 <li>Start with a clear name or title for the idea.</li>
+                                 <li>Explain *what* it does for the user.</li>
+                                 <li>Describe *how* it generally works.</li>
+                                 <li>Mention key features or unique aspects.</li>
+                                 <li>Keep it concise and focused.</li>
+                             </ul>
+                        </div>
+                     </div>
+                     <p style="padding: 0 20px 20px 20px; font-style: italic;">Use the four boxes on Page 10 to capture your top ideas using these techniques.</p>
+                 </div>
+            </div>
+
+            <div class="card">
+                 <div class="element-header" style="margin: -35px -40px 30px -40px; padding: 25px 35px;">
+                    <div class="element-number">2</div>
+                    <h3>Summarising and Choosing (Page 10) <i class="fas fa-key" style="margin-left: 15px; color: var(--accent-color);"></i></h3>
+                </div>
+                <p>Page 10 also asks you to summarise your pool of ideas and then identify the single 'Key Idea' your team will pursue.</p>
+
+                 <div class="interactive-card" style="margin-top: 30px;">
+                     <div class="element-header" style="margin: -35px -35px 30px -35px; padding: 20px 25px;">
+                         <div class="element-number" style="background-color: var(--light-section-bg); color: var(--accent-color); border: 2px solid var(--accent-color);">B</div>
+                         <h3>Summary of Ideas <i class="fas fa-list-ul" style="margin-left: 10px;"></i></h3>
+                     </div>
+                     <p style="padding: 0 20px 10px 20px;">Look back at all the ideas you generated, not just the top 4. What overall approaches did your team explore? What common problems were you trying to solve?</p>
+                     <p style="padding: 0 20px 10px 20px;">Use sentence starters like these for the 'Summary' box on Page 10:</p>
+                     <ul style="padding: 0 40px 20px 40px;">
+                        <li>"Our brainstorming explored solutions for [main user challenge], including ideas related to..."</li>
+                        <li>"Common strategies in our ideas involved using [mechanism/approach] or changing [aspect of task]."</li>
+                        <li>"We generated ideas ranging from simple modifications like [example] to more complex devices like [example]."</li>
+                    </ul>
+                 </div>
+
+                  <div class="interactive-card" style="margin-top: 30px;">
+                     <div class="element-header" style="margin: -35px -35px 30px -35px; padding: 20px 25px;">
+                         <div class="element-number" style="background-color: var(--light-section-bg); color: var(--accent-color); border: 2px solid var(--accent-color);">C</div>
+                         <h3>The Key Idea <i class="fas fa-lightbulb" style="margin-left: 10px;"></i></h3>
+                     </div>
+                     <p style="padding: 0 20px 10px 20px;">This is the big decision! Discuss as a team and select the ONE idea you believe is the most promising to develop into a prototype.</p>
+                     <p style="padding: 0 20px 10px 20px;">Think about:</p>
+                      <ul style="padding: 0 40px 10px 40px;">
+                        <li>Which idea best addresses the user's core need (from your Define phase)?</li>
+                        <li>Which seems most feasible to build within the project constraints (time, materials, skills)?</li>
+                        <li>Which one genuinely excites your team?</li>
+                      </ul>
+                     <p style="padding: 0 20px 10px 20px;">Describe this chosen Key Idea clearly in the final box on Page 10. Explain *why* you chose it.</p>
+                     <ul style="padding: 0 40px 20px 40px;">
+                         <li>"Our Key Idea is [Name/Concept of Idea]."</li>
+                         <li>"We selected this because it strongly addresses [User Need] and seems achievable with [Available Resources/Skills]."</li>
+                         <li>"It works by [Brief explanation of mechanism/function]."</li>
+                         <li>"We believe this has the potential to significantly improve [User's Goal/Experience]."</li>
+                     </ul>
+                 </div>
+            </div>
+        </section>
+
+        <!-- Tab 3: Refine Criteria (Workbook Page 11 Guidance) -->
+        <section id="ideation-refine" class="tab-content light-section">
+             <h1><i class="fas fa-filter" style="margin-right: 15px;"></i>IDEATION: REFINE CRITERIA</h1>
+             <p>This final Ideation step helps you define success for your chosen Key Idea using <strong>Workbook Page 11</strong>. You'll prioritise features and reflect on the process.</p>
+
+             <div class="card">
+                <div class="element-header" style="margin: -35px -40px 30px -40px; padding: 25px 35px;">
+                    <div class="element-number">1</div>
+                    <h3>Refining Design Criteria (Page 11 Chart) <i class="fas fa-bullseye" style="margin-left: 15px; color: var(--accent-color);"></i></h3>
+                </div>
+                <p>You have your Key Idea. Now, what features or requirements *must* it have to be successful for your user? What features *should* it have? What *could* it have if time/resources allow? Page 11's chart helps you prioritise these **Design Criteria**.</p>
+
+                <div class="interactive-card">
+                     <div class="element-header" style="margin: -35px -35px 30px -35px; padding: 20px 25px;">
+                         <div class="element-number" style="background-color: var(--light-section-bg); color: var(--accent-color); border: 2px solid var(--accent-color);">A</div>
+                         <h3>Understanding the Criteria Chart <i class="fas fa-map-signs" style="margin-left: 10px;"></i></h3>
+                     </div>
+                     <p style="padding: 0 20px 10px 20px;">Think of the chart on Page 11 like a target for your Key Idea's features:</p>
+                     <ul style="padding: 0 40px 20px 40px;">
+                        <li><i class="fas fa-circle" style="color: #f5222d; margin-right: 8px;"></i> <strong>Inner Circle (Centre):</strong> This is for the absolute **MUST-HAVE** criteria. These are essential for the solution to work for the user and solve their main problem. They should also be **Actionable** – things you can realistically achieve in this project.</li>
+                        <li><i class="fas fa-dot-circle" style="color: #faad14; margin-right: 8px;"></i> <strong>Middle Ring(s):</strong> This area is for **SHOULD-HAVE** criteria. These are important features that would significantly improve the solution, but might be slightly less critical than the 'Must-Haves', or perhaps a bit harder to implement perfectly.</li>
+                        <li><i class="far fa-circle" style="color: #52c41a; margin-right: 8px;"></i> <strong>Outer Ring:</strong> This is for **COULD-HAVE** criteria (or 'Nice-to-Haves'). These are features that would be cool or beneficial but aren't essential for the core function. They might be harder to achieve, lower priority, or things to consider for future improvements ('long-term considerations').</li>
+                     </ul>
+                     <p style="padding: 0 20px 10px 20px;"><strong>How to use it:</strong> Brainstorm a list of features and requirements for your Key Idea. Write each one down (maybe on small slips of paper). Then, discuss as a team and place each feature onto the chart in your workbook based on its priority level (Must, Should, Could) and how actionable it seems.</p>
+
+                     <!-- Example -->
+                     <div class="criteria-example-box">
+                          <h5><i class="fas fa-lightbulb" style="margin-right: 8px;"></i> Example: Key Idea = Easy-Grip Jar Opener</h5>
+                          <p>Let's say your user needs help opening jars due to weak grip strength. Your criteria might include:</p>
+                          <ul style="list-style-type: none; padding-left: 0;">
+                              <li><i class="fas fa-check" style="color: #f5222d; margin-right: 5px;"></i> **Placed in Inner Circle (Must Have / Actionable):**
+                                  <span class="criteria-item criteria-must">Fits standard jars (e.g., 7-9cm lids)</span>
+                                  <span class="criteria-item criteria-must">Significantly reduces grip force needed</span>
+                                  <span class="criteria-item criteria-must">Can be used with one hand</span>
+                                  <span class="criteria-item criteria-must">Safe to use (no sharp edges)</span>
+                                   <span class="criteria-item criteria-must">Can be 3D printed with school printer</span>
+                              </li>
+                              <li><i class="fas fa-check" style="color: #faad14; margin-right: 5px;"></i> **Placed in Middle Ring (Should Have):**
+                                   <span class="criteria-item criteria-should">Easy to clean / Washable</span>
+                                   <span class="criteria-item criteria-should">Works on slightly different jar sizes</span>
+                                   <span class="criteria-item criteria-should">Doesn't damage the jar lid</span>
+                                   <span class="criteria-item criteria-should">Comfortable handle</span>
+                              </li>
+                               <li><i class="fas fa-check" style="color: #52c41a; margin-right: 5px;"></i> **Placed in Outer Ring (Could Have / Less Actionable / Long Term):**
+                                   <span class="criteria-item criteria-could">Available in multiple colours</span>
+                                   <span class="criteria-item criteria-could">Has a magnet to stick to fridge</span>
+                                   <span class="criteria-item criteria-could">Opens other types of lids (e.g., bottles)</span>
+                                   <span class="criteria-item criteria-could">Made from recycled plastic</span>
+                              </li>
+                          </ul>
+                     </div>
+                 </div>
+            </div>
+
+             <div class="card">
+                 <div class="element-header" style="margin: -35px -40px 30px -40px; padding: 25px 35px;">
+                    <div class="element-number">2</div>
+                    <h3>Checklist & Notes (Page 11) <i class="fas fa-clipboard-check" style="margin-left: 15px; color: var(--accent-color);"></i></h3>
+                </div>
+                 <p>Finally, Page 11 asks you to reflect on your ideation process using the checklist and notes section.</p>
+
+                 <div class="interactive-card" style="margin-top: 30px;">
+                     <div class="element-header" style="margin: -35px -35px 30px -35px; padding: 20px 25px;">
+                         <div class="element-number" style="background-color: var(--light-section-bg); color: var(--accent-color); border: 2px solid var(--accent-color);">B</div>
+                         <h3>The Checklist <i class="fas fa-tasks" style="margin-left: 10px;"></i></h3>
+                     </div>
+                     <p style="padding: 0 20px 10px 20px;">This checklist helps ensure you've followed key Design Thinking steps during ideation:</p>
+                      <ul style="padding: 0 40px 20px 40px;">
+                        <li><strong>Used divergent thinking:</strong> Did you truly brainstorm LOTS of different ideas initially, without limiting yourselves?</li>
+                        <li><strong>Used convergent thinking:</strong> Did you analyse those ideas and make thoughtful choices to narrow them down to your Key Idea?</li>
+                        <li><strong>Determined necessary design criteria:</strong> Did you think specifically about what your Key Idea *needs* to do (based on user needs) to be successful? (Like the Must/Should/Could exercise for the chart).</li>
+                    </ul>
+                     <p style="padding: 0 20px 20px 20px; font-style: italic;">Tick the boxes on Page 11 honestly based on your team's process.</p>
+                 </div>
+
+                 <div class="interactive-card" style="margin-top: 30px;">
+                     <div class="element-header" style="margin: -35px -35px 30px -35px; padding: 20px 25px;">
+                         <div class="element-number" style="background-color: var(--light-section-bg); color: var(--accent-color); border: 2px solid var(--accent-color);">C</div>
+                         <h3>Making Notes <i class="fas fa-book" style="margin-left: 10px;"></i></h3>
+                     </div>
+                     <p style="padding: 0 20px 10px 20px;">Use the 'Notes' box on Page 11 for final reflections on the Ideation stage.</p>
+                      <p style="padding: 0 20px 10px 20px;">Good things to note down:</p>
+                       <ul style="padding: 0 40px 20px 40px;">
+                        <li>Key decisions made during the criteria refinement (why is something a 'Must Have'?).</li>
+                        <li>Any remaining questions or uncertainties about the Key Idea.</li>
+                        <li>Initial thoughts on materials or construction for the prototype.</li>
+                        <li>How the team worked together during ideation.</li>
+                    </ul>
+                 </div>
+            </div>
+
+             
+        </section>
+
+    </main>
+
+    <script>
+        // Basic Tab Navigation Logic
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('.tab-button');
+            const contents = document.querySelectorAll('.tab-content');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', function() {
+                    const targetId = this.getAttribute('data-tab');
+
+                    // Update button active state
+                    tabs.forEach(t => t.classList.remove('active'));
+                    this.classList.add('active');
+
+                    // Update content active state
+                    contents.forEach(content => {
+                        if (content.id === targetId) {
+                            content.classList.add('active');
+                        } else {
+                            content.classList.remove('active');
+                        }
+                    });
+                });
+            });
+
+            // Ensure the first tab is active on load if none are pre-set
+            const activeTab = document.querySelector('.sidebar-nav .tab-button.active');
+            if (!activeTab && tabs.length > 0) {
+                tabs[0].click(); // Simulate a click on the first tab
+            } else if (activeTab){
+                 // Ensure the corresponding content is visible
+                 const activeContentId = activeTab.getAttribute('data-tab');
+                 const activeContent = document.getElementById(activeContentId);
+                 contents.forEach(content => content.classList.remove('active'));
+                 if(activeContent) activeContent.classList.add('active');
+            }
+        });
+    </script>
+</body>
+</html>
