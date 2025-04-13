@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make:able - Step 04: Develop Empathy</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Assume this has the base styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/inter-ui/3.19.3/inter.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Favicon Icons -->
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
+
+    <style>
+        /* Reusing styles from previous examples where applicable */
+        .method-explanation { background-color: rgba(0,0,0,0.03); padding: 15px; border-radius: var(--border-radius); margin-bottom: 15px; border-left: 4px solid var(--accent-color); }
+        .method-explanation h5 { margin-top: 0; color: var(--accent-color); font-size: 1.1em; }
+        .method-explanation p { margin-bottom: 5px; font-size: 0.95em; }
+        .method-explanation ul { margin-top: 5px; margin-bottom: 0; padding-left: 20px; font-size: 0.95em; }
+
+        .insight-guidance { background-color: #f0f7ff; border: 1px solid #cce4ff; padding: 15px; border-radius: var(--border-radius); margin-top: 15px;}
+        .insight-guidance h5 { color: #096dd9; margin-top: 0;}
+
+        .hmw-example { background-color: #f6ffed; border: 1px solid #b7eb8f; padding: 10px 15px; border-radius: var(--border-radius); margin-bottom: 10px; }
+        .hmw-bad-example { background-color: #fff1f0; border: 1px solid #ffa39e; padding: 10px 15px; border-radius: var(--border-radius); margin-bottom: 10px; }
+        .hmw-good-example { background-color: #f6ffed; border: 1px solid #b7eb8f; padding: 10px 15px; border-radius: var(--border-radius); margin-bottom: 10px; }
+
+        .criteria-guidance { background-color: #fff0f6; border: 1px solid #ffadd2; padding: 15px; border-radius: var(--border-radius); margin-top: 15px; }
+        .criteria-guidance h5 { color: #c41d7f; margin-top: 0; }
+
+         .checklist-item-de { /* de for develop-empathy */
+            display: flex;
+            align-items: start;
+            gap: 15px;
+            margin-bottom: 15px;
+            padding: 10px;
+            background-color: rgba(0,0,0,0.02);
+            border-radius: var(--border-radius);
+        }
+        .checklist-item-de input[type="checkbox"] {
+            margin-top: 4px;
+            transform: scale(1.4);
+            accent-color: var(--accent-color);
+        }
+        .checklist-item-de label {
+            font-size: 1em;
+            color: #333;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Sidebar Navigation - Focused on Empathy Tabs -->
+    <aside class="sidebar" style="overflow-y: auto; overflow-x: hidden;">
+        <div class="sidebar-logo">DEVELOP EMPATHY</div>
+        <a href="index.html" class="home-button">
+            <i class="fas fa-home"></i>
+            HOME
+        </a>
+        <div class="sidebar-nav">
+            <button class="tab-button active" data-tab="page-06">
+                <i class="fas fa-file-alt"></i>
+                PAGE 06
+            </button>
+            <button class="tab-button" data-tab="page-07">
+                 <i class="fas fa-file-alt"></i>
+                PAGE 07
+            </button>
+            <button class="tab-button" data-tab="page-08">
+                 <i class="fas fa-file-alt"></i>
+                PAGE 08
+            </button>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- Tab 1: Page 06 Guidance -->
+        <section id="page-06" class="tab-content active light-section">
+            <h1><i class="fas fa-heart" style="margin-right: 15px;"></i>DEVELOP EMPATHY: UNDERSTANDING YOUR USER (PAGE 06)</h1>
+            <p>This is where you start digging deeper into your end user's world. **Empathy** means truly understanding someone else's feelings and experiences. This page helps you plan how you'll learn about your user.</p>
+            <p>This guide will help you complete <strong>Workbook Page 6</strong>.</p>
+
+            <div class="card">
+                <div class="element-header" style="margin: -35px -40px 30px -40px; padding: 25px 35px;">
+                    <div class="element-number">1</div>
+                    <h3>End User Disability (Page 6) <i class="fas fa-wheelchair" style="margin-left: 15px; color: var(--accent-color);"></i></h3>
+                </div>
+                <p>In this first box, summarise what you currently know about the specific disability or challenge your end user faces. Don't guess! Base this on initial information you have or reliable sources.</p>
+                <div class="interactive-card" style="padding: 20px;">
+                    <p>Consider including:</p>
+                     <ul style="padding: 0 20px 0px 20px;">
+                        <li>The name of the condition (if known).</li>
+                        <li>How it affects the user physically (e.g., movement, strength, sensation).</li>
+                        <li>Any impact on daily activities relevant to your project focus.</li>
+                        <li>Are there specific tasks they find difficult?</li>
+                     </ul>
+                     <p><strong>Example:</strong> "Our user, Alex, has Rheumatoid Arthritis, primarily affecting their hands. This causes joint pain, stiffness, and reduced grip strength, making tasks like opening jars, using keys, and writing difficult."</p>
+                     <p style="font-style: italic;">It's okay if you don't know everything yet – that's what the empathy methods are for!</p>
+                </div>
+            </div>
+
+            <div class="card">
+                 <div class="element-header" style="margin: -35px -40px 30px -40px; padding: 25px 35px;">
+                    <div class="element-number">2</div>
+                    <h3>Choosing Empathy Methods (Page 6) <i class="fas fa-search-location" style="margin-left: 15px; color: var(--accent-color);"></i></h3>
+                </div>
+                <p>How will you learn more about your user's experience? Page 6 lists several methods. Choose the ones you plan to use and tick them. Here's more about each:</p>
+
+                <div class="interactive-card">
+                     <div class="element-header" style="margin: -35px -35px 30px -35px; padding: 20px 25px;">
+                         <div class="element-number" style="background-color: var(--light-section-bg); color: var(--accent-color); border: 2px solid var(--accent-color);">A</div>
+                         <h3>Empathy Methods Explained <i class="fas fa-info-circle" style="margin-left: 10px;"></i></h3>
+                     </div>
+                    <div style="padding: 0 20px 20px 20px;">
+                        <div class="method-explanation">
+                             <h5><i class="fas fa-globe-americas" style="margin-right: 8px; color: var(--accent-color);"></i> Online Research</h5>
+                             <p><strong>What:</strong> Finding information online about the specific disability, challenges, existing solutions, and user experiences.</p>
+                             <p><strong>How:</strong> Use reliable sources like reputable health websites (Mayo Clinic, WebMD), disability advocacy groups (Arthritis Australia, Vision Australia), academic articles, or online forums where people share experiences. Look for facts about the condition and personal stories.</p>
+                             <p><strong>Why:</strong> Good starting point, provides background knowledge, helps you form better questions for interviews or observations.</p>
+                        </div>
+                        <div class="method-explanation">
+                             <h5><i class="fas fa-comments" style="margin-right: 8px; color: var(--accent-color);"></i> User Interview</h5>
+                             <p><strong>What:</strong> Talking directly with your end user (or someone very similar) to ask about their life, challenges, needs, and feelings.</p>
+                             <p><strong>How:</strong> Prepare open-ended questions beforehand (e.g., "Can you tell me about...", "What's that like for you?", "What works well/doesn't work?"). Listen more than you talk. Be respectful and curious. Record notes (with permission).</p>
+                             <p><strong>Why:</strong> Provides rich, detailed, personal insights directly from the source. Builds connection and understanding.</p>
+                        </div>
+                        <div class="method-explanation">
+                             <h5><i class="fas fa-theater-masks" style="margin-right: 8px; color: var(--accent-color);"></i> Simulations</h5>
+                             <p><strong>What:</strong> Trying to experience a small part of the user's challenge yourself to build understanding.</p>
+                             <p><strong>How:</strong> Safely simulate a limitation, e.g., wear bulky gloves to mimic reduced dexterity, use Vaseline on glasses for blurred vision, try tasks using only one hand. Reflect on how it felt and what was difficult.</p>
+                             <p><strong>Why:</strong> Can offer a powerful glimpse into physical difficulties and frustrations. Must be done respectfully, knowing it's not the full experience.</p>
+                        </div>
+                         <div class="method-explanation">
+                             <h5><i class="fas fa-eye" style="margin-right: 8px; color: var(--accent-color);"></i> Observations</h5>
+                             <p><strong>What:</strong> Watching the user perform relevant tasks in their natural environment without interfering (with permission).</p>
+                             <p><strong>How:</strong> Ask the user if you can watch them do a task related to the problem (e.g., making breakfast, opening mail). Take notes on their actions, where they struggle, any workarounds they use, and the environment itself. Be unobtrusive.</p>
+                             <p><strong>Why:</strong> Reveals what people *do* (which can differ from what they *say*). Shows real-world context and challenges they might not even think to mention.</p>
+                        </div>
+                         <div class="method-explanation">
+                             <h5><i class="fas fa-map-signs" style="margin-right: 8px; color: var(--accent-color);"></i> Challenge Map</h5>
+                             <p><strong>What:</strong> Visually mapping out the steps of a task or a day, highlighting the specific challenges the user faces at each point.</p>
+                             <p><strong>How:</strong> Break down a relevant activity (e.g., "Getting Ready in the Morning") into small steps. For each step, note down the difficulties the user experiences based on your research/interviews/observations. You could use sticky notes or a flowchart.</p>
+                             <p><strong>Why:</strong> Helps visualise the sequence of challenges, identifies key pain points, and shows where interventions might be most helpful.</p>
+                        </div>
+                         <div class="method-explanation">
+                             <h5><i class="fas fa-brain" style="margin-right: 8px; color: var(--accent-color);"></i> Empathy Map</h5>
+                             <p><strong>What:</strong> A tool to organise your understanding of the user into four areas: What they SAY, THINK, DO, and FEEL.</p>
+                             <p><strong>How:</strong> Draw four quadrants on paper labelled Says, Thinks, Does, Feels. Fill in each section with observations and inferences based on your research. 'Says' = direct quotes. 'Does' = observed actions. 'Thinks' & 'Feels' = your educated guesses about their internal state (e.g., "Thinks: 'This is frustrating'", "Feels: Determined").</p>
+                             <p><strong>Why:</strong> Provides a holistic view of the user, helps identify contradictions (e.g., says one thing, does another), considers emotional aspects.</p>
+                        </div>
+                         <p style="font-style: italic;">The "Star" spaces on Page 6 are for any other empathy methods you might use.</p>
+                    </div>
+                </div>
+            </div>
+
+             <div class="card">
+                 <div class="element-header" style="margin: -35px -40px 30px -40px; padding: 25px 35px;">
+                    <div class="element-number">3</div>
+                    <h3>Empathy Tips & Documentation (Page 6) <i class="fas fa-sticky-note" style="margin-left: 15px; color: var(--accent-color);"></i></h3>
+                </div>
+                <p>Page 6 also asks for key tips to remember and how you'll document your findings.</p>
+
+                 <div class="interactive-card" style="margin-top: 30px;">
+                    <div class="element-header" style="margin: -35px -35px 30px -35px; padding: 20px 25px;">
+                        <div class="element-number" style="background-color: var(--light-section-bg); color: var(--accent-color); border: 2px solid var(--accent-color);">B</div>
+                        <h3>Empathy Tips <i class="fas fa-lightbulb" style="margin-left: 10px;"></i></h3>
+                    </div>
+                    <p style="padding: 0 20px 10px 20px;">What important things should you keep in mind while trying to understand your user? Write 3 key tips in the dotted lines on Page 6.</p>
+                    <p style="padding: 0 20px 10px 20px;">Consider tips like:</p>
+                    <ul style="padding: 0 40px 20px 40px;">
+                        <li>"Listen more than talk."</li>
+                        <li>"Ask 'Why?' often to understand deeper reasons."</li>
+                        <li>"Don't assume – ask or observe."</li>
+                        <li>"Focus on their abilities, not just limitations."</li>
+                        <li>"Be patient and respectful of their time and experience."</li>
+                        <li>"Remember that simulations aren't the same as lived experience."</li>
+                    </ul>
+                 </div>
+
+                 <div class="interactive-card" style="margin-top: 30px;">
+                    <div class="element-header" style="margin: -35px -35px 30px -35px; padding: 20px 25px;">
+                        <div class="element-number" style="background-color: var(--light-section-bg); color: var(--accent-color); border: 2px solid var(--accent-color);">C</div>
+                        <h3>Documentation Strategy <i class="fas fa-camera" style="margin-left: 10px;"></i></h3>
+                    </div>
+                     <p style="padding: 0 20px 10px 20px;">How will you record what you learn? Plan this and write it in the box on Page 6.</p>
+                     <p style="padding: 0 20px 10px 20px;">Think about:</p>
+                     <ul style="padding: 0 40px 20px 40px;">
+                        <li><strong>Tools:</strong> Notebook and pen? Digital notes (OneNote, etc.)? Voice recorder? Camera/video (always ask permission!)? Empathy map template?</li>
+                        <li><strong>What to capture:</strong> Direct quotes? Observations of actions? Your interpretations (label them!)? Sketches of the environment? Photos of existing tools/workarounds?</li>
+                        <li><strong>Organisation:</strong> How will you keep notes from different methods organised? How will you pull out the key findings later?</li>
+                     </ul>
+                     <p style="padding: 0 20px 20px 20px;"><strong>Example Plan:</strong> "We will take written notes during the user interview, using different colours for quotes vs. observations. We'll take photos of Alex's workspace (with permission) to understand context. All findings will be typed up and organised by theme in a shared document."</p>
+                 </div>
+            </div>
+
+             <div class="card">
+                 <div class="element-header" style="margin: -35px -40px 30px -40px; padding: 25px 35px;">
+                    <div class="element-number">4</div>
+                    <h3>Making a Plan (Page 6) <i class="fas fa-calendar-alt" style="margin-left: 15px; color: var(--accent-color);"></i></h3>
+                </div>
+                 <p>The bottom of Page 6 asks for a simple plan for your empathy activities.</p>
+                <div class="interactive-card" style="padding: 20px;">
+                     <ul style="padding: 0 20px 0px 20px; list-style-type: none;">
+                        <li><strong>When + Where?</strong> When and where will you conduct your main empathy activities (like the interview or observation)? Be specific if possible (e.g., "Next Tuesday afternoon at Alex's home").</li>
+                        <li><strong>Who + What?</strong> Who will be involved (team members, the user)? What specific activities will you do? (e.g., "Team members Sarah and Ben will interview Alex about their morning routine").</li>
+                    </ul>
+                     <p style="font-style: italic;">Fill in these details on the lines provided at the bottom of Page 6.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tab 2: Page 07 Guidance -->
+        <section id="page-07" class="tab-content light-section">
+             <h1><i class="fas fa-user-edit" style="margin-right: 15px;"></i>DEVELOP EMPATHY: SUMMARY & INSIGHTS (PAGE 07)</h1>
+             <p>After doing your empathy research (interviews, observations, etc.), this page helps you pull together what you learned and identify key **Insights** – the important discoveries about your user's needs.</p>
+             <p>This guide will help you complete <strong>Workbook Page 7</strong>.</p>
+
+              <div class="card">
+                 <div class="element-header" style="margin: -35px -40px 30px -40px; padding: 25px 35px;">
+                    <div class="element-number">1</div>
+                    <h3>Summary of Experience (Page 7) <i class="fas fa-clipboard" style="margin-left: 15px; color: var(--accent-color);"></i></h3>
+                </div>
+                <p>In this box, synthesise (combine and summarise) the most important things you learned from all your empathy methods. What is the overall picture of your user's experience related to the challenge?</p>
+                 <div class="interactive-card" style="padding: 20px;">
+                     <p>Think about:</p>
+                     <ul style="padding: 0 20px 0px 20px;">
+                         <li>What are the biggest frustrations or difficulties the user faces?</li>
+                         <li>What are their main goals or motivations related to this area?</li>
+                         <li>What workarounds or existing solutions do they use? What are the pros/cons of those?</li>
+                         <li>What were the most surprising or impactful things you learned?</li>
+                         <li>How does their environment affect their experience?</li>
+                     </ul>
+                     <p><strong>Example Sentence Starters:</strong></p>
+                      <ul style="padding: 0 20px 0px 20px; list-style-type: none;">
+                         <li><i class="fas fa-angle-right" style="color: var(--accent-color); margin-right: 8px;"></i> "Through our research, we learned that Alex values independence highly but finds..."</li>
+                         <li><i class="fas fa-angle-right" style="color: var(--accent-color); margin-right: 8px;"></i> "The key challenge seems to be [Specific difficulty], especially during [Specific time/activity]."</li>
+                          <li><i class="fas fa-angle-right" style="color: var(--accent-color); margin-right: 8px;"></i> "Existing solutions like [Example] help sometimes, but Alex finds them [Drawback]."</li>
+                         <li><i class="fas fa-angle-right" style="color: var(--accent-color); margin-right: 8px;"></i> "An important emotional aspect we discovered is Alex's feeling of [Emotion] when..."</li>
+                     </ul>
+                 </div>
+            </div>
+
+             <div class="card">
+                 <div class="element-header" style="margin: -35px -40px 30px -40px; padding: 25px 35px;">
+                    <div class="element-number">2</div>
+                    <h3>Identifying Insights (Page 7) <i class="fas fa-search" style="margin-left: 15px; color: var(--accent-color);"></i></h3>
+                </div>
+                <p>Insights are the 'Aha!' moments. They are discoveries about your user's underlying needs or motivations that can inspire design solutions. They often connect different pieces of information you gathered.</p>
+                 <p>Page 7 asks you to document 4 key insights.</p>
+
+                <div class="interactive-card">
+                     <div class="element-header" style="margin: -35px -35px 30px -35px; padding: 20px 25px;">
+                         <div class="element-number" style="background-color: var(--light-section-bg); color: var(--accent-color); border: 2px solid var(--accent-color);">A</div>
+                         <h3>What Makes a Good Insight? <i class="fas fa-question-circle" style="margin-left: 10px;"></i></h3>
+                     </div>
+                      <p style="padding: 0 20px 10px 20px;">An insight isn't just an observation (e.g., "Alex struggles to open jars"). It explains the *why* or the *meaning* behind the observation.</p>
+                     <ul style="padding: 0 40px 20px 40px;">
+                        <li>It often reveals a tension or unmet need.</li>
+                        <li>It connects behaviour with motivation or feeling.</li>
+                        <li>It should feel like a discovery that could lead to new ideas.</li>
+                        <li>It's specific to your user's context.</li>
+                     </ul>
+                      <div class="insight-guidance">
+                         <h5><i class="fas fa-lightbulb" style="margin-right: 8px;"></i> Finding Insights: Ask 'Why?'</h5>
+                         <p>Observation: "Alex waits for help to open jars."</p>
+                         <p>Ask Why? -> "Because their hands hurt and they lack strength."</p>
+                         <p>Ask Why is that important? -> "Because they value independence and feel frustrated asking for help with simple tasks."</p>
+                         <p><strong>Potential Insight:</strong> "Alex needs a way to open jars independently to maintain their sense of self-reliance and avoid the daily frustration of dependence, even though their hand strength is limited."</p>
+                     </div>
+                 </div>
+
+                  <div class="interactive-card" style="margin-top: 30px;">
+                     <div class="element-header" style="margin: -35px -35px 30px -35px; padding: 20px 25px;">
+                         <div class="element-number" style="background-color: var(--light-section-bg); color: var(--accent-color); border: 2px solid var(--accent-color);">B</div>
+                         <h3>Documenting Your Insights (Page 7) <i class="fas fa-image" style="margin-left: 10px;"></i></h3>
+                     </div>
+                     <p style="padding: 0 20px 10px 20px;">For each of the 4 insight sections on Page 7:</p>
+                     <ul style="padding: 0 40px 20px 40px;">
+                         <li><strong>Image Area:</strong> You could sketch a scene representing the insight, draw the user's emotion, or find/create a simple icon or image that captures the essence.</li>
+                         <li><strong>Text Area:</strong> Write the insight statement clearly. Use the format "[User] needs [Need] because [Reason/Motivation/Underlying Cause]."</li>
+                     </ul>
+                      <p style="padding: 0 20px 20px 20px;"><strong>Example Insight Statements:</strong></p>
+                      <ul style="padding: 0 40px 20px 40px;">
+                        <li>"Alex needs a way to manage daily tasks requiring grip strength without feeling like they are using a 'medical device' because maintaining a sense of normalcy is important to their identity."</li>
+                        <li>"Sarah needs clear visual and tactile feedback when using kitchen tools because her reduced sensation makes it hard to know if she's using them correctly or safely."</li>
+                         <li>"Ben needs a method to carry small items while using his walker because having his hands free allows him to feel more stable and confident when moving around."</li>
+                      </ul>
+                 </div>
+            </div>
+        </section>
+
+        <!-- Tab 3: Page 08 Guidance -->
+        <section id="page-08" class="tab-content light-section">
+              <h1><i class="fas fa-crosshairs" style="margin-right: 15px;"></i>DEVELOP EMPATHY: FRAMING THE CHALLENGE (PAGE 08)</h1>
+              <p>Based on your insights, it's time to define the specific problem you're going to solve. This page helps you frame your design challenge and set initial goals (criteria).</p>
+              <p>This guide will help you complete <strong>Workbook Page 8</strong>.</p>
+
+             <div class="card">
+                 <div class="element-header" style="margin: -35px -40px 30px -40px; padding: 25px 35px;">
+                    <div class="element-number">1</div>
+                    <h3>Challenge Framing & "How Might We..." (Page 8) <i class="fas fa-question" style="margin-left: 15px; color: var(--accent-color);"></i></h3>
+                </div>
+                <p>Challenge framing turns your insights about user needs into actionable questions that guide your ideation (idea generation) phase.</p>
+
+                 <div class="interactive-card">
+                    <div class="element-header" style="margin: -35px -35px 30px -35px; padding: 20px 25px;">
+                        <div class="element-number" style="background-color: var(--light-section-bg); color: var(--accent-color); border: 2px solid var(--accent-color);">A</div>
+                        <h3>Understanding "How Might We..." Statements <i class="fas fa-magic" style="margin-left: 10px;"></i></h3>
+                    </div>
+                     <p style="padding: 0 20px 10px 20px;">A "How Might We..." (HMW) question is a powerful way to frame your challenge because it:</p>
+                     <ul style="padding: 0 40px 20px 40px;">
+                         <li><strong>How:</strong> Suggests solutions exist.</li>
+                         <li><strong>Might:</strong> Implies possibility and encourages exploration (doesn't demand a single right answer).</li>
+                         <li><strong>We:</strong> Highlights the collaborative nature of finding a solution.</li>
+                     </ul>
+                     <p style="padding: 0 20px 10px 20px;">A good HMW statement should be inspired by your insights, specific enough to provide focus, but broad enough to allow for creative ideas.</p>
+                     <p style="padding: 0 20px 10px 20px;"><strong>Structure:</strong> How Might We [Action Verb] for [User] so that [Desired Outcome / Benefit linked to Insight]?</p>
+
+                     <div style="padding: 0 20px 20px 20px;">
+                         <div class="hmw-bad-example">
+                            <p><strong><i class="fas fa-times-circle" style="color: #cf1322; margin-right: 5px;"></i> Too Broad:</strong> How might we help Alex?</p>
+                            <p style="font-size: 0.9em; font-style: italic;">(Doesn't specify the problem area)</p>
+                         </div>
+                          <div class="hmw-bad-example">
+                            <p><strong><i class="fas fa-times-circle" style="color: #cf1322; margin-right: 5px;"></i> Too Narrow / Solution-Based:</strong> How might we make a better jar opener handle for Alex?</p>
+                            <p style="font-size: 0.9em; font-style: italic;">(Already suggests the solution - 'jar opener handle' - limiting creativity)</p>
+                         </div>
+                          <div class="hmw-good-example">
+                            <p><strong><i class="fas fa-check-circle" style="color: #389e0d; margin-right: 5px;"></i> Just Right:</strong> How might we enable Alex to open jars independently so that they feel more self-reliant in the kitchen?</p>
+                            <p style="font-size: 0.9em; font-style: italic;">(Specifies user, action, and desired outcome linked to an insight about independence)</p>
+                         </div>
+                          <div class="hmw-good-example">
+                            <p><strong><i class="fas fa-check-circle" style="color: #389e0d; margin-right: 5px;"></i> Just Right:</strong> How might we provide Sarah with clear feedback when using kitchen tools so that she feels confident and safe while cooking?</p>
+                             <p style="font-size: 0.9em; font-style: italic;">(Specifies user, need for feedback, and desired outcome linked to safety/confidence insight)</p>
+                         </div>
+                     </div>
+                     <p style="padding: 0 20px 20px 20px; font-style: italic;">Use your strongest insight from Page 7 to craft your main HMW question in the large central space on Page 8. The smaller boxes around it might be for alternative HMWs based on other insights, or breaking down the main HMW.</p>
+                 </div>
+            </div>
+
+            <div class="card">
+                 <div class="element-header" style="margin: -35px -40px 30px -40px; padding: 25px 35px;">
+                    <div class="element-number">2</div>
+                    <h3>Initial Design Criteria (Page 8) <i class="fas fa-list-check" style="margin-left: 15px; color: var(--accent-color);"></i></h3>
+                </div>
+                 <p>Design Criteria are the requirements or goals your solution needs to meet to be considered successful. They come directly from your user's needs and your insights.</p>
+                 <p>Page 8 asks for 6 initial criteria.</p>
+
+                 <div class="interactive-card">
+                      <div class="element-header" style="margin: -35px -35px 30px -35px; padding: 20px 25px;">
+                         <div class="element-number" style="background-color: var(--light-section-bg); color: var(--accent-color); border: 2px solid var(--accent-color);">B</div>
+                         <h3>Defining Initial Criteria <i class="fas fa-pencil-alt" style="margin-left: 10px;"></i></h3>
+                     </div>
+                     <p style="padding: 0 20px 10px 20px;">Think about what your solution MUST do or be like. Consider both:</p>
+                     <ul style="padding: 0 40px 10px 40px;">
+                         <li><strong>Functional Criteria:</strong> How it works, what it achieves (e.g., "Reduces force needed by X%", "Holds item securely").</li>
+                         <li><strong>Non-Functional Criteria:</strong> Qualities like ease of use, comfort, safety, appearance, durability, cost, manufacturability (e.g., "Easy to clean," "Comfortable to hold," "Doesn't look 'medical'," "Can be 3D printed").</li>
+                     </ul>
+
+                      <div class="criteria-guidance">
+                         <h5><i class="fas fa-lightbulb" style="margin-right: 8px;"></i> Turning Insights/Needs into Criteria</h5>
+                          <p><strong>Need/Insight:</strong> "Alex needs to open jars independently to feel self-reliant."</p>
+                          <p><strong>Potential Criteria:**</strong></p>
+                           <ul style="font-size: 0.95em;">
+                               <li>Allows single-handed operation.</li>
+                               <li>Requires minimal grip strength (quantify later if possible).</li>
+                               <li>Successfully opens standard jars 9/10 times.</li>
+                               <li>Is intuitive to use without instructions.</li>
+                               <li>Durable enough for daily use.</li>
+                               <li>Aesthetically acceptable for kitchen counter.</li>
+                           </ul>
+                      </div>
+                     <p style="padding: 0 20px 20px 20px; margin-top: 15px; font-style: italic;">Write 6 specific criteria for your project in the spaces provided on Page 8. Make them clear and measurable if possible.</p>
+                 </div>
+            </div>
+
+            <div class="card">
+                 <div class="element-header" style="margin: -35px -40px 30px -40px; padding: 25px 35px;">
+                    <div class="element-number">3</div>
+                    <h3>Checklist & Notes (Page 8) <i class="fas fa-clipboard-check" style="margin-left: 15px; color: var(--accent-color);"></i></h3>
+                </div>
+                 <p>Finally, reflect on your Empathy and Define process using the checklist and notes section at the bottom of Page 8.</p>
+
+                 <div class="interactive-card" style="margin-top: 30px;">
+                     <div class="element-header" style="margin: -35px -35px 30px -35px; padding: 20px 25px;">
+                         <div class="element-number" style="background-color: var(--light-section-bg); color: var(--accent-color); border: 2px solid var(--accent-color);">C</div>
+                         <h3>The Checklist Explained <i class="fas fa-tasks" style="margin-left: 10px;"></i></h3>
+                     </div>
+                      <p style="padding: 0 20px 10px 20px;">Let's clarify the checklist items:</p>
+                      <ul style="padding: 0 40px 20px 40px;">
+                        <li><strong>"I planned and implemented a human-centred design strategy to develop empathy for an end user."</strong>
+                            <ul>
+                               <li>Did you actually make a plan (like on Page 6)? Did you use methods focused on understanding the *person* (interviews, observations, etc.)?</li>
+                            </ul>
+                        </li>
+                        <li><strong>"I analysed and used data to frame design opportunities and initial criteria."</strong>
+                             <ul>
+                               <li>Did you look at the information you gathered (your data)? Did you identify insights (Page 7)? Did you use those insights to create your HMW question and your initial design criteria (Page 8)?</li>
+                             </ul>
+                        </li>
+                    </ul>
+                      <p style="padding: 0 20px 20px 20px; font-style: italic;">Tick the boxes on Page 8 honestly based on your team's work in this phase.</p>
+                 </div>
+
+                  <div class="interactive-card" style="margin-top: 30px;">
+                     <div class="element-header" style="margin: -35px -35px 30px -35px; padding: 20px 25px;">
+                         <div class="element-number" style="background-color: var(--light-section-bg); color: var(--accent-color); border: 2px solid var(--accent-color);">D</div>
+                         <h3>Making Final Notes <i class="fas fa-pen-fancy" style="margin-left: 10px;"></i></h3>
+                     </div>
+                     <p style="padding: 0 20px 10px 20px;">Use the 'Notes' box on Page 8 for final reflections on this Empathy stage.</p>
+                      <p style="padding: 0 20px 10px 20px;">Consider writing about:</p>
+                       <ul style="padding: 0 40px 20px 40px;">
+                        <li>What was the most surprising thing you learned about your user?</li>
+                        <li>Which empathy method was most helpful and why?</li>
+                        <li>Was it difficult to frame the HMW question?</li>
+                        <li>Any challenges in setting initial criteria?</li>
+                        <li>How this understanding will guide your ideation next.</li>
+                    </ul>
+                 </div>
+            </div>
+
+             
+        </section>
+
+    </main>
+
+    <script>
+        // Basic Tab Navigation Logic
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('.sidebar-nav .tab-button');
+            const contents = document.querySelectorAll('.main-content .tab-content');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', function() {
+                    const targetId = this.getAttribute('data-tab');
+
+                    // Update button active state
+                    tabs.forEach(t => t.classList.remove('active'));
+                    this.classList.add('active');
+
+                    // Update content active state
+                    contents.forEach(content => {
+                        if (content.id === targetId) {
+                            content.classList.add('active');
+                        } else {
+                            content.classList.remove('active');
+                        }
+                    });
+                });
+            });
+
+            // Ensure the first tab ('page-06') is active on load if none are pre-set
+            const activeTab = document.querySelector('.sidebar-nav .tab-button.active');
+            if (!activeTab && tabs.length > 0) {
+                tabs[0].click(); // Simulate a click on the first tab
+            } else if (activeTab){
+                 // Ensure the corresponding content is visible
+                 const activeContentId = activeTab.getAttribute('data-tab');
+                 const activeContent = document.getElementById(activeContentId);
+                 contents.forEach(content => content.classList.remove('active'));
+                 if(activeContent) activeContent.classList.add('active');
+            }
+        });
+    </script>
+</body>
+</html>
